@@ -1,0 +1,1105 @@
+2019-02-15 10:55:00,739  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 10:55:01,065  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 13000 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 10:55:01,065  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 10:55:01,235  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4aeeef9: startup date [Fri Feb 15 10:55:01 CST 2019]; root of context hierarchy
+2019-02-15 10:55:02,335  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 10:55:02,718  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 10:55:02,842  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbb775b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 10:55:03,742  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 10:55:03,944  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2711 ms
+2019-02-15 10:55:04,165  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 10:55:04,166  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 10:55:04,168  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 10:55:04,169  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 10:55:04,169  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 10:55:04,169  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 10:55:04,169  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 10:55:04,171  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 10:55:04,903  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 10:55:04,908  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 10:55:04,943  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 10:55:05,062  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 10:55:05,474  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4aeeef9: startup date [Fri Feb 15 10:55:01 CST 2019]; root of context hierarchy
+2019-02-15 10:55:05,519  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 10:55:05,522  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 10:55:05,522  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 10:55:05,522  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 10:55:05,523  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 10:55:05,524  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 10:55:05,524  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 10:55:05,525  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-15 10:55:05,527  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 10:55:05,527  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 10:55:05,539  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 10:55:05,555  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 10:55:05,556  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 10:55:05,630  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 10:55:05,935  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4aeeef9: startup date [Fri Feb 15 10:55:01 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 10:55:05,936  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 10:55:05,950  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 10:55:06,121  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 10:55:06,164  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 10:55:06,164  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 10:55:06,164  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 10:55:06,165  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 10:55:06,171  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 10:55:06,173  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 10:55:06,174  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 10:55:06,210  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 10:55:06,213  INFO MRApplication:59 - Started MRApplication in 5.668 seconds (JVM running for 7.744)
+2019-02-15 10:55:13,015  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 10:55:13,041  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-02-15 10:55:13,333  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 10:55:14,013  INFO BatchRegister:196 - 该商铺已进件=======1919酒类直供二
+2019-02-15 10:55:14,014  INFO BatchRegister:196 - 该商铺已进件=======1983美容美发
+2019-02-15 10:55:14,014  INFO BatchRegister:196 - 该商铺已进件=======AA远洋太古里店
+2019-02-15 10:55:14,014  INFO BatchRegister:196 - 该商铺已进件=======AD财富又一城店
+2019-02-15 10:55:14,014  INFO BatchRegister:196 - 该商铺已进件=======AG远洋太古里店
+2019-02-15 10:55:14,015  INFO BatchRegister:196 - 该商铺已进件=======AIKERL
+2019-02-15 10:55:14,015  INFO BatchRegister:196 - 该商铺已进件=======AN银泰AN99店
+2019-02-15 10:55:14,015  INFO BatchRegister:196 - 该商铺已进件=======AP远洋太古里店
+2019-02-15 10:55:14,017 ERROR BatchRegister:203 - 根据名称=AST如一汽车美容中心找不到对应的图片文件
+2019-02-15 10:55:14,017  INFO BatchRegister:196 - 该商铺已进件=======AWNL
+2019-02-15 10:55:14,018  INFO BatchRegister:196 - 该商铺已进件=======b·duck
+2019-02-15 10:55:14,018  INFO BatchRegister:196 - 该商铺已进件=======BA日韩发型沙龙
+2019-02-15 10:55:14,018  INFO BatchRegister:196 - 该商铺已进件=======BA巴赫整体造型·
+2019-02-15 10:55:14,018  INFO BatchRegister:196 - 该商铺已进件=======BA广场店
+2019-02-15 10:55:14,018  INFO BatchRegister:196 - 该商铺已进件=======BA万象城商场店
+2019-02-15 10:55:14,018  INFO BatchRegister:196 - 该商铺已进件=======BE万达广场店
+2019-02-15 10:55:14,019  INFO BatchRegister:196 - 该商铺已进件=======BO葆蝶家仁恒店
+2019-02-15 10:55:14,019  INFO BatchRegister:196 - 该商铺已进件=======BO锦华万达店
+2019-02-15 10:55:14,019  INFO BatchRegister:196 - 该商铺已进件=======BR
+2019-02-15 10:55:14,019  INFO BatchRegister:196 - 该商铺已进件=======BR翡翠城店
+2019-02-15 10:55:14,019  INFO BatchRegister:196 - 该商铺已进件=======BR银泰城店
+2019-02-15 10:55:14,209  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 10:55:14,386  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:14,575  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:14,576 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区机场路常乐段40号
+2019-02-15 10:55:14,577  INFO BatchRegister:196 - 该商铺已进件=======BV金融中心店
+2019-02-15 10:55:14,577  INFO BatchRegister:196 - 该商铺已进件=======BY太古里店
+2019-02-15 10:55:14,577  INFO BatchRegister:196 - 该商铺已进件=======Cactuss
+2019-02-15 10:55:14,577  INFO BatchRegister:196 - 该商铺已进件=======CA新城市广场店
+2019-02-15 10:55:14,577  INFO BatchRegister:196 - 该商铺已进件=======CA远洋太古里店
+2019-02-15 10:55:14,688  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:14,898  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:14,899 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区中和二街93-103号
+2019-02-15 10:55:14,899  INFO BatchRegister:196 - 该商铺已进件=======CA嘉实多护车保养
+2019-02-15 10:55:14,900  INFO BatchRegister:196 - 该商铺已进件=======CE
+2019-02-15 10:55:14,900  INFO BatchRegister:196 - 该商铺已进件=======CH万象城店
+2019-02-15 10:55:14,900  INFO BatchRegister:196 - 该商铺已进件=======CH国金高级精品
+2019-02-15 10:55:14,900  INFO BatchRegister:196 - 该商铺已进件=======CI家美甲美睫纹绣
+2019-02-15 10:55:14,900  INFO BatchRegister:196 - 该商铺已进件=======D驾族贝森路店
+2019-02-15 10:55:14,901  INFO BatchRegister:196 - 该商铺已进件=======D驾族光华南路店
+2019-02-15 10:55:14,901  INFO BatchRegister:196 - 该商铺已进件=======D驾族两河东路
+2019-02-15 10:55:14,901  INFO BatchRegister:196 - 该商铺已进件=======D驾族人和路店
+2019-02-15 10:55:14,901  INFO BatchRegister:196 - 该商铺已进件=======D驾族蜀江路店
+2019-02-15 10:55:14,901  INFO BatchRegister:196 - 该商铺已进件=======D驾族易途簇桥店
+2019-02-15 10:55:14,902  INFO BatchRegister:196 - 该商铺已进件=======D驾族易途金花店
+2019-02-15 10:55:14,902  INFO BatchRegister:196 - 该商铺已进件=======FFF
+2019-02-15 10:55:14,903  INFO BatchRegister:196 - 该商铺已进件=======FA梵希美发沙龙
+2019-02-15 10:55:14,903  INFO BatchRegister:196 - 该商铺已进件=======GA凯丹广场店
+2019-02-15 10:55:14,905  INFO BatchRegister:196 - 该商铺已进件=======GI华润·万象城店
+2019-02-15 10:55:14,934  INFO BatchRegister:196 - 该商铺已进件=======GI纪梵希
+2019-02-15 10:55:14,938  INFO BatchRegister:196 - 该商铺已进件=======GO金融中心店
+2019-02-15 10:55:14,938  INFO BatchRegister:196 - 该商铺已进件=======GU远洋太古里店
+2019-02-15 10:55:14,938  INFO BatchRegister:196 - 该商铺已进件=======HHH形象发型设计
+2019-02-15 10:55:14,938  INFO BatchRegister:196 - 该商铺已进件=======HA
+2019-02-15 10:55:14,939  INFO BatchRegister:196 - 该商铺已进件=======HA
+2019-02-15 10:55:14,939  INFO BatchRegister:196 - 该商铺已进件=======I·I日系烫发染发
+2019-02-15 10:55:15,108  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:15,208  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:15,209 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区广履路与航港路四段交叉口西南角
+2019-02-15 10:55:15,419  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:15,606  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:15,606 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区双流商都路508号铭汇国际商贸汽配城6栋10号
+2019-02-15 10:55:15,607  INFO BatchRegister:196 - 该商铺已进件=======KR'KR古格发型
+2019-02-15 10:55:15,607  INFO BatchRegister:196 - 该商铺已进件=======LA剪发染发烫发
+2019-02-15 10:55:15,607  INFO BatchRegister:196 - 该商铺已进件=======lippe力柏
+2019-02-15 10:55:15,607  INFO BatchRegister:196 - 该商铺已进件=======LO王府井百货店
+2019-02-15 10:55:15,607  INFO BatchRegister:196 - 该商铺已进件=======LO直营店万象城店
+2019-02-15 10:55:15,607  INFO BatchRegister:196 - 该商铺已进件=======LV路易威登
+2019-02-15 10:55:15,608  INFO BatchRegister:196 - 该商铺已进件=======MA国际金融店
+2019-02-15 10:55:15,608  INFO BatchRegister:196 - 该商铺已进件=======mc汽车美容工作室
+2019-02-15 10:55:15,608  INFO BatchRegister:196 - 该商铺已进件=======MIDO银泰城店
+2019-02-15 10:55:15,714  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:15,901  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:15,902 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区东升镇航都大街
+2019-02-15 10:55:16,089  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:16,276  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:16,276 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区三强路一段116号
+2019-02-15 10:55:16,277  INFO BatchRegister:196 - 该商铺已进件=======MP木朴创意美发沙
+2019-02-15 10:55:16,277  INFO BatchRegister:196 - 该商铺已进件=======Mtan-A爱马
+2019-02-15 10:55:16,277  INFO BatchRegister:196 - 该商铺已进件=======PA成都大悦城店
+2019-02-15 10:55:16,277  INFO BatchRegister:196 - 该商铺已进件=======RADO
+2019-02-15 10:55:16,277  INFO BatchRegister:196 - 该商铺已进件=======RA
+2019-02-15 10:55:16,277  INFO BatchRegister:196 - 该商铺已进件=======RE汽车服务
+2019-02-15 10:55:16,277  INFO BatchRegister:196 - 该商铺已进件=======RIMOWA
+2019-02-15 10:55:16,464  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:16,567  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:16,567 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区五洞桥北路一段12
+2019-02-15 10:55:16,567  INFO BatchRegister:196 - 该商铺已进件=======Samsonite
+2019-02-15 10:55:16,567  INFO BatchRegister:196 - 该商铺已进件=======SA形象沙龙
+2019-02-15 10:55:16,567  INFO BatchRegister:196 - 该商铺已进件=======SA形象沙龙二
+2019-02-15 10:55:16,568  INFO BatchRegister:196 - 该商铺已进件=======SW大悦城店
+2019-02-15 10:55:16,568  INFO BatchRegister:196 - 该商铺已进件=======T·T一非造型
+2019-02-15 10:55:16,568  INFO BatchRegister:196 - 该商铺已进件=======TA私人订制潮西单
+2019-02-15 10:55:16,568  INFO BatchRegister:196 - 该商铺已进件=======TITITITI蒂
+2019-02-15 10:55:16,568  INFO BatchRegister:196 - 该商铺已进件=======TI群光广场店
+2019-02-15 10:55:16,569  INFO BatchRegister:196 - 该商铺已进件=======TI西单商场店
+2019-02-15 10:55:16,569  INFO BatchRegister:196 - 该商铺已进件=======tous茂业百货店
+2019-02-15 10:55:16,761  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:16,949  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:16,949 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区长冶路四段151号音美幼儿园旁
+2019-02-15 10:55:17,050  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:17,228  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:17,229 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区机场路土桥段225号
+2019-02-15 10:55:17,229  INFO BatchRegister:196 - 该商铺已进件=======阿吉豆伊藤洋华堂店
+2019-02-15 10:55:17,423  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:17,526  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:17,526 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区华阳镇伏龙路一段100号
+2019-02-15 10:55:17,527  INFO BatchRegister:196 - 该商铺已进件=======阿杰发艺王府井店
+2019-02-15 10:55:17,527  INFO BatchRegister:196 - 该商铺已进件=======阿玛尼时尚腕表
+2019-02-15 10:55:17,527  INFO BatchRegister:196 - 该商铺已进件=======爱马仕远洋太古里店
+2019-02-15 10:55:17,527  INFO BatchRegister:196 - 该商铺已进件=======爱妻牛排火锅衣冠庙
+2019-02-15 10:55:17,527  INFO BatchRegister:196 - 该商铺已进件=======爱炫车饰界汽车美容
+2019-02-15 10:55:17,527  INFO BatchRegister:196 - 该商铺已进件=======安洁汽车美容服务
+2019-02-15 10:55:17,527  INFO BatchRegister:196 - 该商铺已进件=======澳思莱汽车会所
+2019-02-15 10:55:17,528  INFO BatchRegister:196 - 该商铺已进件=======巴蜀大将火锅
+2019-02-15 10:55:17,528  INFO BatchRegister:196 - 该商铺已进件=======巴蜀大宅门火锅
+2019-02-15 10:55:17,528  INFO BatchRegister:196 - 该商铺已进件=======巴蜀大掌柜火锅
+2019-02-15 10:55:17,699  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:17,919  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:17,919 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区剑南大道华阳欧尚超市地面停车场内
+2019-02-15 10:55:17,920  INFO BatchRegister:196 - 该商铺已进件=======爸爸炒料牛排老火锅
+2019-02-15 10:55:17,920  INFO BatchRegister:196 - 该商铺已进件=======白家老店肥肠粉
+2019-02-15 10:55:17,920  INFO BatchRegister:196 - 该商铺已进件=======百年神厨双楠店
+2019-02-15 10:55:17,920  INFO BatchRegister:196 - 该商铺已进件=======百味记小郡肝砂罐串
+2019-02-15 10:55:17,920  INFO BatchRegister:196 - 该商铺已进件=======宝晨汽车维修部郫县
+2019-02-15 10:55:17,920  INFO BatchRegister:196 - 该商铺已进件=======宝亨表行
+2019-02-15 10:55:17,920  INFO BatchRegister:196 - 该商铺已进件=======宝珀远洋太古里店
+2019-02-15 10:55:17,921  INFO BatchRegister:196 - 该商铺已进件=======贝壳造型SA高新店
+2019-02-15 10:55:17,921  INFO BatchRegister:196 - 该商铺已进件=======飚野汽车养护中心
+2019-02-15 10:55:17,921  INFO BatchRegister:196 - 该商铺已进件=======藏韵圣宴
+2019-02-15 10:55:17,921  INFO BatchRegister:196 - 该商铺已进件=======畅享汽车连锁犀浦店
+2019-02-15 10:55:17,921  INFO BatchRegister:196 - 该商铺已进件=======潮·蜕变发型设计
+2019-02-15 10:55:17,921  INFO BatchRegister:196 - 该商铺已进件=======炒作DS·民间饭店
+2019-02-15 10:55:17,921  INFO BatchRegister:196 - 该商铺已进件=======车吧坊汽车服务中心
+2019-02-15 10:55:17,922  INFO BatchRegister:196 - 该商铺已进件=======车管家平意汽车美容
+2019-02-15 10:55:17,922  INFO BatchRegister:196 - 该商铺已进件=======车立方汽车生活馆
+2019-02-15 10:55:17,922  INFO BatchRegister:196 - 该商铺已进件=======车享家（ 龙德路）
+2019-02-15 10:55:17,922  INFO BatchRegister:196 - 该商铺已进件=======车享家（八桥店）
+2019-02-15 10:55:17,922  INFO BatchRegister:196 - 该商铺已进件=======车享家（北环路店）
+2019-02-15 10:55:17,922  INFO BatchRegister:196 - 该商铺已进件=======车享家（滨江路店）
+2019-02-15 10:55:17,922  INFO BatchRegister:196 - 该商铺已进件=======车享家成都世纪大道
+2019-02-15 10:55:18,019  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:18,215  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:18,216 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区雅和南二路英伦城邦K区东门人行门
+2019-02-15 10:55:18,216  INFO BatchRegister:196 - 该商铺已进件=======车享家（富洲路店）
+2019-02-15 10:55:18,216  INFO BatchRegister:196 - 该商铺已进件=======车享家（钢花路店）
+2019-02-15 10:55:18,216  INFO BatchRegister:196 - 该商铺已进件=======车享家（海峡路店）
+2019-02-15 10:55:18,216  INFO BatchRegister:196 - 该商铺已进件=======车享家（华福大道）
+2019-02-15 10:55:18,216  INFO BatchRegister:196 - 该商铺已进件=======车享家黄花园加油站
+2019-02-15 10:55:18,217  INFO BatchRegister:196 - 该商铺已进件=======车享家（火炬大道）
+2019-02-15 10:55:18,217  INFO BatchRegister:196 - 该商铺已进件=======车享家（金童路店）
+2019-02-15 10:55:18,217  INFO BatchRegister:196 - 该商铺已进件=======车享家（缙云大道）
+2019-02-15 10:55:18,217  INFO BatchRegister:196 - 该商铺已进件=======车享家龙华大道1
+2019-02-15 10:55:18,217  INFO BatchRegister:196 - 该商铺已进件=======车享家（龙山大道）
+2019-02-15 10:55:18,217  INFO BatchRegister:196 - 该商铺已进件=======车享家（龙洲大道）
+2019-02-15 10:55:18,217  INFO BatchRegister:196 - 该商铺已进件=======车享家（青龙站店）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（石马河站）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（双宁路店）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（天吉路店）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（烟雨路店）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（邮电路店）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（余松路店）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（白涛站店）
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家大学城东路
+2019-02-15 10:55:18,218  INFO BatchRegister:196 - 该商铺已进件=======车享家（海尔路店）
+2019-02-15 10:55:18,219  INFO BatchRegister:196 - 该商铺已进件=======车享家（海福路店）
+2019-02-15 10:55:18,219  INFO BatchRegister:196 - 该商铺已进件=======车享家（红黄路店）
+2019-02-15 10:55:18,219  INFO BatchRegister:196 - 该商铺已进件=======车享家（宏帆路店）
+2019-02-15 10:55:18,219  INFO BatchRegister:196 - 该商铺已进件=======车享家（虎曾路站）
+2019-02-15 10:55:18,219  INFO BatchRegister:196 - 该商铺已进件=======车享家（江与城店）
+2019-02-15 10:55:18,222  INFO BatchRegister:196 - 该商铺已进件=======车享家（科城路店）
+2019-02-15 10:55:18,222  INFO BatchRegister:196 - 该商铺已进件=======车享家（科龙路店）
+2019-02-15 10:55:18,222  INFO BatchRegister:196 - 该商铺已进件=======车享家（兰花路店）
+2019-02-15 10:55:18,223  INFO BatchRegister:196 - 该商铺已进件=======车享家（龙头寺店）
+2019-02-15 10:55:18,223  INFO BatchRegister:196 - 该商铺已进件=======车享家（卢作孚路）
+2019-02-15 10:55:18,466  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:18,568  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:18,568 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区中和镇朝阳路306号附1号
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（南山路店）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（南园东路）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（七公里站）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（上江城店）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（双城路店）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（顺江站店）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（桃花大道）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（腾龙大道）
+2019-02-15 10:55:18,569  INFO BatchRegister:196 - 该商铺已进件=======车享家（通江大道）
+2019-02-15 10:55:18,570  INFO BatchRegister:196 - 该商铺已进件=======车享家万州圣士豪庭
+2019-02-15 10:55:18,570  INFO BatchRegister:196 - 该商铺已进件=======车享家（文苑北路）
+2019-02-15 10:55:18,570  INFO BatchRegister:196 - 该商铺已进件=======车享家（西双大道）
+2019-02-15 10:55:18,570  INFO BatchRegister:196 - 该商铺已进件=======车享家学府大道路
+2019-02-15 10:55:18,570  INFO BatchRegister:196 - 该商铺已进件=======车享家（学院街店）
+2019-02-15 10:55:18,570  INFO BatchRegister:196 - 该商铺已进件=======车享家（悠然天地）
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======车享家（渝澳大道）
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======车玴车美汽车养护
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======车逸居汽车改装俱乐
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======车友必成贴膜.美容
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======车之骏汽车美容中心
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======车之美汽车一站式服
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======陈婆婆珍藏菜
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======成都吃客致民路店
+2019-02-15 10:55:18,571  INFO BatchRegister:196 - 该商铺已进件=======成都亨得利钟表
+2019-02-15 10:55:18,572  INFO BatchRegister:196 - 该商铺已进件=======初心HA
+2019-02-15 10:55:18,572  INFO BatchRegister:196 - 该商铺已进件=======川井造型
+2019-02-15 10:55:18,572  INFO BatchRegister:196 - 该商铺已进件=======川西坝子杜甫草堂
+2019-02-15 10:55:18,572  INFO BatchRegister:196 - 该商铺已进件=======川西坝子羊犀直营店
+2019-02-15 10:55:18,572  INFO BatchRegister:196 - 该商铺已进件=======创马汇宝马4S技师
+2019-02-15 10:55:18,572  INFO BatchRegister:196 - 该商铺已进件=======吹吹风汽车美容
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======春耕野菜馆华阳店
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======春阳水饺·川味名小
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======大龙燚火锅花牌坊店
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======大龙燚火锅马鞍北路
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======大院河鲜·来仙气飘
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======得利达名表
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======德洛瑞恩
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======德式精养玛驰店
+2019-02-15 10:55:18,573  INFO BatchRegister:196 - 该商铺已进件=======德系之星·极致车美
+2019-02-15 10:55:18,574  INFO BatchRegister:196 - 该商铺已进件=======鼎靓精工坊
+2019-02-15 10:55:18,574  INFO BatchRegister:196 - 该商铺已进件=======斗鸡饭场伙浆洗街店
+2019-02-15 10:55:18,574  INFO BatchRegister:196 - 该商铺已进件=======额尔敦必福牛匠
+2019-02-15 10:55:18,574  INFO BatchRegister:196 - 该商铺已进件=======范大碗好鱼人家冷锅
+2019-02-15 10:55:18,574  INFO BatchRegister:196 - 该商铺已进件=======菲拉格慕国际金融
+2019-02-15 10:55:18,574  INFO BatchRegister:196 - 该商铺已进件=======峰林汽车服务
+2019-02-15 10:55:18,574  INFO BatchRegister:196 - 该商铺已进件=======福莱士蒸汽洗车美容
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======福雷蒙汽车美容中心
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======福曼汽车美容工坊
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======钢管厂五区小郡肝串
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======高新区实诚汽修
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======格耐汽车生活馆
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======格知沙龙
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======鼓动汽车音响改装连
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======怪叔叔汽车生活馆
+2019-02-15 10:55:18,575  INFO BatchRegister:196 - 该商铺已进件=======广合汽车
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======海底捞火锅莱蒙都会
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======汉阳韩国料理
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======豪众汽车装饰美容服
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======恒动力汽车养护中心
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======红星兔丁WHC店
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======呼哈凉卷粉高升桥店
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======化锐汽车维修
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======奂燃汽车钣喷服务
+2019-02-15 10:55:18,576  INFO BatchRegister:196 - 该商铺已进件=======惠泽汽车美容机场
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======机械蟲汽车美容保养
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======集洁号汽车美容服务
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======佳杰欣汽修厂
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======佳音汽车音响装饰馆
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======嘉悦汽车服务中心
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======間客
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======简HA九眼桥店
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======疆食记
+2019-02-15 10:55:18,577  INFO BatchRegister:196 - 该商铺已进件=======今蓝纳米专业汽车贴
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======锦伯爵汽车美容中心
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======锦城印象火锅酒楼二
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======锦南炉火锅
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======精典汽车江浦路店
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======精典汽车连锁易修店
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======精点倍耐力轮胎红光
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======丼亦九宫格火锅
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======景羊岗贵州米粉·粉
+2019-02-15 10:55:18,578  INFO BatchRegister:196 - 该商铺已进件=======聚昱汽修
+2019-02-15 10:55:18,579  INFO BatchRegister:196 - 该商铺已进件=======卡伦造型锦城店
+2019-02-15 10:55:18,579  INFO BatchRegister:196 - 该商铺已进件=======侃侃火锅高升桥店
+2019-02-15 10:55:18,579  INFO BatchRegister:196 - 该商铺已进件=======科雷汽车服务中心
+2019-02-15 10:55:18,579  INFO BatchRegister:196 - 该商铺已进件=======宽板凳火锅鱼
+2019-02-15 10:55:18,579  INFO BatchRegister:196 - 该商铺已进件=======宽途汽车·众意洗车
+2019-02-15 10:55:18,580  INFO BatchRegister:196 - 该商铺已进件=======辣九爷
+2019-02-15 10:55:18,580  INFO BatchRegister:196 - 该商铺已进件=======浪琴远洋太古里店
+2019-02-15 10:55:18,580  INFO BatchRegister:196 - 该商铺已进件=======老广东营汽车空调装
+2019-02-15 10:55:18,580  INFO BatchRegister:196 - 该商铺已进件=======老家伙理发铺烫发染
+2019-02-15 10:55:18,580  INFO BatchRegister:196 - 该商铺已进件=======老码头火锅玉林店
+2019-02-15 10:55:18,580  INFO BatchRegister:196 - 该商铺已进件=======老盐边羊肉米线
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======乐山胖哥跷脚牛肉
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======乐山王屠夫跷脚牛肉
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======黎黎深夜火锅
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======丽江红山梁牛肉火锅
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======靓车会汽车镀膜青羊
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======靓华汽车服务中心
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======六年二班串串
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======龙膜匠心汽车服务工
+2019-02-15 10:55:18,581  INFO BatchRegister:196 - 该商铺已进件=======泸州酸菜豆花红瓦寺
+2019-02-15 10:55:18,582  INFO BatchRegister:196 - 该商铺已进件=======路尊汽修双楠伊藤店
+2019-02-15 10:55:18,582  INFO BatchRegister:196 - 该商铺已进件=======路尊汽修总厂店
+2019-02-15 10:55:18,582  INFO BatchRegister:196 - 该商铺已进件=======罗西尼
+2019-02-15 10:55:18,582  INFO BatchRegister:196 - 该商铺已进件=======麻辣空间火锅WH店
+2019-02-15 10:55:18,582  INFO BatchRegister:196 - 该商铺已进件=======马记牛肉焦饼
+2019-02-15 10:55:18,582  INFO BatchRegister:196 - 该商铺已进件=======马立可北星店
+2019-02-15 10:55:18,777  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:18,964  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:18,964 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区安公路二段356-358号
+2019-02-15 10:55:18,964  INFO BatchRegister:196 - 该商铺已进件=======马立可东升店
+2019-02-15 10:55:18,964  INFO BatchRegister:196 - 该商铺已进件=======马立可光华店
+2019-02-15 10:55:18,964  INFO BatchRegister:196 - 该商铺已进件=======马立可航都店
+2019-02-15 10:55:18,965  INFO BatchRegister:196 - 该商铺已进件=======马立可花园会所店
+2019-02-15 10:55:18,965  INFO BatchRegister:196 - 该商铺已进件=======马立可金沙店
+2019-02-15 10:55:19,076  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:19,261  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:19,262 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区华阳大道二段安公路一段312号
+2019-02-15 10:55:19,263  INFO BatchRegister:196 - 该商铺已进件=======马立可九里堤店
+2019-02-15 10:55:19,263  INFO BatchRegister:196 - 该商铺已进件=======马立可聚荟店
+2019-02-15 10:55:19,264  INFO BatchRegister:196 - 该商铺已进件=======马立可李家沱店
+2019-02-15 10:55:19,264  INFO BatchRegister:196 - 该商铺已进件=======马立可丽都店
+2019-02-15 10:55:19,264  INFO BatchRegister:196 - 该商铺已进件=======马立可龙泉店
+2019-02-15 10:55:19,265  INFO BatchRegister:196 - 该商铺已进件=======马立可天府二街店
+2019-02-15 10:55:19,265  INFO BatchRegister:196 - 该商铺已进件=======马立可天府收费站
+2019-02-15 10:55:19,371  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:19,542  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:19,543 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区华阳滨河路一段115号
+2019-02-15 10:55:19,543  INFO BatchRegister:196 - 该商铺已进件=======马立可中海国际店
+2019-02-15 10:55:19,544  INFO BatchRegister:196 - 该商铺已进件=======马立可紫荆店
+2019-02-15 10:55:19,544  INFO BatchRegister:196 - 该商铺已进件=======玛吉斯轮胎-小车快
+2019-02-15 10:55:19,545  INFO BatchRegister:196 - 该商铺已进件=======茂腾汽车美容服务中
+2019-02-15 10:55:19,545  INFO BatchRegister:196 - 该商铺已进件=======帽子房
+2019-02-15 10:55:19,649  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:55:19,824  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:55:19,825 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流区长冶路二段72号
+2019-02-15 10:55:19,825  INFO BatchRegister:196 - 该商铺已进件=======美丽100
+2019-02-15 10:55:19,826  INFO BatchRegister:196 - 该商铺已进件=======美轮美汽车养护中心
+2019-02-15 10:55:19,827  INFO BatchRegister:196 - 该商铺已进件=======美特施汽车美容
+2019-02-15 10:55:19,827  INFO BatchRegister:196 - 该商铺已进件=======名士表
+2019-02-15 10:55:19,827  INFO BatchRegister:196 - 该商铺已进件=======名嘴森林堍
+2019-02-15 10:55:19,828  INFO BatchRegister:196 - 该商铺已进件=======铭車优品
+2019-02-15 10:55:19,828  INFO BatchRegister:196 - 该商铺已进件=======摩登时代菁蓉国际
+2019-02-15 10:55:19,829  INFO BatchRegister:196 - 该商铺已进件=======那时·初见形象设计
+2019-02-15 10:55:19,829  INFO BatchRegister:196 - 该商铺已进件=======倪豆花
+2019-02-15 10:55:19,829  INFO BatchRegister:196 - 该商铺已进件=======昵果造型
+2019-02-15 10:55:19,830  INFO BatchRegister:196 - 该商铺已进件=======牛莽莽全牛火锅锦里
+2019-02-15 10:55:19,830  INFO BatchRegister:196 - 该商铺已进件=======牛牪犇牛杂火锅
+2019-02-15 10:55:19,831  INFO BatchRegister:196 - 该商铺已进件=======潘多拉
+2019-02-15 10:55:19,831  INFO BatchRegister:196 - 该商铺已进件=======潘记牛肉旮饼
+2019-02-15 10:55:19,832  INFO BatchRegister:196 - 该商铺已进件=======霹雳蛙掌门春熙路店
+2019-02-15 10:55:19,832  INFO BatchRegister:196 - 该商铺已进件=======朴田泰式海鲜火锅
+2019-02-15 10:55:19,833  INFO BatchRegister:196 - 该商铺已进件=======千乘租车
+2019-02-15 10:55:19,833  INFO BatchRegister:196 - 该商铺已进件=======千和日系造型
+2019-02-15 10:55:19,834  INFO BatchRegister:196 - 该商铺已进件=======千和造型沙龙
+2019-02-15 10:55:19,834  INFO BatchRegister:196 - 该商铺已进件=======签王之王·牛肉串串
+2019-02-15 10:55:19,835  INFO BatchRegister:196 - 该商铺已进件=======强盛汽修
+2019-02-15 10:55:19,835  INFO BatchRegister:196 - 该商铺已进件=======强氏汽车
+2019-02-15 10:55:19,835  INFO BatchRegister:196 - 该商铺已进件=======强氏汽车清江店
+2019-02-15 10:55:19,836  INFO BatchRegister:196 - 该商铺已进件=======俏媳妇重庆老灶火锅
+2019-02-15 10:55:19,837  INFO BatchRegister:196 - 该商铺已进件=======屈臣氏远洋太古里店
+2019-02-15 10:55:19,837  INFO BatchRegister:196 - 该商铺已进件=======全福居老北京涮羊肉
+2019-02-15 10:55:19,838  INFO BatchRegister:196 - 该商铺已进件=======群英汇汽车养护中心
+2019-02-15 10:55:19,838  INFO BatchRegister:196 - 该商铺已进件=======人民食堂高升桥店
+2019-02-15 10:55:19,839  INFO BatchRegister:196 - 该商铺已进件=======荣园餐馆
+2019-02-15 10:55:19,839  INFO BatchRegister:196 - 该商铺已进件=======榕辉汽车维修部
+2019-02-15 10:55:19,840  INFO BatchRegister:196 - 该商铺已进件=======阮成汽车美容服务
+2019-02-15 10:55:19,840  INFO BatchRegister:196 - 该商铺已进件=======瑞含汽车美容一站式
+2019-02-15 10:55:19,841  INFO BatchRegister:196 - 该商铺已进件=======塞博坦名车俱乐部
+2019-02-15 10:55:19,841  INFO BatchRegister:196 - 该商铺已进件=======三道苗苗鱼火锅
+2019-02-15 10:55:19,841  INFO BatchRegister:196 - 该商铺已进件=======三江烤鱼
+2019-02-15 10:55:19,842  INFO BatchRegister:196 - 该商铺已进件=======三益口福抄手武候祠
+2019-02-15 10:55:19,842  INFO BatchRegister:196 - 该商铺已进件=======叁口煮酒都老火锅
+2019-02-15 10:55:19,846 ERROR BatchRegister:203 - 根据名称=陕西面馆找不到对应的图片文件
+2019-02-15 10:55:19,846  INFO BatchRegister:196 - 该商铺已进件=======上池面馆
+2019-02-15 10:55:19,847  INFO BatchRegister:196 - 该商铺已进件=======上海·东尼美发
+2019-02-15 10:55:19,847  INFO BatchRegister:196 - 该商铺已进件=======沈小福米线黉门街店
+2019-02-15 10:55:19,847  INFO BatchRegister:196 - 该商铺已进件=======盛时表行
+2019-02-15 10:55:19,847  INFO BatchRegister:196 - 该商铺已进件=======盛世华美汽车美容装
+2019-02-15 10:55:19,848  INFO BatchRegister:196 - 该商铺已进件=======诗悦轻奢美发沙龙
+2019-02-15 10:55:19,848  INFO BatchRegister:196 - 该商铺已进件=======诗悦轻奢沙龙
+2019-02-15 10:55:19,849  INFO BatchRegister:196 - 该商铺已进件=======时间廊IF金融中心
+2019-02-15 10:55:19,849  INFO BatchRegister:196 - 该商铺已进件=======时间廊龙湖北城天街
+2019-02-15 10:55:19,849  INFO BatchRegister:196 - 该商铺已进件=======拾忆味老火锅
+2019-02-15 10:55:19,849  INFO BatchRegister:196 - 该商铺已进件=======世纪精剪九号公馆店
+2019-02-15 10:55:19,850  INFO BatchRegister:196 - 该商铺已进件=======书芙蓉舒食小火锅
+2019-02-15 10:55:19,850  INFO BatchRegister:196 - 该商铺已进件=======蜀车行汽车美容中心
+2019-02-15 10:55:19,850  INFO BatchRegister:196 - 该商铺已进件=======蜀串香厕所串串
+2019-02-15 10:55:19,851  INFO BatchRegister:196 - 该商铺已进件=======蜀大侠火锅中坝店
+2019-02-15 10:55:19,851  INFO BatchRegister:196 - 该商铺已进件=======蜀国府邸老火锅冒菜
+2019-02-15 10:55:19,851  INFO BatchRegister:196 - 该商铺已进件=======蜀九香火锅东轩AR
+2019-02-15 10:55:19,852  INFO BatchRegister:196 - 该商铺已进件=======顺江花园汽车美容
+2019-02-15 10:55:19,852  INFO BatchRegister:196 - 该商铺已进件=======斯美迪CC洗车场
+2019-02-15 10:55:19,852  INFO BatchRegister:196 - 该商铺已进件=======苏苏元气汤
+2019-02-15 10:55:19,852  INFO BatchRegister:196 - 该商铺已进件=======台湾一非造型
+2019-02-15 10:55:19,853  INFO BatchRegister:196 - 该商铺已进件=======饕林餐厅WHC店
+2019-02-15 10:55:19,853  INFO BatchRegister:196 - 该商铺已进件=======陶记蛋烘糕
+2019-02-15 10:55:19,853  INFO BatchRegister:196 - 该商铺已进件=======藤野造型春熙路店
+2019-02-15 10:55:19,853  INFO BatchRegister:196 - 该商铺已进件=======天梭时代百盛店
+2019-02-15 10:55:19,854  INFO BatchRegister:196 - 该商铺已进件=======头鼎汉文化火锅WH
+2019-02-15 10:55:19,854  INFO BatchRegister:196 - 该商铺已进件=======托马斯邦德汽车青羊
+2019-02-15 10:55:19,854  INFO BatchRegister:196 - 该商铺已进件=======瓦烤·烧烤扛把子
+2019-02-15 10:55:19,854  INFO BatchRegister:196 - 该商铺已进件=======瓦晒川菜WHC店
+2019-02-15 10:55:19,855  INFO BatchRegister:196 - 该商铺已进件=======王鸡婆川菜馆彩虹桥
+2019-02-15 10:55:19,855  INFO BatchRegister:196 - 该商铺已进件=======王记特色锅魁洗面桥
+2019-02-15 10:55:19,855  INFO BatchRegister:196 - 该商铺已进件=======王妈热卤汇锦店
+2019-02-15 10:55:19,856  INFO BatchRegister:196 - 该商铺已进件=======味之绝美蛙鱼头火锅
+2019-02-15 10:55:20,042  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"500100","text":"重庆市"},{"value":"500200","text":"重庆市县"}]}
+2019-02-15 10:55:20,146  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"500101","text":"万州区"},{"value":"500102","text":"涪陵区"},{"value":"500103","text":"渝中区"},{"value":"500104","text":"大渡口区"},{"value":"500105","text":"江北区"},{"value":"500106","text":"沙坪坝区"},{"value":"500107","text":"九龙坡区"},{"value":"500108","text":"南岸区"},{"value":"500109","text":"北碚区"},{"value":"500110","text":"万盛区"},{"value":"500111","text":"双桥区"},{"value":"500112","text":"渝北区"},{"value":"500113","text":"巴南区"},{"value":"500114","text":"黔江区"},{"value":"500115","text":"长寿区"},{"value":"500116","text":"江津区"},{"value":"500117","text":"合川区"},{"value":"500118","text":"永川区"},{"value":"500119","text":"南川区"}]}
+2019-02-15 10:55:20,578  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"500100","sign":"lrrWDg9zgtMmRJjqn0vY62XtUY3kril2c9nE96j2jXEEqOgFZyY05+AObYNe LT3ercL5eXAiaIiMkX7YrarGS3+RDYEoz8LpEX3Wk5Mty+ogQ2WZ1MTVajy4 UnKQAa1SQZPSi0XvOZovKtGfLi4X3CrLWEvQX3j6r/JCE0SZGW8=","remark":"温江龙祥汽车修理厂","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"500000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712008601@163.com","branchno":"104584002488","area":"500115","address":"体育中心凤城街道文苑大道5号42幢1-13、14","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712008601","doorpic":"/uploads/de/f03640f65ce657e0be71e86f89e096.jpg","name":"温江龙祥汽车修理厂","bankno":"1040000"}
+2019-02-15 10:55:20,917  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:55:20,917  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}
+2019-02-15 10:55:20,918  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 10:55:20,918 ERROR MerchantServiceImpl:184 - 商户进件失败，返回结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 10:55:20,918  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 10:55:27,919  INFO BatchRegister:196 - 该商铺已进件=======文速汽修厂
+2019-02-15 10:55:27,920  INFO BatchRegister:196 - 该商铺已进件=======吴系打边炉
+2019-02-15 10:55:27,920  INFO BatchRegister:196 - 该商铺已进件=======無UN发型沙龙
+2019-02-15 10:55:27,921  INFO BatchRegister:196 - 该商铺已进件=======喜车缘
+2019-02-15 10:55:27,921  INFO BatchRegister:196 - 该商铺已进件=======囍辣火锅厅·喜辣
+2019-02-15 10:55:27,921  INFO BatchRegister:196 - 该商铺已进件=======香港V·V美甲美睫
+2019-02-15 10:55:27,921  INFO BatchRegister:196 - 该商铺已进件=======祥龙汽车美容连锁
+2019-02-15 10:55:27,922  INFO BatchRegister:196 - 该商铺已进件=======享月·汤皇象南里店
+2019-02-15 10:55:27,922  INFO BatchRegister:196 - 该商铺已进件=======享月·汤皇橡树林店
+2019-02-15 10:55:27,922  INFO BatchRegister:196 - 该商铺已进件=======小P老师-PPP派
+2019-02-15 10:55:27,922  INFO BatchRegister:196 - 该商铺已进件=======小桔养车琉璃路店
+2019-02-15 10:55:27,922  INFO BatchRegister:196 - 该商铺已进件=======小牛大味面华西店
+2019-02-15 10:55:27,922  INFO BatchRegister:196 - 该商铺已进件=======小乌龙禅院铁像寺店
+2019-02-15 10:55:27,922  INFO BatchRegister:196 - 该商铺已进件=======新奥通名车维修
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======新锐贴膜3M授权店
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======新山城菜根香浆洗街
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======新胜汽车装饰贴膜店
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======新月尚雅华润店
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======鑫城宝车汽车服务连
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======鑫鑫汽车装饰
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======鑫源汽车装饰
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======幸运成都 火锅先生
+2019-02-15 10:55:27,923  INFO BatchRegister:196 - 该商铺已进件=======萱子饰品银泰城店
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======一把骨高升桥直营店
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======一汽“车之城”汽修
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======依波表红牌楼广场店
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======壹捷汽车江北盘溪店
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======宜行宜停汽车生活馆
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======义君美发
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======意念造型水璟塘店
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======英国TOTOTO
+2019-02-15 10:55:27,924  INFO BatchRegister:196 - 该商铺已进件=======优驰汽车快捷养护
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======友乐汽车装饰
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======鱼乐圈蒸汽石锅鱼
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======宇杰车爵士汽车二
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======御车汇万年店
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======御匠HA
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======跃驰汽修服务部
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======珍卓钻石
+2019-02-15 10:55:27,925  INFO BatchRegister:196 - 该商铺已进件=======芝生堂鲜汤锅象南里
+2019-02-15 10:55:27,926  INFO BatchRegister:196 - 该商铺已进件=======钟水饺WHC店
+2019-02-15 10:55:27,926  INFO BatchRegister:196 - 该商铺已进件=======重庆创合汽车维修服
+2019-02-15 10:55:27,926  INFO BatchRegister:196 - 该商铺已进件=======重庆隆钦汽配汽修维
+2019-02-15 10:55:27,926  INFO BatchRegister:196 - 该商铺已进件=======走马西火锅
+2019-02-15 10:55:27,926  INFO BatchRegister:196 - 该商铺已进件=======尊尚柏丽美发SA
+2019-02-15 10:55:27,926  INFO BatchRegister:196 - 该商铺已进件=======左士造型IFS店
+2019-02-15 10:55:27,926  INFO BatchRegister:196 - 该商铺已进件=======佐冷馋·串串里
+2019-02-15 10:55:27,926  INFO BatchRegister:73 - 已经轮询到结尾=399
+2019-02-15 10:55:27,926  INFO BatchRegister:345 - 成功1个
+2019-02-15 10:55:27,945  INFO MyIntercept:34 - 访问[/test/batch]耗时=14885
+2019-02-15 10:57:10,211  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 10:57:10,408  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 11880 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 10:57:10,410  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 10:57:10,465  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ede2ce6: startup date [Fri Feb 15 10:57:10 CST 2019]; root of context hierarchy
+2019-02-15 10:57:11,425  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 10:57:12,326  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 10:57:12,786  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4871a946] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 10:57:13,574  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 10:57:13,733  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 3271 ms
+2019-02-15 10:57:14,006  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 10:57:14,007  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 10:57:14,011  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 10:57:14,012  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 10:57:14,012  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 10:57:14,012  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 10:57:14,012  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 10:57:14,013  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 10:57:15,149  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 10:57:15,152  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 10:57:15,159  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 10:57:15,313  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 10:57:15,633  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ede2ce6: startup date [Fri Feb 15 10:57:10 CST 2019]; root of context hierarchy
+2019-02-15 10:57:15,682  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 10:57:15,685  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 10:57:15,685  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 10:57:15,685  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 10:57:15,686  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 10:57:15,686  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 10:57:15,687  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 10:57:15,687  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-15 10:57:15,689  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 10:57:15,690  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 10:57:15,705  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 10:57:15,726  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 10:57:15,727  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 10:57:15,807  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 10:57:16,171  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ede2ce6: startup date [Fri Feb 15 10:57:10 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 10:57:16,189  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 10:57:16,206  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 10:57:16,364  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 10:57:16,403  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 10:57:16,404  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 10:57:16,405  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 10:57:16,405  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 10:57:16,410  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 10:57:16,412  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 10:57:16,413  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 10:57:16,443  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 10:57:16,446  INFO MRApplication:59 - Started MRApplication in 6.371 seconds (JVM running for 7.522)
+2019-02-15 10:57:27,690  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 10:57:27,712  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2019-02-15 10:57:28,015  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 10:57:28,708  INFO BatchRegister:196 - 该商铺已进件=======1919酒类直供二
+2019-02-15 10:57:28,708  INFO BatchRegister:196 - 该商铺已进件=======1983美容美发
+2019-02-15 10:57:28,708  INFO BatchRegister:196 - 该商铺已进件=======AA远洋太古里店
+2019-02-15 10:57:28,708  INFO BatchRegister:196 - 该商铺已进件=======AD财富又一城店
+2019-02-15 10:57:28,708  INFO BatchRegister:196 - 该商铺已进件=======AG远洋太古里店
+2019-02-15 10:57:28,709  INFO BatchRegister:196 - 该商铺已进件=======AIKERL
+2019-02-15 10:57:28,709  INFO BatchRegister:196 - 该商铺已进件=======AN银泰AN99店
+2019-02-15 10:57:28,709  INFO BatchRegister:196 - 该商铺已进件=======AP远洋太古里店
+2019-02-15 10:57:28,711 ERROR BatchRegister:203 - 根据名称=AST如一汽车美容中心找不到对应的图片文件
+2019-02-15 10:57:28,711  INFO BatchRegister:196 - 该商铺已进件=======AWNL
+2019-02-15 10:57:28,711  INFO BatchRegister:196 - 该商铺已进件=======b·duck
+2019-02-15 10:57:28,711  INFO BatchRegister:196 - 该商铺已进件=======BA日韩发型沙龙
+2019-02-15 10:57:28,712  INFO BatchRegister:196 - 该商铺已进件=======BA巴赫整体造型·
+2019-02-15 10:57:28,712  INFO BatchRegister:196 - 该商铺已进件=======BA广场店
+2019-02-15 10:57:28,712  INFO BatchRegister:196 - 该商铺已进件=======BA万象城商场店
+2019-02-15 10:57:28,712  INFO BatchRegister:196 - 该商铺已进件=======BE万达广场店
+2019-02-15 10:57:28,712  INFO BatchRegister:196 - 该商铺已进件=======BO葆蝶家仁恒店
+2019-02-15 10:57:28,713  INFO BatchRegister:196 - 该商铺已进件=======BO锦华万达店
+2019-02-15 10:57:28,713  INFO BatchRegister:196 - 该商铺已进件=======BR
+2019-02-15 10:57:28,713  INFO BatchRegister:196 - 该商铺已进件=======BR翡翠城店
+2019-02-15 10:57:28,713  INFO BatchRegister:196 - 该商铺已进件=======BR银泰城店
+2019-02-15 10:57:29,080  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 10:57:29,262  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:57:29,359  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:57:29,867  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"fGgjSOvO+Mv7sopfjLcmMD+9KXuL8J1PzMmZCvYotkUsHM5R8R77DRqDWH69 UZF6t+JyMxb+CYVErjl7EjXuGbeh4dr12TckYglO/50Mi7JCkylTfUPjAxSj 2ddvR4Y8IzKwYeDKME9KupFMyyObvDPGp0bKmfJPYbnjz2wD7J4=","remark":"BURBERRY(伊藤洋华堂店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508101@163.com","branchno":"104584002488","area":"510122","address":"机场路常乐段40号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508101","doorpic":"/uploads/6e/cd9d3e0e3ab516b42c0848fcfec1b3.png","name":"BU伊藤洋华堂店","bankno":"1040000"}
+2019-02-15 10:57:30,605  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:57:30,605  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000449","phone":"17712508101"},"sign":"cY\/CyL2FQdWWui+qGI9WjMwTqCMnE5Wby0qrrU++iLVG\/ZDR3HwdPeosCoFpQUjX+O3K6k0\/o8y6UtYRIfzsCKC\/RzTVSkvWUIRnCZTKXc2yDAhW6ino9PK1eRjdiBSiF+wrvPOFVFy7shF38rnpMxq\/DAgel++JefGQiuUk2Ho="}
+2019-02-15 10:57:30,605  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000449","phone":"17712508101"},"sign":"cY\/CyL2FQdWWui+qGI9WjMwTqCMnE5Wby0qrrU++iLVG\/ZDR3HwdPeosCoFpQUjX+O3K6k0\/o8y6UtYRIfzsCKC\/RzTVSkvWUIRnCZTKXc2yDAhW6ino9PK1eRjdiBSiF+wrvPOFVFy7shF38rnpMxq\/DAgel++JefGQiuUk2Ho="}, timestamp=0}
+2019-02-15 10:57:30,627  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000449","phone":"17712508101"},"sign":"cY\/CyL2FQdWWui+qGI9WjMwTqCMnE5Wby0qrrU++iLVG\/ZDR3HwdPeosCoFpQUjX+O3K6k0\/o8y6UtYRIfzsCKC\/RzTVSkvWUIRnCZTKXc2yDAhW6ino9PK1eRjdiBSiF+wrvPOFVFy7shF38rnpMxq\/DAgel++JefGQiuUk2Ho="}, timestamp=0}
+2019-02-15 10:57:37,628  INFO BatchRegister:196 - 该商铺已进件=======BV金融中心店
+2019-02-15 10:57:37,629  INFO BatchRegister:196 - 该商铺已进件=======BY太古里店
+2019-02-15 10:57:37,630  INFO BatchRegister:196 - 该商铺已进件=======Cactuss
+2019-02-15 10:57:37,631  INFO BatchRegister:196 - 该商铺已进件=======CA新城市广场店
+2019-02-15 10:57:37,632  INFO BatchRegister:196 - 该商铺已进件=======CA远洋太古里店
+2019-02-15 10:57:37,873  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:57:37,973  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:57:38,275  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"qS/yTY8IT43RbFuRFaZcGosJsFOvHy4IrOeSwDss1yXlXio/YOWi/MPQT1fn qrIX7//Lxm7lXTOoBcO2WYB/swYsCHA0R4mRtU+tpXnPJXDZT3iF70hY13ac cV7vPWEFHAb9UYwFg65vvk9GyXNnW0Gt0WXB5cEe0Q0pG4tbPN0=","remark":"Casio(凯德广场店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508102@163.com","branchno":"104584002488","area":"510122","address":"中和二街93-103号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508102","doorpic":"/uploads/ea/1e7eccc1d64166ed4bea4593df297c.png","name":"CA凯德广场店","bankno":"1040000"}
+2019-02-15 10:57:38,997  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:57:38,997  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000450","phone":"17712508102"},"sign":"ebLZiU0yOfH5mkGU2GyIKJVrpYeOC5O63+lwA345ASeS+HU3x91\/Ts\/7dq+j0oecBh\/YG\/6YH9mi6LIUbAP2ikJXvtxXgy8S5zpNCuq+UIeT9Qe76RojdthgXck+ncmMQC6zt6Xsn\/6ERBApa9fzn3Uz5L+a4j1OlePEqa24IEw="}
+2019-02-15 10:57:38,998  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000450","phone":"17712508102"},"sign":"ebLZiU0yOfH5mkGU2GyIKJVrpYeOC5O63+lwA345ASeS+HU3x91\/Ts\/7dq+j0oecBh\/YG\/6YH9mi6LIUbAP2ikJXvtxXgy8S5zpNCuq+UIeT9Qe76RojdthgXck+ncmMQC6zt6Xsn\/6ERBApa9fzn3Uz5L+a4j1OlePEqa24IEw="}, timestamp=0}
+2019-02-15 10:57:39,006  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000450","phone":"17712508102"},"sign":"ebLZiU0yOfH5mkGU2GyIKJVrpYeOC5O63+lwA345ASeS+HU3x91\/Ts\/7dq+j0oecBh\/YG\/6YH9mi6LIUbAP2ikJXvtxXgy8S5zpNCuq+UIeT9Qe76RojdthgXck+ncmMQC6zt6Xsn\/6ERBApa9fzn3Uz5L+a4j1OlePEqa24IEw="}, timestamp=0}
+2019-02-15 10:57:46,007  INFO BatchRegister:196 - 该商铺已进件=======CA嘉实多护车保养
+2019-02-15 10:57:46,008  INFO BatchRegister:196 - 该商铺已进件=======CE
+2019-02-15 10:57:46,009  INFO BatchRegister:196 - 该商铺已进件=======CH万象城店
+2019-02-15 10:57:46,010  INFO BatchRegister:196 - 该商铺已进件=======CH国金高级精品
+2019-02-15 10:57:46,010  INFO BatchRegister:196 - 该商铺已进件=======CI家美甲美睫纹绣
+2019-02-15 10:57:46,011  INFO BatchRegister:196 - 该商铺已进件=======D驾族贝森路店
+2019-02-15 10:57:46,012  INFO BatchRegister:196 - 该商铺已进件=======D驾族光华南路店
+2019-02-15 10:57:46,012  INFO BatchRegister:196 - 该商铺已进件=======D驾族两河东路
+2019-02-15 10:57:46,013  INFO BatchRegister:196 - 该商铺已进件=======D驾族人和路店
+2019-02-15 10:57:46,013  INFO BatchRegister:196 - 该商铺已进件=======D驾族蜀江路店
+2019-02-15 10:57:46,014  INFO BatchRegister:196 - 该商铺已进件=======D驾族易途簇桥店
+2019-02-15 10:57:46,015  INFO BatchRegister:196 - 该商铺已进件=======D驾族易途金花店
+2019-02-15 10:57:46,015  INFO BatchRegister:196 - 该商铺已进件=======FFF
+2019-02-15 10:57:46,016  INFO BatchRegister:196 - 该商铺已进件=======FA梵希美发沙龙
+2019-02-15 10:57:46,017  INFO BatchRegister:196 - 该商铺已进件=======GA凯丹广场店
+2019-02-15 10:57:46,017  INFO BatchRegister:196 - 该商铺已进件=======GI华润·万象城店
+2019-02-15 10:57:46,018  INFO BatchRegister:196 - 该商铺已进件=======GI纪梵希
+2019-02-15 10:57:46,019  INFO BatchRegister:196 - 该商铺已进件=======GO金融中心店
+2019-02-15 10:57:46,020  INFO BatchRegister:196 - 该商铺已进件=======GU远洋太古里店
+2019-02-15 10:57:46,021  INFO BatchRegister:196 - 该商铺已进件=======HHH形象发型设计
+2019-02-15 10:57:46,022  INFO BatchRegister:196 - 该商铺已进件=======HA
+2019-02-15 10:57:46,023  INFO BatchRegister:196 - 该商铺已进件=======HA
+2019-02-15 10:57:46,025  INFO BatchRegister:196 - 该商铺已进件=======I·I日系烫发染发
+2019-02-15 10:57:46,249  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:57:46,341  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:57:46,558  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"IVesFgU/815u26jZ6LFu/Fy7BJl5P8r7Hkicu5BQHGUoceQj81wwWo9oB7Dt vKzYFjGXrdZCmKf4ua/PbqVZmVngL3fpE36o4OLCWtVPtXMmkJiEpAdULEhH lRS7S1e8NazBp6YxP81wYVI6Zep6HnMxyVegv9dzK1qnDV9ugb4=","remark":"IL COLPO依格宝香港美发沙龙(银泰中心in99店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508103@163.com","branchno":"104584002488","area":"510122","address":"广履路与航港路四段交叉口西南角","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508103","doorpic":"/uploads/e2/1ca31f7a5c31c73f6fd67762ce29bf.jpg","name":"IL依格宝香港美发","bankno":"1040000"}
+2019-02-15 10:57:47,293  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:57:47,294  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000451","phone":"17712508103"},"sign":"CXpq2\/2YQ\/NH7ySGPruYvmeil3QMR6giDyakrCMHsN5Pbdc2irDQ89BDkXGzLnxGlmh7ZVHRVxK3KMEIaarYp0HTiFfdVXjM540FGytplPdpe8yhmhGzWle2od8jH\/kpKHPgy7r5nqSHTofhFotMLg1V2Pab8NEFOiinq7v2rhA="}
+2019-02-15 10:57:47,295  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000451","phone":"17712508103"},"sign":"CXpq2\/2YQ\/NH7ySGPruYvmeil3QMR6giDyakrCMHsN5Pbdc2irDQ89BDkXGzLnxGlmh7ZVHRVxK3KMEIaarYp0HTiFfdVXjM540FGytplPdpe8yhmhGzWle2od8jH\/kpKHPgy7r5nqSHTofhFotMLg1V2Pab8NEFOiinq7v2rhA="}, timestamp=0}
+2019-02-15 10:57:47,307  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000451","phone":"17712508103"},"sign":"CXpq2\/2YQ\/NH7ySGPruYvmeil3QMR6giDyakrCMHsN5Pbdc2irDQ89BDkXGzLnxGlmh7ZVHRVxK3KMEIaarYp0HTiFfdVXjM540FGytplPdpe8yhmhGzWle2od8jH\/kpKHPgy7r5nqSHTofhFotMLg1V2Pab8NEFOiinq7v2rhA="}, timestamp=0}
+2019-02-15 10:57:54,560  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:57:54,748  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:57:55,067  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"MRn7sCAZMCzz4FUkXZAUUSig/F1THJTudFProHTf9sOVdugmFuSoO1hPlZaB uvWhLnVExchkE4KQrkY+LmOGfmhfVzDion79MLOlonLh7VyjlxqZ0Tid+bw0 jZG8DjlT8V+f/0487XAtW/HXCBo+fvltfLHvLIvDfTHuaQpNzWA=","remark":"jomaloneLondon(远洋太古里店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508104@163.com","branchno":"104584002488","area":"510122","address":"双流商都路508号铭汇国际商贸汽配城6栋10号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508104","doorpic":"/uploads/94/06ac6e1d4ce813888bde3e926640e5.png","name":"JO远洋太古里店","bankno":"1040000"}
+2019-02-15 10:57:55,625  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:57:55,625  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000452","phone":"17712508104"},"sign":"oxy2ES3\/IZqL6HzPIYOjUYrzXqgLhcJ+W94cehPiPLsXsBcyWJ63a6HNyvpT1VKgBe53gBjqlSlm19YBC1EsRBxxevoFtAhkWk4A88qcc9QgxBS4fOOhrBK\/YGJdIW90shsahCYaQxM6hULSz5I36YD9oaP+9LRyfYrJtRfD8fk="}
+2019-02-15 10:57:55,626  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000452","phone":"17712508104"},"sign":"oxy2ES3\/IZqL6HzPIYOjUYrzXqgLhcJ+W94cehPiPLsXsBcyWJ63a6HNyvpT1VKgBe53gBjqlSlm19YBC1EsRBxxevoFtAhkWk4A88qcc9QgxBS4fOOhrBK\/YGJdIW90shsahCYaQxM6hULSz5I36YD9oaP+9LRyfYrJtRfD8fk="}, timestamp=0}
+2019-02-15 10:57:55,633  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000452","phone":"17712508104"},"sign":"oxy2ES3\/IZqL6HzPIYOjUYrzXqgLhcJ+W94cehPiPLsXsBcyWJ63a6HNyvpT1VKgBe53gBjqlSlm19YBC1EsRBxxevoFtAhkWk4A88qcc9QgxBS4fOOhrBK\/YGJdIW90shsahCYaQxM6hULSz5I36YD9oaP+9LRyfYrJtRfD8fk="}, timestamp=0}
+2019-02-15 10:58:02,634  INFO BatchRegister:196 - 该商铺已进件=======KR'KR古格发型
+2019-02-15 10:58:02,635  INFO BatchRegister:196 - 该商铺已进件=======LA剪发染发烫发
+2019-02-15 10:58:02,636  INFO BatchRegister:196 - 该商铺已进件=======lippe力柏
+2019-02-15 10:58:02,636  INFO BatchRegister:196 - 该商铺已进件=======LO王府井百货店
+2019-02-15 10:58:02,638  INFO BatchRegister:196 - 该商铺已进件=======LO直营店万象城店
+2019-02-15 10:58:02,639  INFO BatchRegister:196 - 该商铺已进件=======LV路易威登
+2019-02-15 10:58:02,640  INFO BatchRegister:196 - 该商铺已进件=======MA国际金融店
+2019-02-15 10:58:02,640  INFO BatchRegister:196 - 该商铺已进件=======mc汽车美容工作室
+2019-02-15 10:58:02,641  INFO BatchRegister:196 - 该商铺已进件=======MIDO银泰城店
+2019-02-15 10:58:02,888  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:58:03,093  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:58:03,196  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"OpoMyE8WfuJc2QkT75uPrCZ0n0qnn4IC+CM2EySsiH54NG7SugeO1kDJ6TAB AlBQA38FkaZKoxLXp0en3+yxdAcbOjQx4/eCdMnT9/+kDQCjmuiX3rjekIeM dg1Y1FEb+4wfKEx4rXtDZ/LGcRyJ3dLB4XjIa+9j0V4E1NPqlnM=","remark":"MJ发型定制(建设路店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508105@163.com","branchno":"104584002488","area":"510122","address":"东升镇航都大街","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508105","doorpic":"/uploads/f7/3b779008e99b264568609fd3d097f3.jpg","name":"MJ发型定制建设路","bankno":"1040000"}
+2019-02-15 10:58:03,936  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:58:03,936  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000453","phone":"17712508105"},"sign":"PU1M733u+wulo8KuabSgsK8XhN3Z8+KF8wMKJppy8UVVLKoQTrbsOr3C0XlgFuE5PxPeVyShnEROU50tohhU2j1UW0vN+jF890TAFSKA62BlL01Uhi4+DBhoXijJ34dKAu5f40GSJVMhRAdpb0xMDlUDD4oLXzBFmB03NDpk+OI="}
+2019-02-15 10:58:03,937  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000453","phone":"17712508105"},"sign":"PU1M733u+wulo8KuabSgsK8XhN3Z8+KF8wMKJppy8UVVLKoQTrbsOr3C0XlgFuE5PxPeVyShnEROU50tohhU2j1UW0vN+jF890TAFSKA62BlL01Uhi4+DBhoXijJ34dKAu5f40GSJVMhRAdpb0xMDlUDD4oLXzBFmB03NDpk+OI="}, timestamp=0}
+2019-02-15 10:58:03,949  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000453","phone":"17712508105"},"sign":"PU1M733u+wulo8KuabSgsK8XhN3Z8+KF8wMKJppy8UVVLKoQTrbsOr3C0XlgFuE5PxPeVyShnEROU50tohhU2j1UW0vN+jF890TAFSKA62BlL01Uhi4+DBhoXijJ34dKAu5f40GSJVMhRAdpb0xMDlUDD4oLXzBFmB03NDpk+OI="}, timestamp=0}
+2019-02-15 10:58:11,091  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:58:11,261  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:58:11,527  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"Y+IOzjBvcV0yPf0UOnUEKMKKKWC7MIfCkwNjZ9JPNoADFYRIRF2Si8t21fRR BWZKFpR7jIqYDshg24PEWy/MDP6e2AXztV7li/IDgnBqt+FeTcV4ldVoUXqu mJu9FooXce/Liu11l8Wlwrro82Olt+KecGKTRAIcvaeRG6MCGAg=","remark":"MONTBLANC(仁和春天百货店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508106@163.com","branchno":"104584002488","area":"510122","address":"三强路一段116号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508106","doorpic":"/uploads/4d/1ba449ccac2629dfb456a68857cde3.png","name":"MO仁和春天百货店","bankno":"1040000"}
+2019-02-15 10:58:12,135  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:58:12,136  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000454","phone":"17712508106"},"sign":"oi9bNiPCQIK329T4Yw7CpbgExT6UhldXRK9uPqJsfSjxYlsWERtUBYEAJ34VmIxfPlUoALX3DnVA01CreuJB7mvR0VDy6XeW7UL75iHsQyAOH+SBYLhqC+HwjPBm73tTShKrPb0qt7yA3iUq26cfdo9Zs\/pLhCkNanEXjkLOW0w="}
+2019-02-15 10:58:12,136  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000454","phone":"17712508106"},"sign":"oi9bNiPCQIK329T4Yw7CpbgExT6UhldXRK9uPqJsfSjxYlsWERtUBYEAJ34VmIxfPlUoALX3DnVA01CreuJB7mvR0VDy6XeW7UL75iHsQyAOH+SBYLhqC+HwjPBm73tTShKrPb0qt7yA3iUq26cfdo9Zs\/pLhCkNanEXjkLOW0w="}, timestamp=0}
+2019-02-15 10:58:12,147  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000454","phone":"17712508106"},"sign":"oi9bNiPCQIK329T4Yw7CpbgExT6UhldXRK9uPqJsfSjxYlsWERtUBYEAJ34VmIxfPlUoALX3DnVA01CreuJB7mvR0VDy6XeW7UL75iHsQyAOH+SBYLhqC+HwjPBm73tTShKrPb0qt7yA3iUq26cfdo9Zs\/pLhCkNanEXjkLOW0w="}, timestamp=0}
+2019-02-15 10:58:19,147  INFO BatchRegister:196 - 该商铺已进件=======MP木朴创意美发沙
+2019-02-15 10:58:19,148  INFO BatchRegister:196 - 该商铺已进件=======Mtan-A爱马
+2019-02-15 10:58:19,148  INFO BatchRegister:196 - 该商铺已进件=======PA成都大悦城店
+2019-02-15 10:58:19,149  INFO BatchRegister:196 - 该商铺已进件=======RADO
+2019-02-15 10:58:19,150  INFO BatchRegister:196 - 该商铺已进件=======RA
+2019-02-15 10:58:19,150  INFO BatchRegister:196 - 该商铺已进件=======RE汽车服务
+2019-02-15 10:58:19,151  INFO BatchRegister:196 - 该商铺已进件=======RIMOWA
+2019-02-15 10:58:19,305  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:58:19,479  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:58:19,782  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"B01f3hhNePcg99Iwgk4ffv23/WKNUX0sQaPztTTYuQQ3lQ5ikYoeT+KG2hn8 j1hSO/5cxBKpRV+H7by80EuvBgqi9eiOLOszsdoJZ3qD/JGGmTNV46Z45dnI XOnCCQqDiuwMbFoAcI8i5HGpKOqdnaE4MomO37VNDMjPmz28jhg=","remark":"Roger Vivier(IFS国金中心店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508107@163.com","branchno":"104584002488","area":"510122","address":"五洞桥北路一段12","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508107","doorpic":"/uploads/a6/e252e28e82c8f3d50bc0126bbce9a0.png","name":"RO国金中心店","bankno":"1040000"}
+2019-02-15 10:58:20,497  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:58:20,498  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000455","phone":"17712508107"},"sign":"cyAXyHJMSaFaiq6f5N4Jt9gxdNXmkg\/7dSkvSXNE5J3IYWhQg5QXhx4cpm2tq+V1VtEquvlUKnB85XfZwgXGFOLARJP3XblVJsfdWCC50uDVIPQxa91ZWG8aYBZKHd4RnhCn1+eiJIhDP5N+MTs4OLe\/+XwscIL7XCdwsYcNXqs="}
+2019-02-15 10:58:20,498  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000455","phone":"17712508107"},"sign":"cyAXyHJMSaFaiq6f5N4Jt9gxdNXmkg\/7dSkvSXNE5J3IYWhQg5QXhx4cpm2tq+V1VtEquvlUKnB85XfZwgXGFOLARJP3XblVJsfdWCC50uDVIPQxa91ZWG8aYBZKHd4RnhCn1+eiJIhDP5N+MTs4OLe\/+XwscIL7XCdwsYcNXqs="}, timestamp=0}
+2019-02-15 10:58:20,511  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000455","phone":"17712508107"},"sign":"cyAXyHJMSaFaiq6f5N4Jt9gxdNXmkg\/7dSkvSXNE5J3IYWhQg5QXhx4cpm2tq+V1VtEquvlUKnB85XfZwgXGFOLARJP3XblVJsfdWCC50uDVIPQxa91ZWG8aYBZKHd4RnhCn1+eiJIhDP5N+MTs4OLe\/+XwscIL7XCdwsYcNXqs="}, timestamp=0}
+2019-02-15 10:58:27,512  INFO BatchRegister:196 - 该商铺已进件=======Samsonite
+2019-02-15 10:58:27,512  INFO BatchRegister:196 - 该商铺已进件=======SA形象沙龙
+2019-02-15 10:58:27,513  INFO BatchRegister:196 - 该商铺已进件=======SA形象沙龙二
+2019-02-15 10:58:27,513  INFO BatchRegister:196 - 该商铺已进件=======SW大悦城店
+2019-02-15 10:58:27,514  INFO BatchRegister:196 - 该商铺已进件=======T·T一非造型
+2019-02-15 10:58:27,514  INFO BatchRegister:196 - 该商铺已进件=======TA私人订制潮西单
+2019-02-15 10:58:27,515  INFO BatchRegister:196 - 该商铺已进件=======TITITITI蒂
+2019-02-15 10:58:27,516  INFO BatchRegister:196 - 该商铺已进件=======TI群光广场店
+2019-02-15 10:58:27,516  INFO BatchRegister:196 - 该商铺已进件=======TI西单商场店
+2019-02-15 10:58:27,518  INFO BatchRegister:196 - 该商铺已进件=======tous茂业百货店
+2019-02-15 10:58:27,747  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:58:27,935  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:58:28,121  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"AgD8wO1G9HQGmtLZsMIiSgQUmx26cd3nK+lmYvR9iULWQGYQ1PTEu5Kj/pXg ZIB6+qqK9ikGm/xltb+o7nSHPsbDOQT8g4ACHML8f8lXLmD0yVf773St6jyJ 4e+aMf3S8VDwywD9X5B15S8GTQhT5Lxoj2lrH3hnbhRRS7NSQ/Q=","remark":"YIBOYO(伊藤洋华堂店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508108@163.com","branchno":"104584002488","area":"510122","address":"长冶路四段151号音美幼儿园旁","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508108","doorpic":"/uploads/50/4034a963b49ea1c5b708e21d91efc9.png","name":"YI伊藤洋华堂店","bankno":"1040000"}
+2019-02-15 10:58:28,824  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:58:28,825  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000456","phone":"17712508108"},"sign":"xzYVrk4Fo+imNkwpWckb\/qC6WLD7pkPrq7L37lLvpT1Afpe7K39Y4I1q\/EPkLBTn2spvqAn6iI1FPhKCTp1ysS6Zfup\/jQVaJGUnIPqtkQd52lrOEOL1Y3cb8ox5OQYgmlRPESlHxIJxiP2vD\/qjHIzu+2Pwc432XYAt6J7POJw="}
+2019-02-15 10:58:28,825  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000456","phone":"17712508108"},"sign":"xzYVrk4Fo+imNkwpWckb\/qC6WLD7pkPrq7L37lLvpT1Afpe7K39Y4I1q\/EPkLBTn2spvqAn6iI1FPhKCTp1ysS6Zfup\/jQVaJGUnIPqtkQd52lrOEOL1Y3cb8ox5OQYgmlRPESlHxIJxiP2vD\/qjHIzu+2Pwc432XYAt6J7POJw="}, timestamp=0}
+2019-02-15 10:58:28,832  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000456","phone":"17712508108"},"sign":"xzYVrk4Fo+imNkwpWckb\/qC6WLD7pkPrq7L37lLvpT1Afpe7K39Y4I1q\/EPkLBTn2spvqAn6iI1FPhKCTp1ysS6Zfup\/jQVaJGUnIPqtkQd52lrOEOL1Y3cb8ox5OQYgmlRPESlHxIJxiP2vD\/qjHIzu+2Pwc432XYAt6J7POJw="}, timestamp=0}
+2019-02-15 10:58:35,981  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:58:36,153  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:58:36,473  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"aKAyMe2dFlTQ+IxLyAMuRchPlcKoDAMYtfmXps8KrL9kZDfR8KEXN7mA62cH pskNQNKl0u8aSFTN8iHcnuYNd6/ptjRDMYmCMBUCirxXwzHQyIE5MC6twg0D 88NHHCMBBZzXfE/LcFzxjo00Q0orBlPVVwUcmJV5cfCIOt3+bj0=","remark":"阿好坊","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508109@163.com","branchno":"104584002488","area":"510122","address":"机场路土桥段225号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508109","doorpic":"/uploads/e4/5b0cbe8b1574bdd719f27743b25e62.png","name":"阿好坊","bankno":"1040000"}
+2019-02-15 10:58:37,056  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:58:37,057  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000457","phone":"17712508109"},"sign":"mZqTkQv0ECRQmVCZLZRNkRUMuqwGe\/VHHz3SzvSjB3svyH5N0xNxLvAlqZhwG7yck5YDGwpnufZupA8cmfBWSNIaDtyXGIn8owP6ApyeipeNurCNxomupA5zKkYRrLuGxjKfrlgrnGA8jmQfgJQ97b9aF0n+ZolBLeBCzJceJqs="}
+2019-02-15 10:58:37,058  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000457","phone":"17712508109"},"sign":"mZqTkQv0ECRQmVCZLZRNkRUMuqwGe\/VHHz3SzvSjB3svyH5N0xNxLvAlqZhwG7yck5YDGwpnufZupA8cmfBWSNIaDtyXGIn8owP6ApyeipeNurCNxomupA5zKkYRrLuGxjKfrlgrnGA8jmQfgJQ97b9aF0n+ZolBLeBCzJceJqs="}, timestamp=0}
+2019-02-15 10:58:37,069  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000457","phone":"17712508109"},"sign":"mZqTkQv0ECRQmVCZLZRNkRUMuqwGe\/VHHz3SzvSjB3svyH5N0xNxLvAlqZhwG7yck5YDGwpnufZupA8cmfBWSNIaDtyXGIn8owP6ApyeipeNurCNxomupA5zKkYRrLuGxjKfrlgrnGA8jmQfgJQ97b9aF0n+ZolBLeBCzJceJqs="}, timestamp=0}
+2019-02-15 10:58:44,071  INFO BatchRegister:196 - 该商铺已进件=======阿吉豆伊藤洋华堂店
+2019-02-15 10:58:44,239  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:58:44,426  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:58:44,613  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"gG6t9gDaZB7nqjEcsJ2lZsgjU6C/yvURC4zj6WrZGVCxvqKFuUJIr22dUnRT YRC3v6/X16HlodD4YO/PTi3rhImjomzf6n/2y/YOgmieX8uk+WeXy5Xhygo3 BSwL0qTKkvdmVmCkWLWr7z5xykrG8x4zJ6K9+NawKc8rtqIup9g=","remark":"阿杰发艺(旗舰店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508110@163.com","branchno":"104584002488","area":"510122","address":"华阳镇伏龙路一段100号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508110","doorpic":"/uploads/04/874a86061f1666e7842e007816b9cd.jpg","name":"阿杰发艺旗舰店","bankno":"1040000"}
+2019-02-15 10:58:45,295  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:58:45,295  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000458","phone":"17712508110"},"sign":"QDkCilP\/I9Q5hxUjoDGDJMLQQI9sEgkqcugfMlVUD\/YWNgWfTwWS29GJ78mgL\/z+psaYgJg8zOSePVkFU4N2c\/mKNmJr3Tu2fia8eGrSqkIktyoViXcG6I9C2Mb8Z9n6JVJsMPHg+zPtT\/rr+MWonas0IjKRwRuRgVIRaCtZnp0="}
+2019-02-15 10:58:45,296  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000458","phone":"17712508110"},"sign":"QDkCilP\/I9Q5hxUjoDGDJMLQQI9sEgkqcugfMlVUD\/YWNgWfTwWS29GJ78mgL\/z+psaYgJg8zOSePVkFU4N2c\/mKNmJr3Tu2fia8eGrSqkIktyoViXcG6I9C2Mb8Z9n6JVJsMPHg+zPtT\/rr+MWonas0IjKRwRuRgVIRaCtZnp0="}, timestamp=0}
+2019-02-15 10:58:45,306  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000458","phone":"17712508110"},"sign":"QDkCilP\/I9Q5hxUjoDGDJMLQQI9sEgkqcugfMlVUD\/YWNgWfTwWS29GJ78mgL\/z+psaYgJg8zOSePVkFU4N2c\/mKNmJr3Tu2fia8eGrSqkIktyoViXcG6I9C2Mb8Z9n6JVJsMPHg+zPtT\/rr+MWonas0IjKRwRuRgVIRaCtZnp0="}, timestamp=0}
+2019-02-15 10:58:52,307  INFO BatchRegister:196 - 该商铺已进件=======阿杰发艺王府井店
+2019-02-15 10:58:52,308  INFO BatchRegister:196 - 该商铺已进件=======阿玛尼时尚腕表
+2019-02-15 10:58:52,309  INFO BatchRegister:196 - 该商铺已进件=======爱马仕远洋太古里店
+2019-02-15 10:58:52,309  INFO BatchRegister:196 - 该商铺已进件=======爱妻牛排火锅衣冠庙
+2019-02-15 10:58:52,310  INFO BatchRegister:196 - 该商铺已进件=======爱炫车饰界汽车美容
+2019-02-15 10:58:52,310  INFO BatchRegister:196 - 该商铺已进件=======安洁汽车美容服务
+2019-02-15 10:58:52,311  INFO BatchRegister:196 - 该商铺已进件=======澳思莱汽车会所
+2019-02-15 10:58:52,311  INFO BatchRegister:196 - 该商铺已进件=======巴蜀大将火锅
+2019-02-15 10:58:52,312  INFO BatchRegister:196 - 该商铺已进件=======巴蜀大宅门火锅
+2019-02-15 10:58:52,312  INFO BatchRegister:196 - 该商铺已进件=======巴蜀大掌柜火锅
+2019-02-15 10:58:52,545  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:58:52,652  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:58:52,919  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"MtRz/hiU8m9fJnF4vANeWJT9Tjm6nQzrJZq2Zr43YULbFmOElKaoBnL63kVW ofQBsYWOXy/pM/0OhRyp1ZJuj5j8+XPhv1e57+KDbXuvT690Qvb0Md6h4T/D jrKXflpFri6WCgeyEs6PyDWKoMgxXMPzQ5r531kjB2avoL14xj4=","remark":"巴蜀舌郎火锅 成都美食名片(武侯店)","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508111@163.com","branchno":"104584002488","area":"510122","address":"剑南大道华阳欧尚超市地面停车场内","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508111","doorpic":"/uploads/09/8c130b5be34c823ab3522cf3074adc.jpg","name":"巴蜀舌郎火锅 成都","bankno":"1040000"}
+2019-02-15 10:58:53,622  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:58:53,623  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000459","phone":"17712508111"},"sign":"fiOmbljr9l9UZILppbwjwOjfS8OyCKXjTO+mds6Agt3O+CukegyTQHIxiOF4fRd3Cjipwsq+IJLiNgpJxaSkTosNjrIKdCbvelkePD5Jsb90\/YFQIHp2e6l6jtntQYPfgiSF9NBgH2x3mBphPoQPK5lSObA9WRy4fKhdtIIGOLE="}
+2019-02-15 10:58:53,623  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000459","phone":"17712508111"},"sign":"fiOmbljr9l9UZILppbwjwOjfS8OyCKXjTO+mds6Agt3O+CukegyTQHIxiOF4fRd3Cjipwsq+IJLiNgpJxaSkTosNjrIKdCbvelkePD5Jsb90\/YFQIHp2e6l6jtntQYPfgiSF9NBgH2x3mBphPoQPK5lSObA9WRy4fKhdtIIGOLE="}, timestamp=0}
+2019-02-15 10:58:53,631  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000459","phone":"17712508111"},"sign":"fiOmbljr9l9UZILppbwjwOjfS8OyCKXjTO+mds6Agt3O+CukegyTQHIxiOF4fRd3Cjipwsq+IJLiNgpJxaSkTosNjrIKdCbvelkePD5Jsb90\/YFQIHp2e6l6jtntQYPfgiSF9NBgH2x3mBphPoQPK5lSObA9WRy4fKhdtIIGOLE="}, timestamp=0}
+2019-02-15 10:59:00,632  INFO BatchRegister:196 - 该商铺已进件=======爸爸炒料牛排老火锅
+2019-02-15 10:59:00,632  INFO BatchRegister:196 - 该商铺已进件=======白家老店肥肠粉
+2019-02-15 10:59:00,633  INFO BatchRegister:196 - 该商铺已进件=======百年神厨双楠店
+2019-02-15 10:59:00,633  INFO BatchRegister:196 - 该商铺已进件=======百味记小郡肝砂罐串
+2019-02-15 10:59:00,633  INFO BatchRegister:196 - 该商铺已进件=======宝晨汽车维修部郫县
+2019-02-15 10:59:00,634  INFO BatchRegister:196 - 该商铺已进件=======宝亨表行
+2019-02-15 10:59:00,634  INFO BatchRegister:196 - 该商铺已进件=======宝珀远洋太古里店
+2019-02-15 10:59:00,634  INFO BatchRegister:196 - 该商铺已进件=======贝壳造型SA高新店
+2019-02-15 10:59:00,635  INFO BatchRegister:196 - 该商铺已进件=======飚野汽车养护中心
+2019-02-15 10:59:00,635  INFO BatchRegister:196 - 该商铺已进件=======藏韵圣宴
+2019-02-15 10:59:00,636  INFO BatchRegister:196 - 该商铺已进件=======畅享汽车连锁犀浦店
+2019-02-15 10:59:00,636  INFO BatchRegister:196 - 该商铺已进件=======潮·蜕变发型设计
+2019-02-15 10:59:00,637  INFO BatchRegister:196 - 该商铺已进件=======炒作DS·民间饭店
+2019-02-15 10:59:00,637  INFO BatchRegister:196 - 该商铺已进件=======车吧坊汽车服务中心
+2019-02-15 10:59:00,638  INFO BatchRegister:196 - 该商铺已进件=======车管家平意汽车美容
+2019-02-15 10:59:00,639  INFO BatchRegister:196 - 该商铺已进件=======车立方汽车生活馆
+2019-02-15 10:59:00,640  INFO BatchRegister:196 - 该商铺已进件=======车享家（ 龙德路）
+2019-02-15 10:59:00,640  INFO BatchRegister:196 - 该商铺已进件=======车享家（八桥店）
+2019-02-15 10:59:00,641  INFO BatchRegister:196 - 该商铺已进件=======车享家（北环路店）
+2019-02-15 10:59:00,641  INFO BatchRegister:196 - 该商铺已进件=======车享家（滨江路店）
+2019-02-15 10:59:00,641  INFO BatchRegister:196 - 该商铺已进件=======车享家成都世纪大道
+2019-02-15 10:59:00,873  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:59:01,059  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:59:01,059 ERROR BatchRegister:294 - 没有获取到对应的省市区编号=四川省成都市双流县雅和南二路英伦城邦K区东门人行门
+2019-02-15 10:59:01,059  INFO BatchRegister:196 - 该商铺已进件=======车享家（富洲路店）
+2019-02-15 10:59:01,060  INFO BatchRegister:196 - 该商铺已进件=======车享家（钢花路店）
+2019-02-15 10:59:01,060  INFO BatchRegister:196 - 该商铺已进件=======车享家（海峡路店）
+2019-02-15 10:59:01,060  INFO BatchRegister:196 - 该商铺已进件=======车享家（华福大道）
+2019-02-15 10:59:01,060  INFO BatchRegister:196 - 该商铺已进件=======车享家黄花园加油站
+2019-02-15 10:59:01,061  INFO BatchRegister:196 - 该商铺已进件=======车享家（火炬大道）
+2019-02-15 10:59:01,061  INFO BatchRegister:196 - 该商铺已进件=======车享家（金童路店）
+2019-02-15 10:59:01,061  INFO BatchRegister:196 - 该商铺已进件=======车享家（缙云大道）
+2019-02-15 10:59:01,062  INFO BatchRegister:196 - 该商铺已进件=======车享家龙华大道1
+2019-02-15 10:59:01,062  INFO BatchRegister:196 - 该商铺已进件=======车享家（龙山大道）
+2019-02-15 10:59:01,062  INFO BatchRegister:196 - 该商铺已进件=======车享家（龙洲大道）
+2019-02-15 10:59:01,062  INFO BatchRegister:196 - 该商铺已进件=======车享家（青龙站店）
+2019-02-15 10:59:01,063  INFO BatchRegister:196 - 该商铺已进件=======车享家（石马河站）
+2019-02-15 10:59:01,063  INFO BatchRegister:196 - 该商铺已进件=======车享家（双宁路店）
+2019-02-15 10:59:01,063  INFO BatchRegister:196 - 该商铺已进件=======车享家（天吉路店）
+2019-02-15 10:59:01,063  INFO BatchRegister:196 - 该商铺已进件=======车享家（烟雨路店）
+2019-02-15 10:59:01,064  INFO BatchRegister:196 - 该商铺已进件=======车享家（邮电路店）
+2019-02-15 10:59:01,064  INFO BatchRegister:196 - 该商铺已进件=======车享家（余松路店）
+2019-02-15 10:59:01,064  INFO BatchRegister:196 - 该商铺已进件=======车享家（白涛站店）
+2019-02-15 10:59:01,065  INFO BatchRegister:196 - 该商铺已进件=======车享家大学城东路
+2019-02-15 10:59:01,065  INFO BatchRegister:196 - 该商铺已进件=======车享家（海尔路店）
+2019-02-15 10:59:01,065  INFO BatchRegister:196 - 该商铺已进件=======车享家（海福路店）
+2019-02-15 10:59:01,065  INFO BatchRegister:196 - 该商铺已进件=======车享家（红黄路店）
+2019-02-15 10:59:01,066  INFO BatchRegister:196 - 该商铺已进件=======车享家（宏帆路店）
+2019-02-15 10:59:01,066  INFO BatchRegister:196 - 该商铺已进件=======车享家（虎曾路站）
+2019-02-15 10:59:01,067  INFO BatchRegister:196 - 该商铺已进件=======车享家（江与城店）
+2019-02-15 10:59:01,067  INFO BatchRegister:196 - 该商铺已进件=======车享家（科城路店）
+2019-02-15 10:59:01,067  INFO BatchRegister:196 - 该商铺已进件=======车享家（科龙路店）
+2019-02-15 10:59:01,069  INFO BatchRegister:196 - 该商铺已进件=======车享家（兰花路店）
+2019-02-15 10:59:01,069  INFO BatchRegister:196 - 该商铺已进件=======车享家（龙头寺店）
+2019-02-15 10:59:01,069  INFO BatchRegister:196 - 该商铺已进件=======车享家（卢作孚路）
+2019-02-15 10:59:01,246  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:59:01,354  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:59:01,620  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"JsZZakVqccVGRe7xv4esHa01Ph1WbFuByE9r4dX6nZNKh14r12u5ohAuKRFu KVH4+u14m7U053VpNnw83eXregOM66r/AVSXZRT1IlShU5jNFDBvX1N3apwx 6h9IkoQ6oERTXiXPDAYTnUaAS9gq5eupqYx8k2zXaJmT3yVR260=","remark":"车享家汽车养护中心（重庆米兰路店）","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508112@163.com","branchno":"104584002488","area":"510122","address":"中和镇朝阳路306号附1号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508112","doorpic":"/uploads/8f/f3933552021b8b182b3454afd9477a.jpg","name":"车享家（米兰路店）","bankno":"1040000"}
+2019-02-15 10:59:02,364  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:59:02,364  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000460","phone":"17712508112"},"sign":"R0otnhNMKgtxUI5CHWML+rpM9jFu+U8mSIkgl9\/8HriO64E6Tf5cfrJkuQF4AHzaZ7DBs90Rc5rfuZj3ak1X4uwON7zIYQfOZrrx3vMAqIWYJPjqWsXnSu0762UhaKbdKYvEAo50GGM63bvXByLjRI9DQBac+n7e9lnHj5v9okM="}
+2019-02-15 10:59:02,364  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000460","phone":"17712508112"},"sign":"R0otnhNMKgtxUI5CHWML+rpM9jFu+U8mSIkgl9\/8HriO64E6Tf5cfrJkuQF4AHzaZ7DBs90Rc5rfuZj3ak1X4uwON7zIYQfOZrrx3vMAqIWYJPjqWsXnSu0762UhaKbdKYvEAo50GGM63bvXByLjRI9DQBac+n7e9lnHj5v9okM="}, timestamp=0}
+2019-02-15 10:59:02,373  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000460","phone":"17712508112"},"sign":"R0otnhNMKgtxUI5CHWML+rpM9jFu+U8mSIkgl9\/8HriO64E6Tf5cfrJkuQF4AHzaZ7DBs90Rc5rfuZj3ak1X4uwON7zIYQfOZrrx3vMAqIWYJPjqWsXnSu0762UhaKbdKYvEAo50GGM63bvXByLjRI9DQBac+n7e9lnHj5v9okM="}, timestamp=0}
+2019-02-15 10:59:09,375  INFO BatchRegister:196 - 该商铺已进件=======车享家（南山路店）
+2019-02-15 10:59:09,375  INFO BatchRegister:196 - 该商铺已进件=======车享家（南园东路）
+2019-02-15 10:59:09,376  INFO BatchRegister:196 - 该商铺已进件=======车享家（七公里站）
+2019-02-15 10:59:09,376  INFO BatchRegister:196 - 该商铺已进件=======车享家（上江城店）
+2019-02-15 10:59:09,377  INFO BatchRegister:196 - 该商铺已进件=======车享家（双城路店）
+2019-02-15 10:59:09,378  INFO BatchRegister:196 - 该商铺已进件=======车享家（顺江站店）
+2019-02-15 10:59:09,379  INFO BatchRegister:196 - 该商铺已进件=======车享家（桃花大道）
+2019-02-15 10:59:09,379  INFO BatchRegister:196 - 该商铺已进件=======车享家（腾龙大道）
+2019-02-15 10:59:09,380  INFO BatchRegister:196 - 该商铺已进件=======车享家（通江大道）
+2019-02-15 10:59:09,380  INFO BatchRegister:196 - 该商铺已进件=======车享家万州圣士豪庭
+2019-02-15 10:59:09,381  INFO BatchRegister:196 - 该商铺已进件=======车享家（文苑北路）
+2019-02-15 10:59:09,381  INFO BatchRegister:196 - 该商铺已进件=======车享家（西双大道）
+2019-02-15 10:59:09,381  INFO BatchRegister:196 - 该商铺已进件=======车享家学府大道路
+2019-02-15 10:59:09,382  INFO BatchRegister:196 - 该商铺已进件=======车享家（学院街店）
+2019-02-15 10:59:09,382  INFO BatchRegister:196 - 该商铺已进件=======车享家（悠然天地）
+2019-02-15 10:59:09,383  INFO BatchRegister:196 - 该商铺已进件=======车享家（渝澳大道）
+2019-02-15 10:59:09,383  INFO BatchRegister:196 - 该商铺已进件=======车玴车美汽车养护
+2019-02-15 10:59:09,384  INFO BatchRegister:196 - 该商铺已进件=======车逸居汽车改装俱乐
+2019-02-15 10:59:09,384  INFO BatchRegister:196 - 该商铺已进件=======车友必成贴膜.美容
+2019-02-15 10:59:09,385  INFO BatchRegister:196 - 该商铺已进件=======车之骏汽车美容中心
+2019-02-15 10:59:09,385  INFO BatchRegister:196 - 该商铺已进件=======车之美汽车一站式服
+2019-02-15 10:59:09,386  INFO BatchRegister:196 - 该商铺已进件=======陈婆婆珍藏菜
+2019-02-15 10:59:09,386  INFO BatchRegister:196 - 该商铺已进件=======成都吃客致民路店
+2019-02-15 10:59:09,387  INFO BatchRegister:196 - 该商铺已进件=======成都亨得利钟表
+2019-02-15 10:59:09,387  INFO BatchRegister:196 - 该商铺已进件=======初心HA
+2019-02-15 10:59:09,388  INFO BatchRegister:196 - 该商铺已进件=======川井造型
+2019-02-15 10:59:09,388  INFO BatchRegister:196 - 该商铺已进件=======川西坝子杜甫草堂
+2019-02-15 10:59:09,388  INFO BatchRegister:196 - 该商铺已进件=======川西坝子羊犀直营店
+2019-02-15 10:59:09,389  INFO BatchRegister:196 - 该商铺已进件=======创马汇宝马4S技师
+2019-02-15 10:59:09,389  INFO BatchRegister:196 - 该商铺已进件=======吹吹风汽车美容
+2019-02-15 10:59:09,390  INFO BatchRegister:196 - 该商铺已进件=======春耕野菜馆华阳店
+2019-02-15 10:59:09,390  INFO BatchRegister:196 - 该商铺已进件=======春阳水饺·川味名小
+2019-02-15 10:59:09,391  INFO BatchRegister:196 - 该商铺已进件=======大龙燚火锅花牌坊店
+2019-02-15 10:59:09,391  INFO BatchRegister:196 - 该商铺已进件=======大龙燚火锅马鞍北路
+2019-02-15 10:59:09,392  INFO BatchRegister:196 - 该商铺已进件=======大院河鲜·来仙气飘
+2019-02-15 10:59:09,393  INFO BatchRegister:196 - 该商铺已进件=======得利达名表
+2019-02-15 10:59:09,394  INFO BatchRegister:196 - 该商铺已进件=======德洛瑞恩
+2019-02-15 10:59:09,394  INFO BatchRegister:196 - 该商铺已进件=======德式精养玛驰店
+2019-02-15 10:59:09,394  INFO BatchRegister:196 - 该商铺已进件=======德系之星·极致车美
+2019-02-15 10:59:09,395  INFO BatchRegister:196 - 该商铺已进件=======鼎靓精工坊
+2019-02-15 10:59:09,395  INFO BatchRegister:196 - 该商铺已进件=======斗鸡饭场伙浆洗街店
+2019-02-15 10:59:09,396  INFO BatchRegister:196 - 该商铺已进件=======额尔敦必福牛匠
+2019-02-15 10:59:09,396  INFO BatchRegister:196 - 该商铺已进件=======范大碗好鱼人家冷锅
+2019-02-15 10:59:09,397  INFO BatchRegister:196 - 该商铺已进件=======菲拉格慕国际金融
+2019-02-15 10:59:09,398  INFO BatchRegister:196 - 该商铺已进件=======峰林汽车服务
+2019-02-15 10:59:09,398  INFO BatchRegister:196 - 该商铺已进件=======福莱士蒸汽洗车美容
+2019-02-15 10:59:09,399  INFO BatchRegister:196 - 该商铺已进件=======福雷蒙汽车美容中心
+2019-02-15 10:59:09,399  INFO BatchRegister:196 - 该商铺已进件=======福曼汽车美容工坊
+2019-02-15 10:59:09,400  INFO BatchRegister:196 - 该商铺已进件=======钢管厂五区小郡肝串
+2019-02-15 10:59:09,400  INFO BatchRegister:196 - 该商铺已进件=======高新区实诚汽修
+2019-02-15 10:59:09,400  INFO BatchRegister:196 - 该商铺已进件=======格耐汽车生活馆
+2019-02-15 10:59:09,401  INFO BatchRegister:196 - 该商铺已进件=======格知沙龙
+2019-02-15 10:59:09,402  INFO BatchRegister:196 - 该商铺已进件=======鼓动汽车音响改装连
+2019-02-15 10:59:09,402  INFO BatchRegister:196 - 该商铺已进件=======怪叔叔汽车生活馆
+2019-02-15 10:59:09,402  INFO BatchRegister:196 - 该商铺已进件=======广合汽车
+2019-02-15 10:59:09,403  INFO BatchRegister:196 - 该商铺已进件=======海底捞火锅莱蒙都会
+2019-02-15 10:59:09,403  INFO BatchRegister:196 - 该商铺已进件=======汉阳韩国料理
+2019-02-15 10:59:09,404  INFO BatchRegister:196 - 该商铺已进件=======豪众汽车装饰美容服
+2019-02-15 10:59:09,405  INFO BatchRegister:196 - 该商铺已进件=======恒动力汽车养护中心
+2019-02-15 10:59:09,405  INFO BatchRegister:196 - 该商铺已进件=======红星兔丁WHC店
+2019-02-15 10:59:09,406  INFO BatchRegister:196 - 该商铺已进件=======呼哈凉卷粉高升桥店
+2019-02-15 10:59:09,406  INFO BatchRegister:196 - 该商铺已进件=======化锐汽车维修
+2019-02-15 10:59:09,407  INFO BatchRegister:196 - 该商铺已进件=======奂燃汽车钣喷服务
+2019-02-15 10:59:09,407  INFO BatchRegister:196 - 该商铺已进件=======惠泽汽车美容机场
+2019-02-15 10:59:09,407  INFO BatchRegister:196 - 该商铺已进件=======机械蟲汽车美容保养
+2019-02-15 10:59:09,407  INFO BatchRegister:196 - 该商铺已进件=======集洁号汽车美容服务
+2019-02-15 10:59:09,408  INFO BatchRegister:196 - 该商铺已进件=======佳杰欣汽修厂
+2019-02-15 10:59:09,408  INFO BatchRegister:196 - 该商铺已进件=======佳音汽车音响装饰馆
+2019-02-15 10:59:09,408  INFO BatchRegister:196 - 该商铺已进件=======嘉悦汽车服务中心
+2019-02-15 10:59:09,408  INFO BatchRegister:196 - 该商铺已进件=======間客
+2019-02-15 10:59:09,409  INFO BatchRegister:196 - 该商铺已进件=======简HA九眼桥店
+2019-02-15 10:59:09,409  INFO BatchRegister:196 - 该商铺已进件=======疆食记
+2019-02-15 10:59:09,409  INFO BatchRegister:196 - 该商铺已进件=======今蓝纳米专业汽车贴
+2019-02-15 10:59:09,410  INFO BatchRegister:196 - 该商铺已进件=======锦伯爵汽车美容中心
+2019-02-15 10:59:09,410  INFO BatchRegister:196 - 该商铺已进件=======锦城印象火锅酒楼二
+2019-02-15 10:59:09,410  INFO BatchRegister:196 - 该商铺已进件=======锦南炉火锅
+2019-02-15 10:59:09,410  INFO BatchRegister:196 - 该商铺已进件=======精典汽车江浦路店
+2019-02-15 10:59:09,410  INFO BatchRegister:196 - 该商铺已进件=======精典汽车连锁易修店
+2019-02-15 10:59:09,411  INFO BatchRegister:196 - 该商铺已进件=======精点倍耐力轮胎红光
+2019-02-15 10:59:09,411  INFO BatchRegister:196 - 该商铺已进件=======丼亦九宫格火锅
+2019-02-15 10:59:09,412  INFO BatchRegister:196 - 该商铺已进件=======景羊岗贵州米粉·粉
+2019-02-15 10:59:09,412  INFO BatchRegister:196 - 该商铺已进件=======聚昱汽修
+2019-02-15 10:59:09,412  INFO BatchRegister:196 - 该商铺已进件=======卡伦造型锦城店
+2019-02-15 10:59:09,412  INFO BatchRegister:196 - 该商铺已进件=======侃侃火锅高升桥店
+2019-02-15 10:59:09,413  INFO BatchRegister:196 - 该商铺已进件=======科雷汽车服务中心
+2019-02-15 10:59:09,413  INFO BatchRegister:196 - 该商铺已进件=======宽板凳火锅鱼
+2019-02-15 10:59:09,413  INFO BatchRegister:196 - 该商铺已进件=======宽途汽车·众意洗车
+2019-02-15 10:59:09,413  INFO BatchRegister:196 - 该商铺已进件=======辣九爷
+2019-02-15 10:59:09,413  INFO BatchRegister:196 - 该商铺已进件=======浪琴远洋太古里店
+2019-02-15 10:59:09,414  INFO BatchRegister:196 - 该商铺已进件=======老广东营汽车空调装
+2019-02-15 10:59:09,414  INFO BatchRegister:196 - 该商铺已进件=======老家伙理发铺烫发染
+2019-02-15 10:59:09,414  INFO BatchRegister:196 - 该商铺已进件=======老码头火锅玉林店
+2019-02-15 10:59:09,414  INFO BatchRegister:196 - 该商铺已进件=======老盐边羊肉米线
+2019-02-15 10:59:09,414  INFO BatchRegister:196 - 该商铺已进件=======乐山胖哥跷脚牛肉
+2019-02-15 10:59:09,415  INFO BatchRegister:196 - 该商铺已进件=======乐山王屠夫跷脚牛肉
+2019-02-15 10:59:09,415  INFO BatchRegister:196 - 该商铺已进件=======黎黎深夜火锅
+2019-02-15 10:59:09,415  INFO BatchRegister:196 - 该商铺已进件=======丽江红山梁牛肉火锅
+2019-02-15 10:59:09,415  INFO BatchRegister:196 - 该商铺已进件=======靓车会汽车镀膜青羊
+2019-02-15 10:59:09,415  INFO BatchRegister:196 - 该商铺已进件=======靓华汽车服务中心
+2019-02-15 10:59:09,416  INFO BatchRegister:196 - 该商铺已进件=======六年二班串串
+2019-02-15 10:59:09,416  INFO BatchRegister:196 - 该商铺已进件=======龙膜匠心汽车服务工
+2019-02-15 10:59:09,416  INFO BatchRegister:196 - 该商铺已进件=======泸州酸菜豆花红瓦寺
+2019-02-15 10:59:09,416  INFO BatchRegister:196 - 该商铺已进件=======路尊汽修双楠伊藤店
+2019-02-15 10:59:09,416  INFO BatchRegister:196 - 该商铺已进件=======路尊汽修总厂店
+2019-02-15 10:59:09,416  INFO BatchRegister:196 - 该商铺已进件=======罗西尼
+2019-02-15 10:59:09,417  INFO BatchRegister:196 - 该商铺已进件=======麻辣空间火锅WH店
+2019-02-15 10:59:09,417  INFO BatchRegister:196 - 该商铺已进件=======马记牛肉焦饼
+2019-02-15 10:59:09,417  INFO BatchRegister:196 - 该商铺已进件=======马立可北星店
+2019-02-15 10:59:09,563  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:59:09,744  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:59:09,956  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"cvfiMRTry0JrpiLRDDk/XPXOwKRfPu/kMH0xzMwOM1RxJeBNssLDuuRhushj 844BbPYwScSMnM/HIBVTACbwHBRxtrW7Tc+ionmTR+2U2XBpviqHOedy5EeH UQ60DaNx0kVrFuiskwPPh090NxqoBclcOgEQhxNaxJguHR/QGik=","remark":"马立可汽车中心（车马堂店）","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508113@163.com","branchno":"104584002488","area":"510122","address":"安公路二段356-358号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508113","doorpic":"/uploads/00/3d7965d6a0ecdca31e86cf9a6c3a64.jpg","name":"马立可车马堂店","bankno":"1040000"}
+2019-02-15 10:59:10,685  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:59:10,686  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000461","phone":"17712508113"},"sign":"e\/YWgBz69H0n4QfQLE8x5ADP3eIAISwRT2GB0A\/RHJBE9RttmtHgdO3TJbSdcW3KWoEryWgt\/SiLugIGD6Nzb4iDeM6pAcYbOLYLpjQHqsbDVhIpVnkB8i4xuktni12ZdwhKYX0L1TKCC5kBULAxCcgBXrw7TGW2iheBh5qGznQ="}
+2019-02-15 10:59:10,686  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000461","phone":"17712508113"},"sign":"e\/YWgBz69H0n4QfQLE8x5ADP3eIAISwRT2GB0A\/RHJBE9RttmtHgdO3TJbSdcW3KWoEryWgt\/SiLugIGD6Nzb4iDeM6pAcYbOLYLpjQHqsbDVhIpVnkB8i4xuktni12ZdwhKYX0L1TKCC5kBULAxCcgBXrw7TGW2iheBh5qGznQ="}, timestamp=0}
+2019-02-15 10:59:10,698  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000461","phone":"17712508113"},"sign":"e\/YWgBz69H0n4QfQLE8x5ADP3eIAISwRT2GB0A\/RHJBE9RttmtHgdO3TJbSdcW3KWoEryWgt\/SiLugIGD6Nzb4iDeM6pAcYbOLYLpjQHqsbDVhIpVnkB8i4xuktni12ZdwhKYX0L1TKCC5kBULAxCcgBXrw7TGW2iheBh5qGznQ="}, timestamp=0}
+2019-02-15 10:59:17,699  INFO BatchRegister:196 - 该商铺已进件=======马立可东升店
+2019-02-15 10:59:17,700  INFO BatchRegister:196 - 该商铺已进件=======马立可光华店
+2019-02-15 10:59:17,700  INFO BatchRegister:196 - 该商铺已进件=======马立可航都店
+2019-02-15 10:59:17,701  INFO BatchRegister:196 - 该商铺已进件=======马立可花园会所店
+2019-02-15 10:59:17,701  INFO BatchRegister:196 - 该商铺已进件=======马立可金沙店
+2019-02-15 10:59:17,935  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:59:18,040  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:59:18,308  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"bm3RtCgrrJq9Jbo46qBzk2LJG/rcI3gOIRU99kAOLlElpFgDxvJPx5cddmMK YPl+0cvTFKc4cOksKfKRdHMntKAoBdNGfJfP4EnQ4uzePkZ1hIalUP7vfeDI jUvJS9WgvKsLFeYZy7+T0BNSPReu8V2y0YkrHicbY7+sZALrzwE=","remark":"马立可汽车中心（锦江店）","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508114@163.com","branchno":"104584002488","area":"510122","address":"华阳大道二段安公路一段312号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508114","doorpic":"/uploads/0f/5d3dedc5739502bb891fef8881910a.jpg","name":"马立可锦江店","bankno":"1040000"}
+2019-02-15 10:59:19,044  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:59:19,045  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000462","phone":"17712508114"},"sign":"GIaEUmt\/oiJmVCDElW2G5oUa\/0yB6o+O+APZoE\/QfIhjqIPvAo4w72m7voefukGPXL4GdzXgLRE3ZS2d\/a8INY\/cbSdxdLsH3ut9FcUSETwYWy6bgt9NzN\/EmdlPA+zlwn\/+GN7aYiE2e\/IEzdOWnva0I\/zVPM7YbUtNzCrDUv0="}
+2019-02-15 10:59:19,045  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000462","phone":"17712508114"},"sign":"GIaEUmt\/oiJmVCDElW2G5oUa\/0yB6o+O+APZoE\/QfIhjqIPvAo4w72m7voefukGPXL4GdzXgLRE3ZS2d\/a8INY\/cbSdxdLsH3ut9FcUSETwYWy6bgt9NzN\/EmdlPA+zlwn\/+GN7aYiE2e\/IEzdOWnva0I\/zVPM7YbUtNzCrDUv0="}, timestamp=0}
+2019-02-15 10:59:19,055  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000462","phone":"17712508114"},"sign":"GIaEUmt\/oiJmVCDElW2G5oUa\/0yB6o+O+APZoE\/QfIhjqIPvAo4w72m7voefukGPXL4GdzXgLRE3ZS2d\/a8INY\/cbSdxdLsH3ut9FcUSETwYWy6bgt9NzN\/EmdlPA+zlwn\/+GN7aYiE2e\/IEzdOWnva0I\/zVPM7YbUtNzCrDUv0="}, timestamp=0}
+2019-02-15 10:59:26,055  INFO BatchRegister:196 - 该商铺已进件=======马立可九里堤店
+2019-02-15 10:59:26,055  INFO BatchRegister:196 - 该商铺已进件=======马立可聚荟店
+2019-02-15 10:59:26,055  INFO BatchRegister:196 - 该商铺已进件=======马立可李家沱店
+2019-02-15 10:59:26,055  INFO BatchRegister:196 - 该商铺已进件=======马立可丽都店
+2019-02-15 10:59:26,055  INFO BatchRegister:196 - 该商铺已进件=======马立可龙泉店
+2019-02-15 10:59:26,055  INFO BatchRegister:196 - 该商铺已进件=======马立可天府二街店
+2019-02-15 10:59:26,055  INFO BatchRegister:196 - 该商铺已进件=======马立可天府收费站
+2019-02-15 10:59:26,296  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:59:26,483  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:59:26,621  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"hucWcyZl7abBHmHTX9G49cZ1ehXCdFJumm4AUdPCooSPURSktYAx6Yzxiyn3 /2xg3FGG2kBm2EdPfehHGbvSbOp8+3zNAS6/Mr1QWdwL2WoW7fhREQbm+Sf1 mss+I7T5VPi2/dvpnzqjOqc+EtlsmJavnMUQ+ICLVdtB7bgcqPU=","remark":"马立可汽车中心（韵致亮车店）","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508115@163.com","branchno":"104584002488","area":"510122","address":"华阳滨河路一段115号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508115","doorpic":"/uploads/34/711ec0d246cafcd0a64c93aca5d4ab.jpg","name":"马立可韵致亮车店","bankno":"1040000"}
+2019-02-15 10:59:27,296  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:59:27,296  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000463","phone":"17712508115"},"sign":"Dnccd\/jnFbhFoV5PVdwXzlTGsRL6JBa\/B4jZJCn1XBz2IZB\/Nha8V9GPxYw51knKzRDHtuquJlGxQlZn27Ph8I\/VNfCd8UUD4AiOH7\/5VzRb6Myrihi+J4Zvz1T1WYCneQrXtmtVqHF\/bAFcaT1t0H0Ad9EpzSNRNEY4EnujrxQ="}
+2019-02-15 10:59:27,297  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000463","phone":"17712508115"},"sign":"Dnccd\/jnFbhFoV5PVdwXzlTGsRL6JBa\/B4jZJCn1XBz2IZB\/Nha8V9GPxYw51knKzRDHtuquJlGxQlZn27Ph8I\/VNfCd8UUD4AiOH7\/5VzRb6Myrihi+J4Zvz1T1WYCneQrXtmtVqHF\/bAFcaT1t0H0Ad9EpzSNRNEY4EnujrxQ="}, timestamp=0}
+2019-02-15 10:59:27,308  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000463","phone":"17712508115"},"sign":"Dnccd\/jnFbhFoV5PVdwXzlTGsRL6JBa\/B4jZJCn1XBz2IZB\/Nha8V9GPxYw51knKzRDHtuquJlGxQlZn27Ph8I\/VNfCd8UUD4AiOH7\/5VzRb6Myrihi+J4Zvz1T1WYCneQrXtmtVqHF\/bAFcaT1t0H0Ad9EpzSNRNEY4EnujrxQ="}, timestamp=0}
+2019-02-15 10:59:34,309  INFO BatchRegister:196 - 该商铺已进件=======马立可中海国际店
+2019-02-15 10:59:34,309  INFO BatchRegister:196 - 该商铺已进件=======马立可紫荆店
+2019-02-15 10:59:34,309  INFO BatchRegister:196 - 该商铺已进件=======玛吉斯轮胎-小车快
+2019-02-15 10:59:34,309  INFO BatchRegister:196 - 该商铺已进件=======茂腾汽车美容服务中
+2019-02-15 10:59:34,309  INFO BatchRegister:196 - 该商铺已进件=======帽子房
+2019-02-15 10:59:34,527  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 10:59:34,716  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 10:59:34,908  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"JvBdpZd24u5ebXimy+S77yuhxTcP4JMUzJUlRBd91f0VSY3An/7JIz66Aedc ZJS2sZNwmix8+GGKBvIUwrF67di877Vi01eTdhP/jau3RzLlk3aMMiCehG36 zCH5RuwMJfzUzMjgYRgcwPJp6Ri0krnS6II54rV74CHT/H69v/8=","remark":"美嘟嘟专业电脑洗车","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"510000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508116@163.com","branchno":"104584002488","area":"510122","address":"长冶路二段72号","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508116","doorpic":"/uploads/80/0ee6ff310f7f74bf34b5830c6308be.jpg","name":"美嘟嘟专业电脑洗车","bankno":"1040000"}
+2019-02-15 10:59:35,562  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:59:35,562  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000464","phone":"17712508116"},"sign":"TdeslJIU23iH9WQWyzXQTNbizuuUAdZpkdlrxa1RgM4xvD\/\/9DnDqKG5Tzhlow125Yhsyb3cEGf6qYgSnmNOE60TOxvM0NDu+mZ3nDTW7YaCg0IL+2SRCRsdOSEpPceIKl5HKMv09tvzzHCzl4RJT7rjrbcVIhjTB8O5DKu6LBE="}
+2019-02-15 10:59:35,563  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000464","phone":"17712508116"},"sign":"TdeslJIU23iH9WQWyzXQTNbizuuUAdZpkdlrxa1RgM4xvD\/\/9DnDqKG5Tzhlow125Yhsyb3cEGf6qYgSnmNOE60TOxvM0NDu+mZ3nDTW7YaCg0IL+2SRCRsdOSEpPceIKl5HKMv09tvzzHCzl4RJT7rjrbcVIhjTB8O5DKu6LBE="}, timestamp=0}
+2019-02-15 10:59:35,591  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000464","phone":"17712508116"},"sign":"TdeslJIU23iH9WQWyzXQTNbizuuUAdZpkdlrxa1RgM4xvD\/\/9DnDqKG5Tzhlow125Yhsyb3cEGf6qYgSnmNOE60TOxvM0NDu+mZ3nDTW7YaCg0IL+2SRCRsdOSEpPceIKl5HKMv09tvzzHCzl4RJT7rjrbcVIhjTB8O5DKu6LBE="}, timestamp=0}
+2019-02-15 10:59:42,591  INFO BatchRegister:196 - 该商铺已进件=======美丽100
+2019-02-15 10:59:42,591  INFO BatchRegister:196 - 该商铺已进件=======美轮美汽车养护中心
+2019-02-15 10:59:42,592  INFO BatchRegister:196 - 该商铺已进件=======美特施汽车美容
+2019-02-15 10:59:42,592  INFO BatchRegister:196 - 该商铺已进件=======名士表
+2019-02-15 10:59:42,592  INFO BatchRegister:196 - 该商铺已进件=======名嘴森林堍
+2019-02-15 10:59:42,593  INFO BatchRegister:196 - 该商铺已进件=======铭車优品
+2019-02-15 10:59:42,593  INFO BatchRegister:196 - 该商铺已进件=======摩登时代菁蓉国际
+2019-02-15 10:59:42,593  INFO BatchRegister:196 - 该商铺已进件=======那时·初见形象设计
+2019-02-15 10:59:42,593  INFO BatchRegister:196 - 该商铺已进件=======倪豆花
+2019-02-15 10:59:42,594  INFO BatchRegister:196 - 该商铺已进件=======昵果造型
+2019-02-15 10:59:42,594  INFO BatchRegister:196 - 该商铺已进件=======牛莽莽全牛火锅锦里
+2019-02-15 10:59:42,594  INFO BatchRegister:196 - 该商铺已进件=======牛牪犇牛杂火锅
+2019-02-15 10:59:42,595  INFO BatchRegister:196 - 该商铺已进件=======潘多拉
+2019-02-15 10:59:42,595  INFO BatchRegister:196 - 该商铺已进件=======潘记牛肉旮饼
+2019-02-15 10:59:42,595  INFO BatchRegister:196 - 该商铺已进件=======霹雳蛙掌门春熙路店
+2019-02-15 10:59:42,595  INFO BatchRegister:196 - 该商铺已进件=======朴田泰式海鲜火锅
+2019-02-15 10:59:42,595  INFO BatchRegister:196 - 该商铺已进件=======千乘租车
+2019-02-15 10:59:42,596  INFO BatchRegister:196 - 该商铺已进件=======千和日系造型
+2019-02-15 10:59:42,596  INFO BatchRegister:196 - 该商铺已进件=======千和造型沙龙
+2019-02-15 10:59:42,596  INFO BatchRegister:196 - 该商铺已进件=======签王之王·牛肉串串
+2019-02-15 10:59:42,597  INFO BatchRegister:196 - 该商铺已进件=======强盛汽修
+2019-02-15 10:59:42,597  INFO BatchRegister:196 - 该商铺已进件=======强氏汽车
+2019-02-15 10:59:42,597  INFO BatchRegister:196 - 该商铺已进件=======强氏汽车清江店
+2019-02-15 10:59:42,598  INFO BatchRegister:196 - 该商铺已进件=======俏媳妇重庆老灶火锅
+2019-02-15 10:59:42,598  INFO BatchRegister:196 - 该商铺已进件=======屈臣氏远洋太古里店
+2019-02-15 10:59:42,598  INFO BatchRegister:196 - 该商铺已进件=======全福居老北京涮羊肉
+2019-02-15 10:59:42,599  INFO BatchRegister:196 - 该商铺已进件=======群英汇汽车养护中心
+2019-02-15 10:59:42,599  INFO BatchRegister:196 - 该商铺已进件=======人民食堂高升桥店
+2019-02-15 10:59:42,599  INFO BatchRegister:196 - 该商铺已进件=======荣园餐馆
+2019-02-15 10:59:42,599  INFO BatchRegister:196 - 该商铺已进件=======榕辉汽车维修部
+2019-02-15 10:59:42,600  INFO BatchRegister:196 - 该商铺已进件=======阮成汽车美容服务
+2019-02-15 10:59:42,600  INFO BatchRegister:196 - 该商铺已进件=======瑞含汽车美容一站式
+2019-02-15 10:59:42,600  INFO BatchRegister:196 - 该商铺已进件=======塞博坦名车俱乐部
+2019-02-15 10:59:42,601  INFO BatchRegister:196 - 该商铺已进件=======三道苗苗鱼火锅
+2019-02-15 10:59:42,601  INFO BatchRegister:196 - 该商铺已进件=======三江烤鱼
+2019-02-15 10:59:42,601  INFO BatchRegister:196 - 该商铺已进件=======三益口福抄手武候祠
+2019-02-15 10:59:42,601  INFO BatchRegister:196 - 该商铺已进件=======叁口煮酒都老火锅
+2019-02-15 10:59:42,605 ERROR BatchRegister:203 - 根据名称=陕西面馆找不到对应的图片文件
+2019-02-15 10:59:42,605  INFO BatchRegister:196 - 该商铺已进件=======上池面馆
+2019-02-15 10:59:42,606  INFO BatchRegister:196 - 该商铺已进件=======上海·东尼美发
+2019-02-15 10:59:42,606  INFO BatchRegister:196 - 该商铺已进件=======沈小福米线黉门街店
+2019-02-15 10:59:42,606  INFO BatchRegister:196 - 该商铺已进件=======盛时表行
+2019-02-15 10:59:42,607  INFO BatchRegister:196 - 该商铺已进件=======盛世华美汽车美容装
+2019-02-15 10:59:42,607  INFO BatchRegister:196 - 该商铺已进件=======诗悦轻奢美发沙龙
+2019-02-15 10:59:42,607  INFO BatchRegister:196 - 该商铺已进件=======诗悦轻奢沙龙
+2019-02-15 10:59:42,607  INFO BatchRegister:196 - 该商铺已进件=======时间廊IF金融中心
+2019-02-15 10:59:42,608  INFO BatchRegister:196 - 该商铺已进件=======时间廊龙湖北城天街
+2019-02-15 10:59:42,608  INFO BatchRegister:196 - 该商铺已进件=======拾忆味老火锅
+2019-02-15 10:59:42,608  INFO BatchRegister:196 - 该商铺已进件=======世纪精剪九号公馆店
+2019-02-15 10:59:42,609  INFO BatchRegister:196 - 该商铺已进件=======书芙蓉舒食小火锅
+2019-02-15 10:59:42,609  INFO BatchRegister:196 - 该商铺已进件=======蜀车行汽车美容中心
+2019-02-15 10:59:42,609  INFO BatchRegister:196 - 该商铺已进件=======蜀串香厕所串串
+2019-02-15 10:59:42,609  INFO BatchRegister:196 - 该商铺已进件=======蜀大侠火锅中坝店
+2019-02-15 10:59:42,610  INFO BatchRegister:196 - 该商铺已进件=======蜀国府邸老火锅冒菜
+2019-02-15 10:59:42,610  INFO BatchRegister:196 - 该商铺已进件=======蜀九香火锅东轩AR
+2019-02-15 10:59:42,610  INFO BatchRegister:196 - 该商铺已进件=======顺江花园汽车美容
+2019-02-15 10:59:42,611  INFO BatchRegister:196 - 该商铺已进件=======斯美迪CC洗车场
+2019-02-15 10:59:42,611  INFO BatchRegister:196 - 该商铺已进件=======苏苏元气汤
+2019-02-15 10:59:42,611  INFO BatchRegister:196 - 该商铺已进件=======台湾一非造型
+2019-02-15 10:59:42,611  INFO BatchRegister:196 - 该商铺已进件=======饕林餐厅WHC店
+2019-02-15 10:59:42,612  INFO BatchRegister:196 - 该商铺已进件=======陶记蛋烘糕
+2019-02-15 10:59:42,612  INFO BatchRegister:196 - 该商铺已进件=======藤野造型春熙路店
+2019-02-15 10:59:42,612  INFO BatchRegister:196 - 该商铺已进件=======天梭时代百盛店
+2019-02-15 10:59:42,612  INFO BatchRegister:196 - 该商铺已进件=======头鼎汉文化火锅WH
+2019-02-15 10:59:42,613  INFO BatchRegister:196 - 该商铺已进件=======托马斯邦德汽车青羊
+2019-02-15 10:59:42,613  INFO BatchRegister:196 - 该商铺已进件=======瓦烤·烧烤扛把子
+2019-02-15 10:59:42,613  INFO BatchRegister:196 - 该商铺已进件=======瓦晒川菜WHC店
+2019-02-15 10:59:42,614  INFO BatchRegister:196 - 该商铺已进件=======王鸡婆川菜馆彩虹桥
+2019-02-15 10:59:42,614  INFO BatchRegister:196 - 该商铺已进件=======王记特色锅魁洗面桥
+2019-02-15 10:59:42,614  INFO BatchRegister:196 - 该商铺已进件=======王妈热卤汇锦店
+2019-02-15 10:59:42,615  INFO BatchRegister:196 - 该商铺已进件=======味之绝美蛙鱼头火锅
+2019-02-15 10:59:42,873  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"500100","text":"重庆市"},{"value":"500200","text":"重庆市县"}]}
+2019-02-15 10:59:43,045  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"500101","text":"万州区"},{"value":"500102","text":"涪陵区"},{"value":"500103","text":"渝中区"},{"value":"500104","text":"大渡口区"},{"value":"500105","text":"江北区"},{"value":"500106","text":"沙坪坝区"},{"value":"500107","text":"九龙坡区"},{"value":"500108","text":"南岸区"},{"value":"500109","text":"北碚区"},{"value":"500110","text":"万盛区"},{"value":"500111","text":"双桥区"},{"value":"500112","text":"渝北区"},{"value":"500113","text":"巴南区"},{"value":"500114","text":"黔江区"},{"value":"500115","text":"长寿区"},{"value":"500116","text":"江津区"},{"value":"500117","text":"合川区"},{"value":"500118","text":"永川区"},{"value":"500119","text":"南川区"}]}
+2019-02-15 10:59:43,226  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"500100","sign":"Um+TvD+IHuuO+T7ZtJER3w2H3fiPUuxdmNnQv3dfgonH825JfTWHfcs9f4MY s93jvYzkwJyLKPLszbDXKGhChdWNqF9QP/eyrVWpgB8FR6EvS4uj7jrVWjO9 cOVj4cfe9WQ47pa2BVXYgKwiNJtUqtCWFtfCmdxUcJ54FpkoYJ8=","remark":"温江龙祥汽车修理厂","type":"1","buslicpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","certno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13160721607","province":"500000","cardarea":"440307","certtype":"1","legelname":"陈裕明","legbackpic":"/uploads/d4/be019a041da29c12024a44f50c9f80.jpg","email":"17712508117@163.com","branchno":"104584002488","area":"500115","address":"体育中心凤城街道文苑大道5号42幢1-13、14","legfrontpic":"/uploads/2a/26c0255ca232da5b4df46ea8c3a02a.jpg","ecardno":"Du91QHgJLpVDmVJNNjIpHWy+JE+joE2l","cardno":"+2ySH0gNfCntROMFXwSYrOFC0lXUJt3I","cardprovince":"440000","payname":"qmOAxAXXWIjBVvLChuuF7g==","legelcertno":"vYm5mkOEpOy+LIZ457oV5fAVCDjZT0Iq","handpic":"/uploads/71/136506f35b7ef41db1a2ceae118719.jpg","cardcity":"440300","phone":"17712508117","doorpic":"/uploads/de/f03640f65ce657e0be71e86f89e096.jpg","name":"温江龙祥汽车修理厂","bankno":"1040000"}
+2019-02-15 10:59:43,589  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 10:59:43,589  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}
+2019-02-15 10:59:43,590  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 10:59:43,590 ERROR MerchantServiceImpl:184 - 商户进件失败，返回结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 10:59:43,591  INFO BatchRegister:328 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 10:59:50,591  INFO BatchRegister:196 - 该商铺已进件=======文速汽修厂
+2019-02-15 10:59:50,591  INFO BatchRegister:196 - 该商铺已进件=======吴系打边炉
+2019-02-15 10:59:50,592  INFO BatchRegister:196 - 该商铺已进件=======無UN发型沙龙
+2019-02-15 10:59:50,593  INFO BatchRegister:196 - 该商铺已进件=======喜车缘
+2019-02-15 10:59:50,593  INFO BatchRegister:196 - 该商铺已进件=======囍辣火锅厅·喜辣
+2019-02-15 10:59:50,594  INFO BatchRegister:196 - 该商铺已进件=======香港V·V美甲美睫
+2019-02-15 10:59:50,594  INFO BatchRegister:196 - 该商铺已进件=======祥龙汽车美容连锁
+2019-02-15 10:59:50,594  INFO BatchRegister:196 - 该商铺已进件=======享月·汤皇象南里店
+2019-02-15 10:59:50,595  INFO BatchRegister:196 - 该商铺已进件=======享月·汤皇橡树林店
+2019-02-15 10:59:50,596  INFO BatchRegister:196 - 该商铺已进件=======小P老师-PPP派
+2019-02-15 10:59:50,596  INFO BatchRegister:196 - 该商铺已进件=======小桔养车琉璃路店
+2019-02-15 10:59:50,596  INFO BatchRegister:196 - 该商铺已进件=======小牛大味面华西店
+2019-02-15 10:59:50,597  INFO BatchRegister:196 - 该商铺已进件=======小乌龙禅院铁像寺店
+2019-02-15 10:59:50,598  INFO BatchRegister:196 - 该商铺已进件=======新奥通名车维修
+2019-02-15 10:59:50,599  INFO BatchRegister:196 - 该商铺已进件=======新锐贴膜3M授权店
+2019-02-15 10:59:50,600  INFO BatchRegister:196 - 该商铺已进件=======新山城菜根香浆洗街
+2019-02-15 10:59:50,600  INFO BatchRegister:196 - 该商铺已进件=======新胜汽车装饰贴膜店
+2019-02-15 10:59:50,600  INFO BatchRegister:196 - 该商铺已进件=======新月尚雅华润店
+2019-02-15 10:59:50,601  INFO BatchRegister:196 - 该商铺已进件=======鑫城宝车汽车服务连
+2019-02-15 10:59:50,601  INFO BatchRegister:196 - 该商铺已进件=======鑫鑫汽车装饰
+2019-02-15 10:59:50,602  INFO BatchRegister:196 - 该商铺已进件=======鑫源汽车装饰
+2019-02-15 10:59:50,602  INFO BatchRegister:196 - 该商铺已进件=======幸运成都 火锅先生
+2019-02-15 10:59:50,602  INFO BatchRegister:196 - 该商铺已进件=======萱子饰品银泰城店
+2019-02-15 10:59:50,603  INFO BatchRegister:196 - 该商铺已进件=======一把骨高升桥直营店
+2019-02-15 10:59:50,603  INFO BatchRegister:196 - 该商铺已进件=======一汽“车之城”汽修
+2019-02-15 10:59:50,604  INFO BatchRegister:196 - 该商铺已进件=======依波表红牌楼广场店
+2019-02-15 10:59:50,605  INFO BatchRegister:196 - 该商铺已进件=======壹捷汽车江北盘溪店
+2019-02-15 10:59:50,605  INFO BatchRegister:196 - 该商铺已进件=======宜行宜停汽车生活馆
+2019-02-15 10:59:50,606  INFO BatchRegister:196 - 该商铺已进件=======义君美发
+2019-02-15 10:59:50,607  INFO BatchRegister:196 - 该商铺已进件=======意念造型水璟塘店
+2019-02-15 10:59:50,608  INFO BatchRegister:196 - 该商铺已进件=======英国TOTOTO
+2019-02-15 10:59:50,608  INFO BatchRegister:196 - 该商铺已进件=======优驰汽车快捷养护
+2019-02-15 10:59:50,609  INFO BatchRegister:196 - 该商铺已进件=======友乐汽车装饰
+2019-02-15 10:59:50,609  INFO BatchRegister:196 - 该商铺已进件=======鱼乐圈蒸汽石锅鱼
+2019-02-15 10:59:50,610  INFO BatchRegister:196 - 该商铺已进件=======宇杰车爵士汽车二
+2019-02-15 10:59:50,610  INFO BatchRegister:196 - 该商铺已进件=======御车汇万年店
+2019-02-15 10:59:50,610  INFO BatchRegister:196 - 该商铺已进件=======御匠HA
+2019-02-15 10:59:50,611  INFO BatchRegister:196 - 该商铺已进件=======跃驰汽修服务部
+2019-02-15 10:59:50,611  INFO BatchRegister:196 - 该商铺已进件=======珍卓钻石
+2019-02-15 10:59:50,612  INFO BatchRegister:196 - 该商铺已进件=======芝生堂鲜汤锅象南里
+2019-02-15 10:59:50,613  INFO BatchRegister:196 - 该商铺已进件=======钟水饺WHC店
+2019-02-15 10:59:50,614  INFO BatchRegister:196 - 该商铺已进件=======重庆创合汽车维修服
+2019-02-15 10:59:50,614  INFO BatchRegister:196 - 该商铺已进件=======重庆隆钦汽配汽修维
+2019-02-15 10:59:50,615  INFO BatchRegister:196 - 该商铺已进件=======走马西火锅
+2019-02-15 10:59:50,615  INFO BatchRegister:196 - 该商铺已进件=======尊尚柏丽美发SA
+2019-02-15 10:59:50,616  INFO BatchRegister:196 - 该商铺已进件=======左士造型IFS店
+2019-02-15 10:59:50,616  INFO BatchRegister:196 - 该商铺已进件=======佐冷馋·串串里
+2019-02-15 10:59:50,616  INFO BatchRegister:73 - 已经轮询到结尾=399
+2019-02-15 10:59:50,617  INFO BatchRegister:345 - 成功17个
+2019-02-15 10:59:50,651  INFO MyIntercept:34 - 访问[/test/batch]耗时=142924
+2019-02-15 11:52:55,699  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 11:52:56,006  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 12404 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 11:52:56,007  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 11:52:56,091  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ce82fb7: startup date [Fri Feb 15 11:52:56 CST 2019]; root of context hierarchy
+2019-02-15 11:52:56,853  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 11:52:57,129  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 11:52:57,232  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f173d3ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 11:52:57,576  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 11:52:57,711  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1622 ms
+2019-02-15 11:52:57,908  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 11:52:57,909  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 11:52:57,912  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 11:52:57,912  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 11:52:57,913  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 11:52:57,913  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 11:52:57,913  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 11:52:57,914  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 11:52:58,700  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 11:52:58,702  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 11:52:58,709  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 11:52:58,791  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 11:52:59,062  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ce82fb7: startup date [Fri Feb 15 11:52:56 CST 2019]; root of context hierarchy
+2019-02-15 11:52:59,109  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 11:52:59,111  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 11:52:59,111  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 11:52:59,111  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 11:52:59,112  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 11:52:59,112  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 11:52:59,113  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 11:52:59,113  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-15 11:52:59,117  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 11:52:59,117  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 11:52:59,130  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 11:52:59,145  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 11:52:59,146  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 11:52:59,220  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 11:52:59,545  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ce82fb7: startup date [Fri Feb 15 11:52:56 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 11:52:59,546  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 11:52:59,560  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 11:52:59,711  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 11:52:59,747  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 11:52:59,748  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 11:52:59,748  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 11:52:59,748  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 11:52:59,755  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 11:52:59,757  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 11:52:59,759  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 11:52:59,791  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 11:52:59,794  INFO MRApplication:59 - Started MRApplication in 4.33 seconds (JVM running for 5.161)

@@ -1,0 +1,908 @@
+2019-02-15 13:51:42,678  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 13:51:42,967  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 14628 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:51:42,968  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:51:43,057  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c9c0a0e: startup date [Fri Feb 15 13:51:43 CST 2019]; root of context hierarchy
+2019-02-15 13:51:44,182  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:51:44,461  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:51:44,607  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4438cd06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:51:45,007  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:51:45,134  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2080 ms
+2019-02-15 13:51:45,312  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:51:45,313  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:51:45,316  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:51:45,317  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:51:45,317  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:51:45,317  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:51:45,317  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:51:45,318  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:51:45,982  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:51:45,984  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:51:45,990  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:51:46,077  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:51:46,368  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c9c0a0e: startup date [Fri Feb 15 13:51:43 CST 2019]; root of context hierarchy
+2019-02-15 13:51:46,417  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:51:46,420  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:51:46,420  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:51:46,421  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:51:46,422  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:51:46,422  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:51:46,422  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:51:46,423  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:51:46,425  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:51:46,426  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:51:46,438  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:51:46,454  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:51:46,454  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:51:46,519  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:51:46,836  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c9c0a0e: startup date [Fri Feb 15 13:51:43 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:51:46,837  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:51:46,850  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:51:47,000  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:51:47,037  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:51:47,038  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:51:47,038  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:51:47,038  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:51:47,045  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:51:47,048  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:51:47,049  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:51:47,084  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:51:47,087  INFO MRApplication:59 - Started MRApplication in 4.605 seconds (JVM running for 5.422)
+2019-02-15 13:52:02,049  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 13:52:02,071  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2019-02-15 13:52:02,354  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 13:52:02,463  INFO BatchRegister:140 - 该商铺已进件=======-SODA HOU
+2019-02-15 13:52:02,464  INFO BatchRegister:140 - 该商铺已进件=======3CO
+2019-02-15 13:52:02,654  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 13:52:02,848  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 13:52:03,036  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 13:52:03,456  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"PORr3a8PSUhLLIg1GMIq8qjfTHS2O+OXQj7ekD37DRbtfTXvS8lufwh5iWBc tMtlmP6Nv86/CItog5o6O4DcNUrUdLiVM4qQaycI5K41VX/XNjK31PX0vwca CpxEst5cPNVHJgQQPsP4FfcuM1MFC/f+cxGjsjjRvBDgVVOI3Eo=","remark":"7天连锁酒店（成都望江楼万达广场）","type":"1","buslicpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","certno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"18784508142","province":"510000","cardarea":"510184","certtype":"1","legelname":"周婷","legbackpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","email":"17790128101@163.com","branchno":"103651086780","area":"510121","address":"政通路（社区服务中心）","legfrontpic":"/uploads/9c/f2b655f22936381dd935acd0dd45a6.jpg","ecardno":"Du91QHgJLpUGhJWmTLGqT3TeTwZUl3py","cardno":"oRk6GfF35b7kcIl+cYoh/AHqRREuQR9y","cardprovince":"510000","payname":"xoGILLetPo8=","legelcertno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","handpic":"/uploads/43/07865aeb11c985e1522d7f27fd2e3f.jpg","cardcity":"510100","phone":"17790128101","doorpic":"/uploads/17/22007eb8229da3de22fabfd82e0191.png","name":"7天连锁酒店","bankno":"1030000"}
+2019-02-15 13:52:03,814  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 13:52:03,814  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}
+2019-02-15 13:52:03,815  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:52:03,815 ERROR MerchantServiceImpl:184 - 商户进件失败，返回结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:52:03,816  INFO BatchRegister:197 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:52:11,818  INFO BatchRegister:214 - 成功1个
+2019-02-15 13:52:11,895  INFO MyIntercept:34 - 访问[/test/batch]耗时=9806
+2019-02-15 13:53:02,614  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c9c0a0e: startup date [Fri Feb 15 13:51:43 CST 2019]; root of context hierarchy
+2019-02-15 13:53:02,618  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2019-02-15 13:53:02,618  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2019-02-15 13:53:02,619  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'asyncServiceExecutor'
+2019-02-15 13:53:02,639  INFO DruidDataSource:1825 - {dataSource-1} closed
+2019-02-15 13:53:03,344  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 14628 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:53:03,344  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:53:03,350  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@558c63d8: startup date [Fri Feb 15 13:53:03 CST 2019]; root of context hierarchy
+2019-02-15 13:53:03,839  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:53:03,966  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:53:03,985  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4438cd06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:53:04,106  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:53:04,137  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 787 ms
+2019-02-15 13:53:04,224  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:53:04,225  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:53:04,226  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:53:04,226  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:53:04,226  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:53:04,226  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:53:04,227  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:53:04,227  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:53:04,528  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController' defined in file [D:\merchant-register\target\classes\com\merchant\controller\TestController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.merchant.controller.TestController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42eec204]
+2019-02-15 13:53:04,540  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-15 13:53:04,547 ERROR SpringApplication:842 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testController' defined in file [D:\merchant-register\target\classes\com\merchant\controller\TestController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.merchant.controller.TestController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42eec204]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:558)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:503)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.merchant.MRApplication.main(MRApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.merchant.controller.TestController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@42eec204]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:758)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:690)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:355)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:339)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1022)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 20 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/merchant/util/BatchRegister;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:753)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: com.merchant.util.BatchRegister
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:148)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 more
+2019-02-15 13:53:06,272  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 14628 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:53:06,272  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:53:06,318  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@747e4071: startup date [Fri Feb 15 13:53:06 CST 2019]; root of context hierarchy
+2019-02-15 13:53:06,791  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:53:06,856  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:53:06,868  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4438cd06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:53:06,982  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:53:07,079  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 761 ms
+2019-02-15 13:53:07,188  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:53:07,188  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:53:07,188  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:53:07,189  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:53:07,191  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:53:07,191  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:53:07,191  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:53:07,191  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:53:07,440  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:53:07,440  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:53:07,441  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:53:07,474  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:53:07,560  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@747e4071: startup date [Fri Feb 15 13:53:06 CST 2019]; root of context hierarchy
+2019-02-15 13:53:07,570  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:53:07,570  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:53:07,571  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:53:07,571  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:53:07,574  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:53:07,574  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:53:07,575  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:53:07,575  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:53:07,577  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:53:07,577  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:53:07,587  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:53:07,594  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:53:07,594  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:53:07,621  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:53:07,681  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@747e4071: startup date [Fri Feb 15 13:53:06 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:53:07,681  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:53:07,684  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:53:07,736  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:53:07,762  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:53:07,762  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:53:07,762  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:53:07,763  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:53:07,765  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:53:07,766  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:53:07,767  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:53:07,774  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:53:07,775  INFO MRApplication:59 - Started MRApplication in 1.559 seconds (JVM running for 86.11)
+2019-02-15 13:53:07,777  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2019-02-15 13:53:10,859  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 13:53:10,866  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2019-02-15 13:53:10,940  INFO DruidDataSource:930 - {dataSource-2} inited
+2019-02-15 13:53:10,954  INFO BatchRegister:144 - 该商铺已进件=======-SODA HOU
+2019-02-15 13:53:10,955  INFO BatchRegister:144 - 该商铺已进件=======3CO
+2019-02-15 13:53:11,193  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 13:53:11,286  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 13:53:11,459  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 13:53:11,781  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"PoJcN2uvIX5co+zWJzZx1hEDExzUNHETMjMYRLeeUP1rgtuxR8Zwek5/N4R/ rGAnvURziCK6Ajwcuq9pXSVxPs5iFEntAuitO2MpmqjWB7vtkMNo+3zgcKzW Lw1WYo5BDwymPu93J+qjsaJwzJw1EfHuZ9ALXwcPX5hmV8gT5UY=","remark":"7天连锁酒店（成都望江楼万达广场）","type":"1","buslicpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","certno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"18784508142","province":"510000","cardarea":"510184","certtype":"1","legelname":"周婷","legbackpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","email":"17790128101@163.com","branchno":"103651086780","area":"510115","address":"天回镇明月路","legfrontpic":"/uploads/9c/f2b655f22936381dd935acd0dd45a6.jpg","ecardno":"Du91QHgJLpUGhJWmTLGqT3TeTwZUl3py","cardno":"oRk6GfF35b7kcIl+cYoh/AHqRREuQR9y","cardprovince":"510000","payname":"xoGILLetPo8=","legelcertno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","handpic":"/uploads/43/07865aeb11c985e1522d7f27fd2e3f.jpg","cardcity":"510100","phone":"17790128101","doorpic":"/uploads/17/22007eb8229da3de22fabfd82e0191.png","name":"7天连锁酒店","bankno":"1030000"}
+2019-02-15 13:53:12,138  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 13:53:12,138  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}
+2019-02-15 13:53:12,138  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:53:12,138 ERROR MerchantServiceImpl:184 - 商户进件失败，返回结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:53:12,139  INFO BatchRegister:201 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:53:20,140  INFO BatchRegister:218 - 成功1个
+2019-02-15 13:53:20,145  INFO MyIntercept:34 - 访问[/test/batch]耗时=9277
+2019-02-15 13:53:48,033  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 13:53:48,731  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 296 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:53:48,731  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:53:48,831  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1395f9d0: startup date [Fri Feb 15 13:53:48 CST 2019]; root of context hierarchy
+2019-02-15 13:53:50,193  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:53:50,699  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:53:50,983  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3d9546c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:53:51,838  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:53:52,016  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 3187 ms
+2019-02-15 13:53:52,266  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:53:52,268  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:53:52,271  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:53:52,272  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:53:52,272  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:53:52,273  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:53:52,273  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:53:52,279  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:53:53,280  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:53:53,282  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:53:53,290  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:53:53,460  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:53:53,851  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1395f9d0: startup date [Fri Feb 15 13:53:48 CST 2019]; root of context hierarchy
+2019-02-15 13:53:53,913  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:53:53,915  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:53:53,915  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:53:53,916  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:53:53,917  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:53:53,918  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:53:53,918  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:53:53,919  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:53:53,921  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:53:53,922  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:53:53,936  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:53:53,957  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:53:53,957  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:53:54,030  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:53:54,387  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1395f9d0: startup date [Fri Feb 15 13:53:48 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:53:54,388  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:53:54,403  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:53:54,567  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:53:54,611  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:53:54,612  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:53:54,612  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:53:54,612  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:53:54,617  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:53:54,619  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:53:54,620  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:53:54,654  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:53:54,659  INFO MRApplication:59 - Started MRApplication in 6.869 seconds (JVM running for 8.465)
+2019-02-15 13:54:03,550  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 13:54:03,576  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-02-15 13:54:03,853  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 13:54:03,957  INFO BatchRegister:144 - 该商铺已进件=======-SODA HOU
+2019-02-15 13:54:03,959  INFO BatchRegister:144 - 该商铺已进件=======3CO
+2019-02-15 13:54:04,237  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 13:54:04,357  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 13:54:04,536  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 13:54:05,028  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"fPyagE+ALk8N8VRyq4wnxOY7ftyZa91QQVk+ifLNNZRBMkiMBpyGOXBH2cv3 kK0EQCBgJBYgWIg7EVAPGyXMYIh8x9uPK6Lt1EU1GoEVgfJ++XKYaj8Dep3f ClOcjIQuUozlWp92qiU5BdOZSaeT4N/O4nnZicsYuKBREFmofRQ=","remark":"7天连锁酒店（成都望江楼万达广场）","type":"1","buslicpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","certno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"18784508142","province":"510000","cardarea":"510184","certtype":"1","legelname":"周婷","legbackpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","email":"17790128101@163.com","branchno":"103651086780","area":"510182","address":"横小南街7号","legfrontpic":"/uploads/9c/f2b655f22936381dd935acd0dd45a6.jpg","ecardno":"Du91QHgJLpUGhJWmTLGqT3TeTwZUl3py","cardno":"oRk6GfF35b7kcIl+cYoh/AHqRREuQR9y","cardprovince":"510000","payname":"xoGILLetPo8=","legelcertno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","handpic":"/uploads/43/07865aeb11c985e1522d7f27fd2e3f.jpg","cardcity":"510100","phone":"17790128101","doorpic":"/uploads/17/22007eb8229da3de22fabfd82e0191.png","name":"7天连锁酒店","bankno":"1030000"}
+2019-02-15 13:54:05,374  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 13:54:05,375  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}
+2019-02-15 13:54:05,378  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:54:05,380 ERROR MerchantServiceImpl:184 - 商户进件失败，返回结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:54:05,381  INFO BatchRegister:201 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:54:13,382  INFO BatchRegister:218 - 成功1个
+2019-02-15 13:54:13,473  INFO MyIntercept:34 - 访问[/test/batch]耗时=9880
+2019-02-15 13:54:30,429  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 13:54:30,597  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 14760 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:54:30,598  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:54:30,671  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@691565e2: startup date [Fri Feb 15 13:54:30 CST 2019]; root of context hierarchy
+2019-02-15 13:54:31,634  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:54:31,986  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:54:32,129  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7eac824] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:54:32,546  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:54:32,713  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2045 ms
+2019-02-15 13:54:33,041  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:54:33,042  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:54:33,045  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:54:33,045  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:54:33,045  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:54:33,046  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:54:33,046  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:54:33,047  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:54:33,911  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:54:33,913  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:54:33,921  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:54:34,040  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:54:34,407  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@691565e2: startup date [Fri Feb 15 13:54:30 CST 2019]; root of context hierarchy
+2019-02-15 13:54:34,471  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:54:34,475  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:54:34,475  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:54:34,475  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:54:34,476  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:54:34,476  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:54:34,477  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:54:34,478  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:54:34,480  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:54:34,480  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:54:34,495  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:54:34,520  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:54:34,521  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:54:34,636  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:54:35,063  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@691565e2: startup date [Fri Feb 15 13:54:30 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:54:35,064  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:54:35,082  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:54:35,333  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:54:35,376  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:54:35,377  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:54:35,377  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:54:35,377  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:54:35,384  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:54:35,386  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:54:35,386  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:54:35,423  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:54:35,428  INFO MRApplication:59 - Started MRApplication in 5.117 seconds (JVM running for 6.564)
+2019-02-15 13:54:42,312  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 13:54:42,337  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-02-15 13:54:42,670  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 13:54:58,281  INFO BatchRegister:144 - 该商铺已进件=======-SODA HOU
+2019-02-15 13:54:58,283  INFO BatchRegister:144 - 该商铺已进件=======3CO
+2019-02-15 13:54:58,775  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 13:54:58,892  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 13:54:59,075  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 13:55:00,951  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"NuJpMD8VzpkOdivYjEnqdTpYyncmSRECywn0qahTKXWNvBcKWibzBtTIHtKA rA/Cz7Lp5Kdv0I93HWqRoKQNJYM15Xp33fdXkpIUFtxE8Ovm88F+o90lviPV Klsv6Kmx/v73aBYBXl4lAKK5y7epEgz1k82XyTaUmvAiVE5+ftw=","remark":"7天连锁酒店（成都望江楼万达广场）","type":"1","buslicpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","certno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"18784508142","province":"510000","cardarea":"510184","certtype":"1","legelname":"周婷","legbackpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","email":"17790128101@163.com","branchno":"103651086780","area":"510108","address":"滨江中路14号","legfrontpic":"/uploads/9c/f2b655f22936381dd935acd0dd45a6.jpg","ecardno":"Du91QHgJLpUGhJWmTLGqT3TeTwZUl3py","cardno":"oRk6GfF35b7kcIl+cYoh/AHqRREuQR9y","cardprovince":"510000","payname":"xoGILLetPo8=","legelcertno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","handpic":"/uploads/43/07865aeb11c985e1522d7f27fd2e3f.jpg","cardcity":"510100","phone":"17790128101","doorpic":"/uploads/17/22007eb8229da3de22fabfd82e0191.png","name":"7天连锁酒店","bankno":"1030000"}
+2019-02-15 13:55:01,322  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 13:55:01,325  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}
+2019-02-15 13:55:01,329  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:55:01,333 ERROR MerchantServiceImpl:184 - 商户进件失败，返回结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:55:01,336  INFO BatchRegister:201 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:55:17,279  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 13:55:17,497  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 3868 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:55:17,498  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:55:17,581  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c5869d4: startup date [Fri Feb 15 13:55:17 CST 2019]; root of context hierarchy
+2019-02-15 13:55:18,569  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:55:18,931  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:55:19,068  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee2a3775] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:55:19,484  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:55:19,628  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2049 ms
+2019-02-15 13:55:19,871  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:55:19,872  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:55:19,876  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:55:19,876  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:55:19,876  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:55:19,877  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:55:19,877  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:55:19,878  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:55:20,662  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:55:20,665  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:55:20,674  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:55:20,806  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:55:21,162  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c5869d4: startup date [Fri Feb 15 13:55:17 CST 2019]; root of context hierarchy
+2019-02-15 13:55:21,223  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:55:21,225  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:55:21,226  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:55:21,226  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:55:21,227  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:55:21,227  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:55:21,228  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:55:21,228  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:55:21,231  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:55:21,231  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:55:21,253  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:55:21,295  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:55:21,295  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:55:21,486  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:55:21,940  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c5869d4: startup date [Fri Feb 15 13:55:17 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:55:21,941  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:55:21,959  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:55:22,169  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:55:22,210  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:55:22,211  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:55:22,211  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:55:22,211  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:55:22,217  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:55:22,219  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:55:22,221  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:55:22,258  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:55:22,262  INFO MRApplication:59 - Started MRApplication in 5.171 seconds (JVM running for 6.278)
+2019-02-15 13:55:25,717  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 13:55:25,746  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2019-02-15 13:55:26,088  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 13:55:26,236  INFO BatchRegister:144 - 该商铺已进件=======-SODA HOU
+2019-02-15 13:55:26,236  INFO BatchRegister:144 - 该商铺已进件=======3CO
+2019-02-15 13:55:26,530  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 13:55:26,634  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 13:55:26,818  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 13:55:27,257  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"hQvOTKILsUUO/J7+9V0bSXoNFzluiH2zDfEEfgflkU3EZlDmo0F/tfxY91wK sKk+iuYYY5L5TLSqD7eHGw+T9wOUIPR77Us6R+aWYwx7hVpUTkfFw1VerD+b EzETCq4omQ40yd6krquPLPrudGwkubpUfGiOnKMKMCE8ywpK1TU=","remark":"7天连锁酒店（成都望江楼万达广场）","type":"1","buslicpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","certno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"18784508142","province":"510000","cardarea":"510184","certtype":"1","legelname":"周婷","legbackpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","email":"17790128101@163.com","branchno":"103651086780","area":"510115","address":"三圣街58号608室","legfrontpic":"/uploads/9c/f2b655f22936381dd935acd0dd45a6.jpg","ecardno":"Du91QHgJLpUGhJWmTLGqT3TeTwZUl3py","cardno":"oRk6GfF35b7kcIl+cYoh/AHqRREuQR9y","cardprovince":"510000","payname":"xoGILLetPo8=","legelcertno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","handpic":"/uploads/43/07865aeb11c985e1522d7f27fd2e3f.jpg","cardcity":"510100","phone":"17790128101","doorpic":"/uploads/17/22007eb8229da3de22fabfd82e0191.png","name":"7天连锁酒店","bankno":"1030000"}
+2019-02-15 13:55:27,594  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 13:55:27,594  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}
+2019-02-15 13:55:27,594  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:55:27,595 ERROR MerchantServiceImpl:184 - 商户进件失败，返回结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:55:27,595  INFO BatchRegister:201 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":0,"msg":"已有商户使用该商户名称，请您更换商户名称后重新提交","data":[],"sign":"idoIyJKEo6MzuJUI+1CIEmRYD1Z4NxUijHXsfT8whyCtrG0bUmpQ7i1sCcoJ\/Zz15rt3L3Ylntc6mtYcK5xewReh4QSwqDTVDVZ8T3h5yQMsteK5DrhjKxAJRWlW46surbjTLHM2SOSTY2bZgFk8LAIr2eEcB6t5XG6VfMdeBA0="}, timestamp=0}
+2019-02-15 13:55:35,595  INFO BatchRegister:218 - 成功1个
+2019-02-15 13:55:35,679  INFO MyIntercept:34 - 访问[/test/batch]耗时=9911
+2019-02-15 13:56:09,659  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c5869d4: startup date [Fri Feb 15 13:55:17 CST 2019]; root of context hierarchy
+2019-02-15 13:56:09,667  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2019-02-15 13:56:09,668  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2019-02-15 13:56:09,671  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'asyncServiceExecutor'
+2019-02-15 13:56:09,796  INFO DruidDataSource:1825 - {dataSource-1} closed
+2019-02-15 13:56:10,278  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 3868 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:56:10,279  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:56:10,283  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f96aab1: startup date [Fri Feb 15 13:56:10 CST 2019]; root of context hierarchy
+2019-02-15 13:56:10,809  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:56:10,898  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:56:10,914  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee2a3775] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:56:11,044  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:56:11,104  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 821 ms
+2019-02-15 13:56:11,198  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:56:11,198  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:56:11,199  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:56:11,200  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:56:11,200  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:56:11,200  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:56:11,200  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:56:11,201  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:56:11,577  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:56:11,580  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:56:11,582  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:56:11,637  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:56:11,738  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f96aab1: startup date [Fri Feb 15 13:56:10 CST 2019]; root of context hierarchy
+2019-02-15 13:56:11,750  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:56:11,750  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:56:11,750  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:56:11,751  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:56:11,754  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:56:11,755  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:56:11,755  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:56:11,755  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:56:11,757  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:56:11,757  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:56:11,766  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:56:11,772  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:56:11,772  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:56:11,800  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:56:11,868  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f96aab1: startup date [Fri Feb 15 13:56:10 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:56:11,868  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:56:11,872  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:56:11,931  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:56:11,959  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:56:11,959  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:56:11,960  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:56:11,960  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:56:11,965  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:56:11,966  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:56:11,966  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:56:11,976  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:56:11,977  INFO MRApplication:59 - Started MRApplication in 1.741 seconds (JVM running for 55.992)
+2019-02-15 13:56:11,980  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2019-02-15 13:56:23,099  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f96aab1: startup date [Fri Feb 15 13:56:10 CST 2019]; root of context hierarchy
+2019-02-15 13:56:23,103  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2019-02-15 13:56:23,103  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2019-02-15 13:56:23,103  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'asyncServiceExecutor'
+2019-02-15 13:56:23,904  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 3868 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:56:23,906  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:56:23,910  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@240f736b: startup date [Fri Feb 15 13:56:23 CST 2019]; root of context hierarchy
+2019-02-15 13:56:24,560  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:56:24,645  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:56:24,660  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee2a3775] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:56:24,792  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:56:24,822  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 912 ms
+2019-02-15 13:56:24,863  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:56:24,863  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:56:24,863  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:56:24,864  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:56:24,864  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:56:24,864  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:56:24,864  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:56:24,864  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:56:25,026  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'batchRegister'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.merchant.util.BatchRegister' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-02-15 13:56:25,035  INFO ConditionEvaluationReportLoggingListener:101 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-02-15 13:56:25,299 ERROR LoggingFailureAnalysisReporter:42 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field batchRegister in com.merchant.controller.TestController required a bean of type 'com.merchant.util.BatchRegister' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.merchant.util.BatchRegister' in your configuration.
+
+2019-02-15 13:56:32,537  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 13:56:32,709  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 3000 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:56:32,709  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:56:32,781  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cdc6674: startup date [Fri Feb 15 13:56:32 CST 2019]; root of context hierarchy
+2019-02-15 13:56:33,629  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:56:33,902  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:56:34,008  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f35112de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:56:34,348  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:56:34,482  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1705 ms
+2019-02-15 13:56:34,671  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:56:34,672  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:56:34,676  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:56:34,676  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:56:34,677  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:56:34,677  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:56:34,677  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:56:34,678  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:56:35,366  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:56:35,368  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:56:35,374  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:56:35,460  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:56:35,746  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cdc6674: startup date [Fri Feb 15 13:56:32 CST 2019]; root of context hierarchy
+2019-02-15 13:56:35,793  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:56:35,795  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:56:35,795  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:56:35,795  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:56:35,796  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:56:35,797  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:56:35,797  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:56:35,798  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:56:35,800  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:56:35,801  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:56:35,812  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:56:35,828  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:56:35,829  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:56:35,896  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:56:36,214  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cdc6674: startup date [Fri Feb 15 13:56:32 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:56:36,215  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:56:36,229  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:56:36,388  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:56:36,446  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:56:36,447  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:56:36,448  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:56:36,448  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:56:36,458  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:56:36,461  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:56:36,462  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:56:36,506  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:56:36,511  INFO MRApplication:59 - Started MRApplication in 4.115 seconds (JVM running for 4.871)
+2019-02-15 13:56:39,950  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 13:56:39,970  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-02-15 13:56:40,256  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 13:56:40,371  INFO BatchRegister:143 - 该商铺已进件=======-SODA HOU
+2019-02-15 13:56:40,371  INFO BatchRegister:143 - 该商铺已进件=======3CO
+2019-02-15 13:56:40,577  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 13:56:40,771  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 13:56:40,885  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 13:56:41,369  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"eY7XIDa182O53icMQP3fc8DEYRnbVm4F4xSALblIiFl/s6wcdV5nbQmUEbhq D6xVZ1pmWscKzBnq6c04aQB0y1nFP2aeXBTss2+Q7v59TI9WD5RGJhkFGleT GhDRxoeCjiF8mmpywGl/G+ofLKrlULKQoCvcDaj/9Ir1Lvm1Wjc=","remark":"7天连锁酒店（成都望江楼万达广场）","type":"1","buslicpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","certno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"18784508142","province":"510000","cardarea":"510184","certtype":"1","legelname":"周婷","legbackpic":"/uploads/fb/63f0acfb993361adb695bfc4a9eece.jpg","email":"17790128101@163.com","branchno":"103651086780","area":"510131","address":"政通路（社区服务中心）","legfrontpic":"/uploads/9c/f2b655f22936381dd935acd0dd45a6.jpg","ecardno":"Du91QHgJLpUGhJWmTLGqT3TeTwZUl3py","cardno":"oRk6GfF35b7kcIl+cYoh/AHqRREuQR9y","cardprovince":"510000","payname":"xoGILLetPo8=","legelcertno":"MzycvDKxwy2C6g5ZlShm0S+l08Bpo8/U","handpic":"/uploads/43/07865aeb11c985e1522d7f27fd2e3f.jpg","cardcity":"510100","phone":"17790128101","doorpic":"/uploads/17/22007eb8229da3de22fabfd82e0191.png","name":"7天连锁酒店二","bankno":"1030000"}
+2019-02-15 13:56:42,433  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 13:56:42,433  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000519","phone":"17790128101"},"sign":"WJcxbeEdR\/nRIG6aE6IURalMyeSj6O5LzA7iqB\/PfKc7q47ugKgqv5bnxusLOg7ZPfK1oERp61hFBx16fQlzLPkUDFMLff6mOiPQ\/QpXO39GPvfsOdCN1atGDkPL1Fjf53X1g0\/KKMxGi7WluGxHoF3wgFhGnkbfSUlazhKNPYw="}
+2019-02-15 13:56:42,434  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000519","phone":"17790128101"},"sign":"WJcxbeEdR\/nRIG6aE6IURalMyeSj6O5LzA7iqB\/PfKc7q47ugKgqv5bnxusLOg7ZPfK1oERp61hFBx16fQlzLPkUDFMLff6mOiPQ\/QpXO39GPvfsOdCN1atGDkPL1Fjf53X1g0\/KKMxGi7WluGxHoF3wgFhGnkbfSUlazhKNPYw="}, timestamp=0}
+2019-02-15 13:56:42,486  INFO BatchRegister:200 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000519","phone":"17790128101"},"sign":"WJcxbeEdR\/nRIG6aE6IURalMyeSj6O5LzA7iqB\/PfKc7q47ugKgqv5bnxusLOg7ZPfK1oERp61hFBx16fQlzLPkUDFMLff6mOiPQ\/QpXO39GPvfsOdCN1atGDkPL1Fjf53X1g0\/KKMxGi7WluGxHoF3wgFhGnkbfSUlazhKNPYw="}, timestamp=0}
+2019-02-15 13:56:50,488  INFO BatchRegister:217 - 成功1个
+2019-02-15 13:56:50,575  INFO MyIntercept:34 - 访问[/test/batch]耗时=10588
+2019-02-15 13:58:56,297  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 13:58:56,564  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 8008 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 13:58:56,565  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 13:58:56,637  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f6aa015: startup date [Fri Feb 15 13:58:56 CST 2019]; root of context hierarchy
+2019-02-15 13:58:57,667  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 13:58:57,949  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 13:58:58,056  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1bc3ac5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 13:58:58,407  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 13:58:58,540  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1905 ms
+2019-02-15 13:58:58,716  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 13:58:58,717  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 13:58:58,720  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 13:58:58,720  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 13:58:58,721  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 13:58:58,721  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 13:58:58,721  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 13:58:58,722  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 13:58:59,406  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 13:58:59,408  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 13:58:59,414  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 13:58:59,503  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:58:59,791  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f6aa015: startup date [Fri Feb 15 13:58:56 CST 2019]; root of context hierarchy
+2019-02-15 13:58:59,837  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 13:58:59,839  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 13:58:59,840  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 13:58:59,840  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 13:58:59,841  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 13:58:59,841  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 13:58:59,841  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 13:58:59,842  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 13:58:59,844  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 13:58:59,845  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 13:58:59,856  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 13:58:59,872  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:58:59,872  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 13:58:59,939  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 13:59:00,264  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f6aa015: startup date [Fri Feb 15 13:58:56 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 13:59:00,264  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 13:59:00,278  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 13:59:00,433  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 13:59:00,469  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 13:59:00,470  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 13:59:00,471  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 13:59:00,471  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 13:59:00,481  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 13:59:00,483  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 13:59:00,484  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 13:59:00,520  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 13:59:00,523  INFO MRApplication:59 - Started MRApplication in 4.372 seconds (JVM running for 5.157)
+2019-02-15 13:59:17,168  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 13:59:17,188  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-02-15 13:59:17,470  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 13:59:17,587  INFO BatchRegister:143 - 该商铺已进件=======-SODA HOU
+2019-02-15 13:59:17,587  INFO BatchRegister:143 - 该商铺已进件=======3CO
+2019-02-15 13:59:17,588  INFO BatchRegister:143 - 该商铺已进件=======7天连锁酒店二
+2019-02-15 13:59:17,588  INFO BatchRegister:143 - 该商铺已进件=======AJ丨ARMANI
+2019-02-15 13:59:17,588  INFO BatchRegister:143 - 该商铺已进件=======AN(万象城店)
+2019-02-15 13:59:17,588  INFO BatchRegister:143 - 该商铺已进件=======Anruz安润适
+2019-02-15 13:59:17,588  INFO BatchRegister:143 - 该商铺已进件=======ARMANIEXC
+2019-02-15 13:59:17,589  INFO BatchRegister:143 - 该商铺已进件=======AR重庆时代广场
+2019-02-15 13:59:17,589  INFO BatchRegister:143 - 该商铺已进件=======AU(大融城店)
+2019-02-15 13:59:17,589  INFO BatchRegister:143 - 该商铺已进件=======AUPRES
+2019-02-15 13:59:17,589  INFO BatchRegister:143 - 该商铺已进件=======AX(爱融荟城店)
+2019-02-15 13:59:17,589  INFO BatchRegister:143 - 该商铺已进件=======BA(万象城店)
+2019-02-15 13:59:17,590  INFO BatchRegister:143 - 该商铺已进件=======BE贝拉维塔春熙路
+2019-02-15 13:59:17,590  INFO BatchRegister:143 - 该商铺已进件=======berluti
+2019-02-15 13:59:17,591  INFO BatchRegister:143 - 该商铺已进件=======Bestie柏诗特
+2019-02-15 13:59:17,592  INFO BatchRegister:143 - 该商铺已进件=======binger宾格试
+2019-02-15 13:59:17,593  INFO BatchRegister:143 - 该商铺已进件=======BO
+2019-02-15 13:59:17,593  INFO BatchRegister:143 - 该商铺已进件=======Bottega V
+2019-02-15 13:59:17,593  INFO BatchRegister:143 - 该商铺已进件=======BU(王府井百货)
+2019-02-15 13:59:17,593  INFO BatchRegister:143 - 该商铺已进件=======BU(百盛店)
+2019-02-15 13:59:17,593  INFO BatchRegister:143 - 该商铺已进件=======BVLGARI
+2019-02-15 13:59:17,594  INFO BatchRegister:143 - 该商铺已进件=======C.CLIO
+2019-02-15 13:59:17,594  INFO BatchRegister:143 - 该商铺已进件=======CARRY
+2019-02-15 13:59:17,594  INFO BatchRegister:143 - 该商铺已进件=======CA(万象城店)
+2019-02-15 13:59:17,594  INFO BatchRegister:143 - 该商铺已进件=======CA(新光天地店)
+2019-02-15 13:59:17,595  INFO BatchRegister:143 - 该商铺已进件=======CH(太平洋店)
+2019-02-15 13:59:17,595  INFO BatchRegister:143 - 该商铺已进件=======CH(远东百货店)
+2019-02-15 13:59:17,596  INFO BatchRegister:143 - 该商铺已进件=======CH世纪(新都店)
+2019-02-15 13:59:17,596  INFO BatchRegister:143 - 该商铺已进件=======CiCi家美甲美睫
+2019-02-15 13:59:17,596  INFO BatchRegister:143 - 该商铺已进件=======CiCi家美甲美睫
+2019-02-15 13:59:17,597  INFO BatchRegister:143 - 该商铺已进件=======CI五月花商业广场
+2019-02-15 13:59:17,597  INFO BatchRegister:143 - 该商铺已进件=======CI金港国际购物
+2019-02-15 13:59:17,597  INFO BatchRegister:143 - 该商铺已进件=======CL(凯瑞商都店)
+2019-02-15 13:59:17,597  INFO BatchRegister:143 - 该商铺已进件=======CL(新世纪店)
+2019-02-15 13:59:17,597  INFO BatchRegister:143 - 该商铺已进件=======color森林美甲
+2019-02-15 13:59:17,597  INFO BatchRegister:143 - 该商铺已进件=======DHC(新世界店)
+2019-02-15 13:59:17,598  INFO BatchRegister:143 - 该商铺已进件=======DI(DI国金)
+2019-02-15 13:59:17,598  INFO BatchRegister:143 - 该商铺已进件=======DI(新光天地店)
+2019-02-15 13:59:17,598  INFO BatchRegister:143 - 该商铺已进件=======dw专卖店
+2019-02-15 13:59:17,598  INFO BatchRegister:143 - 该商铺已进件=======ELSA I 德国
+2019-02-15 13:59:17,598  INFO BatchRegister:143 - 该商铺已进件=======Emma's美甲美
+2019-02-15 13:59:17,599  INFO BatchRegister:143 - 该商铺已进件=======ER+ER
+2019-02-15 13:59:17,599  INFO BatchRegister:143 - 该商铺已进件=======ES重庆世纪新都
+2019-02-15 13:59:17,599  INFO BatchRegister:143 - 该商铺已进件=======esteelaud
+2019-02-15 13:59:17,599  INFO BatchRegister:143 - 该商铺已进件=======ET
+2019-02-15 13:59:17,599  INFO BatchRegister:143 - 该商铺已进件=======EU(中天购物城)
+2019-02-15 13:59:17,599  INFO BatchRegister:143 - 该商铺已进件=======E奢汇二手奢侈品
+2019-02-15 13:59:17,600  INFO BatchRegister:143 - 该商铺已进件=======FEFE3航站楼一
+2019-02-15 13:59:17,600  INFO BatchRegister:143 - 该商铺已进件=======FE(FE国金)
+2019-02-15 13:59:17,600  INFO BatchRegister:143 - 该商铺已进件=======ForYou玲·日
+2019-02-15 13:59:17,600  INFO BatchRegister:143 - 该商铺已进件=======FR
+2019-02-15 13:59:17,600  INFO BatchRegister:143 - 该商铺已进件=======FR(龙湖北城店)
+2019-02-15 13:59:17,601  INFO BatchRegister:143 - 该商铺已进件=======FR
+2019-02-15 13:59:17,601  INFO BatchRegister:143 - 该商铺已进件=======GI
+2019-02-15 13:59:17,601  INFO BatchRegister:143 - 该商铺已进件=======GI(新光天地店)
+2019-02-15 13:59:17,601  INFO BatchRegister:143 - 该商铺已进件=======GIVENCHY
+2019-02-15 13:59:17,601  INFO BatchRegister:143 - 该商铺已进件=======GR(保利店)
+2019-02-15 13:59:17,888  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 13:59:17,995  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 13:59:18,178  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 13:59:18,683  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"PaJ+qRzU+h8Zws78t9FYHOWrRVn7B/gomRih0sqCvUpIwoe1Z32CHMgbnh/2 WdezjBgljKSTsWxx/ABlcQ8BYP4fLtWhsBhR0/SrUGZBJ5yC8K2p8bNT7Tng FgEpeCDmfHyLKqr7VuvLYhA8cHM/l3NNTuIXJ6vQqRVX6RpXkW4=","remark":"GrandMix Nail Salon(天府三街店)","type":"1","buslicpic":"/uploads/7d/cb002c7ecfdb15aff949b9fc87317b.jpg","certno":"Epzt1y+gIuLhuyd/eqsK7z9KHHdeVhVw","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"17348081850","province":"510000","cardarea":"510107","certtype":"1","legelname":"余家燕","legbackpic":"/uploads/7d/cb002c7ecfdb15aff949b9fc87317b.jpg","email":"17790128111@163.com","branchno":"303651000206","area":"510132","address":"二环路南四段77号","legfrontpic":"/uploads/db/f4b6b5c5324d4b826d14c36a5caf83.jpg","ecardno":"Du91QHgJLpXyUSRLfqTuOYJAQaSD11zA","cardno":"6naAYAaP/Xwdd3CbWAcl/lf2uYeVZTTd","cardprovince":"510000","payname":"usZh1nvtOERjF1T5xVbS1g==","legelcertno":"Epzt1y+gIuLhuyd/eqsK7z9KHHdeVhVw","handpic":"/uploads/78/79109b76123b904227ae34501d88c7.jpg","cardcity":"510100","phone":"17790128111","doorpic":"/uploads/5b/74f4aae7ba3f84fba79ba136c73930.png","name":"GR(天府三街店)","bankno":"3030000"}
+2019-02-15 13:59:20,674  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 13:59:20,675  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000520","phone":"17790128111"},"sign":"ZtTE7Av3WlnRIJggnYlLB\/g9zwR3w\/R3yGLOe3UCclgDqbExsK0x4lxHiWcRt\/NVNt7CFjqJYBmRCL6m7wuvofnsdPUOoXBOl8pOR1doHigX8eyCEmLyIo+8JWP+1p2QhYLFKLlD8T6EppOy77InNNktuED0jxq9r8LO4yVNWGo="}
+2019-02-15 13:59:20,676  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000520","phone":"17790128111"},"sign":"ZtTE7Av3WlnRIJggnYlLB\/g9zwR3w\/R3yGLOe3UCclgDqbExsK0x4lxHiWcRt\/NVNt7CFjqJYBmRCL6m7wuvofnsdPUOoXBOl8pOR1doHigX8eyCEmLyIo+8JWP+1p2QhYLFKLlD8T6EppOy77InNNktuED0jxq9r8LO4yVNWGo="}, timestamp=0}
+2019-02-15 13:59:20,718  INFO BatchRegister:200 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000520","phone":"17790128111"},"sign":"ZtTE7Av3WlnRIJggnYlLB\/g9zwR3w\/R3yGLOe3UCclgDqbExsK0x4lxHiWcRt\/NVNt7CFjqJYBmRCL6m7wuvofnsdPUOoXBOl8pOR1doHigX8eyCEmLyIo+8JWP+1p2QhYLFKLlD8T6EppOy77InNNktuED0jxq9r8LO4yVNWGo="}, timestamp=0}
+2019-02-15 13:59:28,720  INFO BatchRegister:217 - 成功1个
+2019-02-15 13:59:28,779  INFO MyIntercept:34 - 访问[/test/batch]耗时=11574
+2019-02-15 14:01:17,604  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 14:01:17,824  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 7472 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 14:01:17,825  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 14:01:17,908  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@191615a4: startup date [Fri Feb 15 14:01:17 CST 2019]; root of context hierarchy
+2019-02-15 14:01:18,770  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 14:01:19,039  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 14:01:19,138  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d3340ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 14:01:19,465  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 14:01:19,609  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1704 ms
+2019-02-15 14:01:19,782  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 14:01:19,783  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 14:01:19,786  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 14:01:19,787  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 14:01:19,787  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 14:01:19,787  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 14:01:19,788  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 14:01:19,788  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 14:01:20,432  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 14:01:20,434  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 14:01:20,439  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 14:01:20,521  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 14:01:20,798  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@191615a4: startup date [Fri Feb 15 14:01:17 CST 2019]; root of context hierarchy
+2019-02-15 14:01:20,848  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 14:01:20,850  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 14:01:20,850  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 14:01:20,850  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 14:01:20,851  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 14:01:20,852  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 14:01:20,852  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 14:01:20,853  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 14:01:20,854  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 14:01:20,855  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 14:01:20,868  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 14:01:20,886  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 14:01:20,886  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 14:01:20,960  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 14:01:21,250  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@191615a4: startup date [Fri Feb 15 14:01:17 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 14:01:21,250  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 14:01:21,266  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 14:01:21,421  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 14:01:21,458  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 14:01:21,459  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 14:01:21,459  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 14:01:21,459  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 14:01:21,464  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 14:01:21,466  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 14:01:21,467  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 14:01:21,498  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 14:01:21,500  INFO MRApplication:59 - Started MRApplication in 4.067 seconds (JVM running for 4.937)
+2019-02-15 14:02:38,229  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 14:02:38,251  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2019-02-15 14:02:38,549  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 14:02:38,700  INFO BatchRegister:143 - 该商铺已进件=======-SODA HOU
+2019-02-15 14:02:38,700  INFO BatchRegister:143 - 该商铺已进件=======3CO
+2019-02-15 14:02:38,700  INFO BatchRegister:143 - 该商铺已进件=======7天连锁酒店二
+2019-02-15 14:02:38,701  INFO BatchRegister:143 - 该商铺已进件=======AJ丨ARMANI
+2019-02-15 14:02:38,701  INFO BatchRegister:143 - 该商铺已进件=======AN(万象城店)
+2019-02-15 14:02:38,701  INFO BatchRegister:143 - 该商铺已进件=======Anruz安润适
+2019-02-15 14:02:38,702  INFO BatchRegister:143 - 该商铺已进件=======ARMANIEXC
+2019-02-15 14:02:38,702  INFO BatchRegister:143 - 该商铺已进件=======AR重庆时代广场
+2019-02-15 14:02:38,702  INFO BatchRegister:143 - 该商铺已进件=======AU(大融城店)
+2019-02-15 14:02:38,702  INFO BatchRegister:143 - 该商铺已进件=======AUPRES
+2019-02-15 14:02:38,702  INFO BatchRegister:143 - 该商铺已进件=======AX(爱融荟城店)
+2019-02-15 14:02:38,703  INFO BatchRegister:143 - 该商铺已进件=======BA(万象城店)
+2019-02-15 14:02:38,703  INFO BatchRegister:143 - 该商铺已进件=======BE贝拉维塔春熙路
+2019-02-15 14:02:38,703  INFO BatchRegister:143 - 该商铺已进件=======berluti
+2019-02-15 14:02:38,703  INFO BatchRegister:143 - 该商铺已进件=======Bestie柏诗特
+2019-02-15 14:02:38,703  INFO BatchRegister:143 - 该商铺已进件=======binger宾格试
+2019-02-15 14:02:38,704  INFO BatchRegister:143 - 该商铺已进件=======BO
+2019-02-15 14:02:38,704  INFO BatchRegister:143 - 该商铺已进件=======Bottega V
+2019-02-15 14:02:38,704  INFO BatchRegister:143 - 该商铺已进件=======BU(王府井百货)
+2019-02-15 14:02:38,704  INFO BatchRegister:143 - 该商铺已进件=======BU(百盛店)
+2019-02-15 14:02:38,704  INFO BatchRegister:143 - 该商铺已进件=======BVLGARI
+2019-02-15 14:02:38,704  INFO BatchRegister:143 - 该商铺已进件=======C.CLIO
+2019-02-15 14:02:38,705  INFO BatchRegister:143 - 该商铺已进件=======CARRY
+2019-02-15 14:02:38,705  INFO BatchRegister:143 - 该商铺已进件=======CA(万象城店)
+2019-02-15 14:02:38,706  INFO BatchRegister:143 - 该商铺已进件=======CA(新光天地店)
+2019-02-15 14:02:38,706  INFO BatchRegister:143 - 该商铺已进件=======CH(太平洋店)
+2019-02-15 14:02:38,706  INFO BatchRegister:143 - 该商铺已进件=======CH(远东百货店)
+2019-02-15 14:02:38,707  INFO BatchRegister:143 - 该商铺已进件=======CH世纪(新都店)
+2019-02-15 14:02:38,707  INFO BatchRegister:143 - 该商铺已进件=======CiCi家美甲美睫
+2019-02-15 14:02:38,707  INFO BatchRegister:143 - 该商铺已进件=======CiCi家美甲美睫
+2019-02-15 14:02:38,708  INFO BatchRegister:143 - 该商铺已进件=======CI五月花商业广场
+2019-02-15 14:02:38,709  INFO BatchRegister:143 - 该商铺已进件=======CI金港国际购物
+2019-02-15 14:02:38,710  INFO BatchRegister:143 - 该商铺已进件=======CL(凯瑞商都店)
+2019-02-15 14:02:38,710  INFO BatchRegister:143 - 该商铺已进件=======CL(新世纪店)
+2019-02-15 14:02:38,712  INFO BatchRegister:143 - 该商铺已进件=======color森林美甲
+2019-02-15 14:02:38,712  INFO BatchRegister:143 - 该商铺已进件=======DHC(新世界店)
+2019-02-15 14:02:38,712  INFO BatchRegister:143 - 该商铺已进件=======DI(DI国金)
+2019-02-15 14:02:38,712  INFO BatchRegister:143 - 该商铺已进件=======DI(新光天地店)
+2019-02-15 14:02:38,712  INFO BatchRegister:143 - 该商铺已进件=======dw专卖店
+2019-02-15 14:02:38,713  INFO BatchRegister:143 - 该商铺已进件=======ELSA I 德国
+2019-02-15 14:02:38,713  INFO BatchRegister:143 - 该商铺已进件=======Emma's美甲美
+2019-02-15 14:02:38,713  INFO BatchRegister:143 - 该商铺已进件=======ER+ER
+2019-02-15 14:02:38,713  INFO BatchRegister:143 - 该商铺已进件=======ES重庆世纪新都
+2019-02-15 14:02:38,714  INFO BatchRegister:143 - 该商铺已进件=======esteelaud
+2019-02-15 14:02:38,714  INFO BatchRegister:143 - 该商铺已进件=======ET
+2019-02-15 14:02:38,714  INFO BatchRegister:143 - 该商铺已进件=======EU(中天购物城)
+2019-02-15 14:02:38,714  INFO BatchRegister:143 - 该商铺已进件=======E奢汇二手奢侈品
+2019-02-15 14:02:38,714  INFO BatchRegister:143 - 该商铺已进件=======FEFE3航站楼一
+2019-02-15 14:02:38,715  INFO BatchRegister:143 - 该商铺已进件=======FE(FE国金)
+2019-02-15 14:02:38,715  INFO BatchRegister:143 - 该商铺已进件=======ForYou玲·日
+2019-02-15 14:02:38,715  INFO BatchRegister:143 - 该商铺已进件=======FR
+2019-02-15 14:02:38,715  INFO BatchRegister:143 - 该商铺已进件=======FR(龙湖北城店)
+2019-02-15 14:02:38,715  INFO BatchRegister:143 - 该商铺已进件=======FR
+2019-02-15 14:02:38,716  INFO BatchRegister:143 - 该商铺已进件=======GI
+2019-02-15 14:02:38,716  INFO BatchRegister:143 - 该商铺已进件=======GI(新光天地店)
+2019-02-15 14:02:38,716  INFO BatchRegister:143 - 该商铺已进件=======GIVENCHY
+2019-02-15 14:02:38,716  INFO BatchRegister:143 - 该商铺已进件=======GR(保利店)
+2019-02-15 14:02:38,716  INFO BatchRegister:143 - 该商铺已进件=======GR(天府三街店)
+2019-02-15 14:02:38,924  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-15 14:02:39,139  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-15 14:02:39,250  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-15 14:02:39,651  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"fgvZNCvCpRm4Zcpa3FSdNGQdnROIpRrV8cLs39sMU6mrvDvmMcjyUEKcOt/D QGTo1yPxdUVJxFJCfOcIDGaJS9sXZedvUt18ZznI7AEB1NM0Yl9nIvrm9SIX CTzbaww7+BoZBEb4VhEmAHJTs68lmKdjYAKtIhyi47q94OK4gts=","remark":"grosse(新光天地店)","type":"1","buslicpic":"/uploads/e2/47b1f98f23c4341c84e4ae3451036b.jpg","certno":"b3hnMijdr8Z97z7aMwZhGoGhUt2lbwNl","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"18628197575","province":"510000","cardarea":"510105","certtype":"1","legelname":"马博","legbackpic":"/uploads/e2/47b1f98f23c4341c84e4ae3451036b.jpg","email":"17790128121@163.com","branchno":"301651000023","area":"510182","address":"海椒市街37号","legfrontpic":"/uploads/73/421d68988a4e6e8ec5f71f540ca248.jpg","ecardno":"Du91QHgJLpUGhJWmTLGqTwK4ghIoSHm6","cardno":"KFG5PRE6tAwqi+RTg0i5gVVPZhzMntIn","cardprovince":"510000","payname":"GMs9CzVozpI=","legelcertno":"b3hnMijdr8Z97z7aMwZhGoGhUt2lbwNl","handpic":"/uploads/ca/341c33291d6a9be6f3cbc0ac393140.jpg","cardcity":"510100","phone":"17790128121","doorpic":"/uploads/87/564567b6e670503824441fe023e02e.png","name":"GR(新光天地店)","bankno":"3010000"}
+2019-02-15 14:02:40,748  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 14:02:40,749  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000521","phone":"17790128121"},"sign":"ti9h1bAH6D\/521xbvJt1WuBenQXrvnWEnOivK2QIfaaRhXQXnUtFUtXONwdAsUPegxMiqApekYYlGYSYYV\/OO\/qL1ArnKlV+ImfjzfbVp+gpuqVQc6xEl+eVVq+k5YTkN0O6gfEvKPp0OQptW0oHFGKtSSQ9QRZ08HM8MKk5cEM="}
+2019-02-15 14:02:40,749  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000521","phone":"17790128121"},"sign":"ti9h1bAH6D\/521xbvJt1WuBenQXrvnWEnOivK2QIfaaRhXQXnUtFUtXONwdAsUPegxMiqApekYYlGYSYYV\/OO\/qL1ArnKlV+ImfjzfbVp+gpuqVQc6xEl+eVVq+k5YTkN0O6gfEvKPp0OQptW0oHFGKtSSQ9QRZ08HM8MKk5cEM="}, timestamp=0}
+2019-02-15 14:02:40,804  INFO BatchRegister:200 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000521","phone":"17790128121"},"sign":"ti9h1bAH6D\/521xbvJt1WuBenQXrvnWEnOivK2QIfaaRhXQXnUtFUtXONwdAsUPegxMiqApekYYlGYSYYV\/OO\/qL1ArnKlV+ImfjzfbVp+gpuqVQc6xEl+eVVq+k5YTkN0O6gfEvKPp0OQptW0oHFGKtSSQ9QRZ08HM8MKk5cEM="}, timestamp=0}
+2019-02-15 14:02:48,805  INFO BatchRegister:217 - 成功1个
+2019-02-15 14:02:48,899  INFO MyIntercept:34 - 访问[/test/batch]耗时=10632
+2019-02-15 14:08:56,113  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-15 14:08:56,321  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 15344 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-15 14:08:56,322  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-15 14:08:56,407  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11c533dd: startup date [Fri Feb 15 14:08:56 CST 2019]; root of context hierarchy
+2019-02-15 14:08:57,416  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-15 14:08:57,704  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-15 14:08:57,799  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a833d160] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-15 14:08:58,126  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-15 14:08:58,255  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1851 ms
+2019-02-15 14:08:58,429  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-15 14:08:58,430  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-15 14:08:58,433  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-15 14:08:58,434  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-15 14:08:58,434  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-15 14:08:58,434  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-15 14:08:58,434  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-15 14:08:58,435  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-15 14:08:59,070  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-15 14:08:59,072  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-15 14:08:59,077  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-15 14:08:59,171  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 14:08:59,451  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11c533dd: startup date [Fri Feb 15 14:08:56 CST 2019]; root of context hierarchy
+2019-02-15 14:08:59,499  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-15 14:08:59,501  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-15 14:08:59,501  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-15 14:08:59,501  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-15 14:08:59,502  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-15 14:08:59,503  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-15 14:08:59,503  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-15 14:08:59,504  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public com.merchant.entity.ResultData com.merchant.controller.TestController.batch()
+2019-02-15 14:08:59,506  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-15 14:08:59,507  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-15 14:08:59,519  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-15 14:08:59,537  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 14:08:59,537  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-15 14:08:59,607  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-15 14:08:59,955  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@11c533dd: startup date [Fri Feb 15 14:08:56 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-15 14:08:59,956  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-15 14:08:59,969  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-15 14:09:00,123  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-15 14:09:00,159  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-15 14:09:00,159  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-15 14:09:00,160  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-15 14:09:00,160  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-15 14:09:00,167  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-15 14:09:00,169  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-15 14:09:00,171  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-15 14:09:00,206  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-15 14:09:00,210  INFO MRApplication:59 - Started MRApplication in 4.265 seconds (JVM running for 5.12)
+2019-02-15 14:09:18,552  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-15 14:09:18,577  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-02-15 14:09:18,864  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-15 14:09:18,974  INFO BatchRegister:143 - 该商铺已进件=======-SODA HOU
+2019-02-15 14:09:18,974  INFO BatchRegister:143 - 该商铺已进件=======3CO
+2019-02-15 14:09:18,974  INFO BatchRegister:143 - 该商铺已进件=======7天连锁酒店二
+2019-02-15 14:09:18,975  INFO BatchRegister:143 - 该商铺已进件=======AJ丨ARMANI
+2019-02-15 14:09:18,976  INFO BatchRegister:143 - 该商铺已进件=======AN(万象城店)
+2019-02-15 14:09:18,977  INFO BatchRegister:143 - 该商铺已进件=======Anruz安润适
+2019-02-15 14:09:18,977  INFO BatchRegister:143 - 该商铺已进件=======ARMANIEXC
+2019-02-15 14:09:18,977  INFO BatchRegister:143 - 该商铺已进件=======AR重庆时代广场
+2019-02-15 14:09:18,977  INFO BatchRegister:143 - 该商铺已进件=======AU(大融城店)
+2019-02-15 14:09:18,977  INFO BatchRegister:143 - 该商铺已进件=======AUPRES
+2019-02-15 14:09:18,978  INFO BatchRegister:143 - 该商铺已进件=======AX(爱融荟城店)
+2019-02-15 14:09:18,978  INFO BatchRegister:143 - 该商铺已进件=======BA(万象城店)
+2019-02-15 14:09:18,978  INFO BatchRegister:143 - 该商铺已进件=======BE贝拉维塔春熙路
+2019-02-15 14:09:18,978  INFO BatchRegister:143 - 该商铺已进件=======berluti
+2019-02-15 14:09:18,978  INFO BatchRegister:143 - 该商铺已进件=======Bestie柏诗特
+2019-02-15 14:09:18,979  INFO BatchRegister:143 - 该商铺已进件=======binger宾格试
+2019-02-15 14:09:18,979  INFO BatchRegister:143 - 该商铺已进件=======BO
+2019-02-15 14:09:18,979  INFO BatchRegister:143 - 该商铺已进件=======Bottega V
+2019-02-15 14:09:18,979  INFO BatchRegister:143 - 该商铺已进件=======BU(王府井百货)
+2019-02-15 14:09:18,979  INFO BatchRegister:143 - 该商铺已进件=======BU(百盛店)
+2019-02-15 14:09:18,979  INFO BatchRegister:143 - 该商铺已进件=======BVLGARI
+2019-02-15 14:09:18,980  INFO BatchRegister:143 - 该商铺已进件=======C.CLIO
+2019-02-15 14:09:18,980  INFO BatchRegister:143 - 该商铺已进件=======CARRY
+2019-02-15 14:09:18,980  INFO BatchRegister:143 - 该商铺已进件=======CA(万象城店)
+2019-02-15 14:09:18,980  INFO BatchRegister:143 - 该商铺已进件=======CA(新光天地店)
+2019-02-15 14:09:18,980  INFO BatchRegister:143 - 该商铺已进件=======CH(太平洋店)
+2019-02-15 14:09:18,980  INFO BatchRegister:143 - 该商铺已进件=======CH(远东百货店)
+2019-02-15 14:09:18,981  INFO BatchRegister:143 - 该商铺已进件=======CH世纪(新都店)
+2019-02-15 14:09:18,981  INFO BatchRegister:143 - 该商铺已进件=======CiCi家美甲美睫
+2019-02-15 14:09:18,981  INFO BatchRegister:143 - 该商铺已进件=======CiCi家美甲美睫
+2019-02-15 14:09:18,981  INFO BatchRegister:143 - 该商铺已进件=======CI五月花商业广场
+2019-02-15 14:09:18,981  INFO BatchRegister:143 - 该商铺已进件=======CI金港国际购物
+2019-02-15 14:09:18,982  INFO BatchRegister:143 - 该商铺已进件=======CL(凯瑞商都店)
+2019-02-15 14:09:18,982  INFO BatchRegister:143 - 该商铺已进件=======CL(新世纪店)
+2019-02-15 14:09:18,982  INFO BatchRegister:143 - 该商铺已进件=======color森林美甲
+2019-02-15 14:09:18,982  INFO BatchRegister:143 - 该商铺已进件=======DHC(新世界店)
+2019-02-15 14:09:18,982  INFO BatchRegister:143 - 该商铺已进件=======DI(DI国金)
+2019-02-15 14:09:18,982  INFO BatchRegister:143 - 该商铺已进件=======DI(新光天地店)
+2019-02-15 14:09:18,983  INFO BatchRegister:143 - 该商铺已进件=======dw专卖店
+2019-02-15 14:09:18,983  INFO BatchRegister:143 - 该商铺已进件=======ELSA I 德国
+2019-02-15 14:09:18,983  INFO BatchRegister:143 - 该商铺已进件=======Emma's美甲美
+2019-02-15 14:09:18,983  INFO BatchRegister:143 - 该商铺已进件=======ER+ER
+2019-02-15 14:09:18,983  INFO BatchRegister:143 - 该商铺已进件=======ES重庆世纪新都
+2019-02-15 14:09:18,984  INFO BatchRegister:143 - 该商铺已进件=======esteelaud
+2019-02-15 14:09:18,984  INFO BatchRegister:143 - 该商铺已进件=======ET
+2019-02-15 14:09:18,984  INFO BatchRegister:143 - 该商铺已进件=======EU(中天购物城)
+2019-02-15 14:09:18,984  INFO BatchRegister:143 - 该商铺已进件=======E奢汇二手奢侈品
+2019-02-15 14:09:18,984  INFO BatchRegister:143 - 该商铺已进件=======FEFE3航站楼一
+2019-02-15 14:09:18,984  INFO BatchRegister:143 - 该商铺已进件=======FE(FE国金)
+2019-02-15 14:09:18,985  INFO BatchRegister:143 - 该商铺已进件=======ForYou玲·日
+2019-02-15 14:09:18,985  INFO BatchRegister:143 - 该商铺已进件=======FR
+2019-02-15 14:09:18,985  INFO BatchRegister:143 - 该商铺已进件=======FR(龙湖北城店)
+2019-02-15 14:09:18,985  INFO BatchRegister:143 - 该商铺已进件=======FR
+2019-02-15 14:09:18,985  INFO BatchRegister:143 - 该商铺已进件=======GI
+2019-02-15 14:09:18,985  INFO BatchRegister:143 - 该商铺已进件=======GI(新光天地店)
+2019-02-15 14:09:18,986  INFO BatchRegister:143 - 该商铺已进件=======GIVENCHY
+2019-02-15 14:09:18,986  INFO BatchRegister:143 - 该商铺已进件=======GR(保利店)
+2019-02-15 14:09:18,986  INFO BatchRegister:143 - 该商铺已进件=======GR(天府三街店)
+2019-02-15 14:09:18,986  INFO BatchRegister:143 - 该商铺已进件=======GR(新光天地店)
+2019-02-15 14:09:19,580  INFO MerchantServiceImpl:148 - 商户进件，请求参数={"mchid":"00020019","city":"510100","sign":"PXNtyAgDva3qbzwK+OaFGXCAieQUnwQ4Fwd4MYL9ZSgK/r+eM5cDcRCE9KLJ fVz1hB+FmMKsxsFlY1p8ZR0PHtUCF6s9wDRZNSEYutO1NH//uEKPqPkI3Orc kT1YZplNlPbqT2XqzjWeu1L2SZrzXIDt0a8SLkW3VwRZTDrfz+o=","remark":"GUCCI(煌华新纪元购物广场店)","type":"1","buslicpic":"/uploads/b4/1d84a2dcf5eba5a14b7c4582a43ecb.jpg","certno":"OXDicAX7zYrlDwJU9uSNUCvf7geJcbBB","channelinfo":"{\"bnzfbFix\":{\"rate\":\"31\",\"fee\":0},\"bnwxFix\":{\"rate\":\"31\",\"fee\":0},\"bnzfbQR\":{\"rate\":\"31\",\"fee\":0},\"bnwxQR\":{\"rate\":\"31\",\"fee\":0}}","payphone":"13980610794","province":"510000","cardarea":"510105","certtype":"1","legelname":"文旋","legbackpic":"/uploads/b4/1d84a2dcf5eba5a14b7c4582a43ecb.jpg","email":"17790128131@163.com","branchno":"305651000288","area":"510121","address":"黄忠街33号","legfrontpic":"/uploads/f9/453bcf1f490004e7649b7b150e2449.jpg","ecardno":"Du91QHgJLpUAPMtASJg4drGzzs1BFnMd","cardno":"rGx2yW2D5wd8KoFSy9VQageKaUZwfBJu","cardprovince":"510000","payname":"TIdP8AJCrhQ=","legelcertno":"OXDicAX7zYrlDwJU9uSNUCvf7geJcbBB","handpic":"/uploads/64/b4959416b81a3cc030686d1b4c2193.jpg","cardcity":"510100","phone":"17790128131","doorpic":"/uploads/39/0f003c40c8bb2cded17d5c056e9917.png","name":"GUCCI","bankno":"3050000"}
+2019-02-15 14:09:20,265  INFO HttpUtils:75 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 发送请求返回状态=200
+2019-02-15 14:09:20,266  INFO HttpUtils:81 - 请求地址=http://www.ruishengglass.cn/api-v1-user/register, 返回内容={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000522","phone":"17790128131"},"sign":"wxUH3Y51G\/zUIVPae8h6NN\/\/KLCEGbBo8hMo1fyX\/E6CbCFxuR8\/39YJAEFBQk6qbvI354cGtPUEfXDtdw3uy1rPlvQR14AfTi2DypATzK\/nmEjpmixyt5RxfRRTSgLt2ms9BzUOgyYmHACDiVF+W3EbTRbSqN\/gmD1Kx5ovOyE="}
+2019-02-15 14:09:20,266  INFO MerchantServiceImpl:150 - 商户进件，返回内容=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000522","phone":"17790128131"},"sign":"wxUH3Y51G\/zUIVPae8h6NN\/\/KLCEGbBo8hMo1fyX\/E6CbCFxuR8\/39YJAEFBQk6qbvI354cGtPUEfXDtdw3uy1rPlvQR14AfTi2DypATzK\/nmEjpmixyt5RxfRRTSgLt2ms9BzUOgyYmHACDiVF+W3EbTRbSqN\/gmD1Kx5ovOyE="}, timestamp=0}
+2019-02-15 14:09:20,290  INFO BatchRegister:200 - 批量商户进件结果=ResultData{code=0, message='操作成功', static={"code":1,"msg":"member saved","data":{"mchid":"00020019","submchid":"00020019000000000522","phone":"17790128131"},"sign":"wxUH3Y51G\/zUIVPae8h6NN\/\/KLCEGbBo8hMo1fyX\/E6CbCFxuR8\/39YJAEFBQk6qbvI354cGtPUEfXDtdw3uy1rPlvQR14AfTi2DypATzK\/nmEjpmixyt5RxfRRTSgLt2ms9BzUOgyYmHACDiVF+W3EbTRbSqN\/gmD1Kx5ovOyE="}, timestamp=0}
+2019-02-15 14:09:28,290  INFO BatchRegister:217 - 成功1个
+2019-02-15 14:09:28,355  INFO MyIntercept:34 - 访问[/test/batch]耗时=9764

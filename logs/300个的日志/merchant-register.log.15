@@ -1,0 +1,748 @@
+2019-02-14 19:52:06,745  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-14 19:52:06,979  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 14568 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-14 19:52:06,979  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-14 19:52:07,043  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4634b5e: startup date [Thu Feb 14 19:52:07 CST 2019]; root of context hierarchy
+2019-02-14 19:52:08,445  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-14 19:52:08,903  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-14 19:52:09,069  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5a911f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-14 19:52:09,767  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-14 19:52:10,119  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 3079 ms
+2019-02-14 19:52:10,360  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-14 19:52:10,361  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-14 19:52:10,363  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-14 19:52:10,364  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-14 19:52:10,365  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-14 19:52:10,365  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-14 19:52:10,365  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-14 19:52:10,367  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-14 19:52:11,151  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-14 19:52:11,154  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-14 19:52:11,162  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-14 19:52:11,278  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:11,647  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4634b5e: startup date [Thu Feb 14 19:52:07 CST 2019]; root of context hierarchy
+2019-02-14 19:52:11,696  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-14 19:52:11,698  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-14 19:52:11,699  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-14 19:52:11,699  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-14 19:52:11,700  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-14 19:52:11,700  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-14 19:52:11,700  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-14 19:52:11,701  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-14 19:52:11,703  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-14 19:52:11,704  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-14 19:52:11,717  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-14 19:52:11,734  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:11,735  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:11,810  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-14 19:52:12,138  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4634b5e: startup date [Thu Feb 14 19:52:07 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-14 19:52:12,139  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-14 19:52:12,154  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-14 19:52:12,332  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-14 19:52:12,369  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-14 19:52:12,369  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-14 19:52:12,369  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-14 19:52:12,370  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-14 19:52:12,375  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-14 19:52:12,376  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-14 19:52:12,377  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-14 19:52:12,409  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-14 19:52:12,414  INFO MRApplication:59 - Started MRApplication in 5.868 seconds (JVM running for 6.673)
+2019-02-14 19:52:18,153  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4634b5e: startup date [Thu Feb 14 19:52:07 CST 2019]; root of context hierarchy
+2019-02-14 19:52:18,156  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2019-02-14 19:52:18,156  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2019-02-14 19:52:18,158  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'asyncServiceExecutor'
+2019-02-14 19:52:19,550  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 14568 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-14 19:52:19,550  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-14 19:52:19,553  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a15319a: startup date [Thu Feb 14 19:52:19 CST 2019]; root of context hierarchy
+2019-02-14 19:52:19,909  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-14 19:52:19,976  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-14 19:52:19,990  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5a911f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-14 19:52:20,106  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-14 19:52:20,134  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 581 ms
+2019-02-14 19:52:20,175  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-14 19:52:20,176  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-14 19:52:20,176  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-14 19:52:20,176  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-14 19:52:20,177  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-14 19:52:20,177  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-14 19:52:20,177  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-14 19:52:20,177  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-14 19:52:20,386  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-14 19:52:20,387  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-14 19:52:20,387  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-14 19:52:20,417  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:20,557  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a15319a: startup date [Thu Feb 14 19:52:19 CST 2019]; root of context hierarchy
+2019-02-14 19:52:20,579  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-14 19:52:20,579  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-14 19:52:20,582  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-14 19:52:20,583  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-14 19:52:20,586  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-14 19:52:20,586  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-14 19:52:20,586  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-14 19:52:20,588  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-14 19:52:20,590  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-14 19:52:20,591  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-14 19:52:20,606  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-14 19:52:20,615  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:20,615  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:20,645  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-14 19:52:20,701  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a15319a: startup date [Thu Feb 14 19:52:19 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-14 19:52:20,701  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-14 19:52:20,705  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-14 19:52:20,790  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-14 19:52:20,820  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-14 19:52:20,820  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-14 19:52:20,820  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-14 19:52:20,820  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-14 19:52:20,823  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-14 19:52:20,824  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-14 19:52:20,825  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-14 19:52:20,832  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-14 19:52:20,833  INFO MRApplication:59 - Started MRApplication in 1.312 seconds (JVM running for 15.091)
+2019-02-14 19:52:20,836  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2019-02-14 19:52:56,760  INFO AnnotationConfigServletWebServerApplicationContext:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a15319a: startup date [Thu Feb 14 19:52:19 CST 2019]; root of context hierarchy
+2019-02-14 19:52:56,761  INFO AnnotationMBeanExporter:451 - Unregistering JMX-exposed beans on shutdown
+2019-02-14 19:52:56,762  INFO AnnotationMBeanExporter:183 - Unregistering JMX-exposed beans
+2019-02-14 19:52:56,762  INFO ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'asyncServiceExecutor'
+2019-02-14 19:52:57,836  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 14568 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-14 19:52:57,836  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-14 19:52:57,839  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12a73043: startup date [Thu Feb 14 19:52:57 CST 2019]; root of context hierarchy
+2019-02-14 19:52:58,265  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-14 19:52:58,321  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-14 19:52:58,331  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5a911f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-14 19:52:58,444  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-14 19:52:58,474  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 635 ms
+2019-02-14 19:52:58,519  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-14 19:52:58,520  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-14 19:52:58,520  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-14 19:52:58,520  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-14 19:52:58,520  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-14 19:52:58,520  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-14 19:52:58,520  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-14 19:52:58,520  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-14 19:52:58,705  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-14 19:52:58,706  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-14 19:52:58,706  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-14 19:52:58,758  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:58,852  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12a73043: startup date [Thu Feb 14 19:52:57 CST 2019]; root of context hierarchy
+2019-02-14 19:52:58,862  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-14 19:52:58,862  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-14 19:52:58,863  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-14 19:52:58,863  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-14 19:52:58,863  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-14 19:52:58,864  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-14 19:52:58,865  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-14 19:52:58,866  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-14 19:52:58,867  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-14 19:52:58,868  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-14 19:52:58,874  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-14 19:52:58,879  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:58,879  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:52:58,902  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-14 19:52:58,980  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12a73043: startup date [Thu Feb 14 19:52:57 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-14 19:52:58,980  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-14 19:52:58,990  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-14 19:52:59,073  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-14 19:52:59,099  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-14 19:52:59,100  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-14 19:52:59,100  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-14 19:52:59,100  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-14 19:52:59,103  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-14 19:52:59,104  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-14 19:52:59,104  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-14 19:52:59,112  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-14 19:52:59,113  INFO MRApplication:59 - Started MRApplication in 1.329 seconds (JVM running for 53.371)
+2019-02-14 19:52:59,115  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2019-02-14 19:53:02,959  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-14 19:53:02,984  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-02-14 19:53:03,274  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-14 19:53:04,011 ERROR BatchRegister:191 - 已进件=======1919酒类直供二
+2019-02-14 19:53:04,011 ERROR BatchRegister:191 - 已进件=======1983美容美发
+2019-02-14 19:53:04,011 ERROR BatchRegister:191 - 已进件=======AA远洋太古里店
+2019-02-14 19:53:04,281  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取省份列表成功","data":[{"value":"110000","text":"北京市"},{"value":"120000","text":"天津市"},{"value":"130000","text":"河北省"},{"value":"140000","text":"山西省"},{"value":"150000","text":"内蒙古自治区"},{"value":"210000","text":"辽宁省"},{"value":"220000","text":"吉林省"},{"value":"230000","text":"黑龙江省"},{"value":"310000","text":"上海市"},{"value":"320000","text":"江苏省"},{"value":"330000","text":"浙江省"},{"value":"340000","text":"安徽省"},{"value":"350000","text":"福建省"},{"value":"360000","text":"江西省"},{"value":"370000","text":"山东省"},{"value":"410000","text":"河南省"},{"value":"420000","text":"湖北省"},{"value":"430000","text":"湖南省"},{"value":"440000","text":"广东省"},{"value":"450000","text":"广西壮族自治区"},{"value":"460000","text":"海南省"},{"value":"500000","text":"重庆市"},{"value":"510000","text":"四川省"},{"value":"520000","text":"贵州省"},{"value":"530000","text":"云南省"},{"value":"540000","text":"西藏自治区"},{"value":"620000","text":"甘肃省"},{"value":"630000","text":"青海省"},{"value":"640000","text":"宁夏回族自治区"},{"value":"650000","text":"新疆维吾尔自治区"},{"value":"660000","text":"新疆生产建设兵团"},{"value":"710000","text":"台湾省"},{"value":"810000","text":"香港特别行政区"},{"value":"820000","text":"澳门特别行政区"},{"value":"610000","text":"陕西省"}]}
+2019-02-14 19:53:04,369  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:04,524  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:04,524 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市崇州唐人街世纪大道与长城路西南侧隆腾世纪朗域4幢1层9、10号
+2019-02-14 19:53:04,525 ERROR BatchRegister:191 - 已进件=======AG远洋太古里店
+2019-02-14 19:53:04,525 ERROR BatchRegister:191 - 已进件=======AIKERL
+2019-02-14 19:53:04,525 ERROR BatchRegister:191 - 已进件=======AN银泰AN99店
+2019-02-14 19:53:04,525 ERROR BatchRegister:191 - 已进件=======AP远洋太古里店
+2019-02-14 19:53:04,526 ERROR BatchRegister:198 - 根据名称=AST如一汽车美容中心找不到对应的图片文件
+2019-02-14 19:53:04,526 ERROR BatchRegister:191 - 已进件=======AWNL
+2019-02-14 19:53:04,526 ERROR BatchRegister:191 - 已进件=======b·duck
+2019-02-14 19:53:04,527 ERROR BatchRegister:191 - 已进件=======BA日韩发型沙龙
+2019-02-14 19:53:04,697  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:04,775  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:04,775 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市邛崃新邛路294号
+2019-02-14 19:53:04,929  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:05,019  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:05,019 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市崇州崇双路与宏业大道中段西100米
+2019-02-14 19:53:05,020 ERROR BatchRegister:191 - 已进件=======BA万象城商场店
+2019-02-14 19:53:05,020 ERROR BatchRegister:191 - 已进件=======BE万达广场店
+2019-02-14 19:53:05,020 ERROR BatchRegister:191 - 已进件=======BO葆蝶家仁恒店
+2019-02-14 19:53:05,020 ERROR BatchRegister:191 - 已进件=======BO锦华万达店
+2019-02-14 19:53:05,020 ERROR BatchRegister:191 - 已进件=======BR
+2019-02-14 19:53:05,021 ERROR BatchRegister:191 - 已进件=======BR翡翠城店
+2019-02-14 19:53:05,021 ERROR BatchRegister:191 - 已进件=======BR银泰城店
+2019-02-14 19:53:05,134  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:05,354  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:05,355 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区机场路常乐段40号
+2019-02-14 19:53:05,511  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:05,657  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:05,657 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市郫县犀浦兴业北街258号卡布里城
+2019-02-14 19:53:05,657 ERROR BatchRegister:191 - 已进件=======BY太古里店
+2019-02-14 19:53:05,658 ERROR BatchRegister:191 - 已进件=======Cactuss
+2019-02-14 19:53:05,658 ERROR BatchRegister:191 - 已进件=======CA新城市广场店
+2019-02-14 19:53:05,658 ERROR BatchRegister:191 - 已进件=======CA远洋太古里店
+2019-02-14 19:53:05,762  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:05,944  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:05,944 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区中和二街93-103号
+2019-02-14 19:53:05,944 ERROR BatchRegister:191 - 已进件=======CA嘉实多护车保养
+2019-02-14 19:53:05,945 ERROR BatchRegister:191 - 已进件=======CE
+2019-02-14 19:53:05,945 ERROR BatchRegister:191 - 已进件=======CH万象城店
+2019-02-14 19:53:05,945 ERROR BatchRegister:191 - 已进件=======CH国金高级精品
+2019-02-14 19:53:05,945 ERROR BatchRegister:191 - 已进件=======CI家美甲美睫纹绣
+2019-02-14 19:53:05,945 ERROR BatchRegister:191 - 已进件=======D驾族贝森路店
+2019-02-14 19:53:05,945 ERROR BatchRegister:191 - 已进件=======D驾族光华南路店
+2019-02-14 19:53:05,945 ERROR BatchRegister:191 - 已进件=======D驾族两河东路
+2019-02-14 19:53:05,946 ERROR BatchRegister:191 - 已进件=======D驾族人和路店
+2019-02-14 19:53:05,946 ERROR BatchRegister:191 - 已进件=======D驾族蜀江路店
+2019-02-14 19:53:05,946 ERROR BatchRegister:191 - 已进件=======D驾族易途簇桥店
+2019-02-14 19:53:05,946 ERROR BatchRegister:191 - 已进件=======D驾族易途金花店
+2019-02-14 19:53:05,946 ERROR BatchRegister:191 - 已进件=======FFF
+2019-02-14 19:53:05,946 ERROR BatchRegister:191 - 已进件=======FA梵希美发沙龙
+2019-02-14 19:53:05,946 ERROR BatchRegister:191 - 已进件=======GA凯丹广场店
+2019-02-14 19:53:05,947 ERROR BatchRegister:191 - 已进件=======GI华润·万象城店
+2019-02-14 19:53:05,947 ERROR BatchRegister:191 - 已进件=======GI纪梵希
+2019-02-14 19:53:05,947 ERROR BatchRegister:191 - 已进件=======GO金融中心店
+2019-02-14 19:53:05,947 ERROR BatchRegister:191 - 已进件=======GU远洋太古里店
+2019-02-14 19:53:05,947 ERROR BatchRegister:191 - 已进件=======HHH形象发型设计
+2019-02-14 19:53:05,947 ERROR BatchRegister:191 - 已进件=======HA
+2019-02-14 19:53:05,948 ERROR BatchRegister:191 - 已进件=======HA
+2019-02-14 19:53:05,948 ERROR BatchRegister:191 - 已进件=======I·I日系烫发染发
+2019-02-14 19:53:06,147  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:06,337  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:06,338 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区广履路与航港路四段交叉口西南角
+2019-02-14 19:53:06,443  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:06,633  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:06,635 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区双流商都路508号铭汇国际商贸汽配城6栋10号
+2019-02-14 19:53:06,635 ERROR BatchRegister:191 - 已进件=======KR'KR古格发型
+2019-02-14 19:53:06,635 ERROR BatchRegister:191 - 已进件=======LA剪发染发烫发
+2019-02-14 19:53:06,636 ERROR BatchRegister:191 - 已进件=======lippe力柏
+2019-02-14 19:53:06,636 ERROR BatchRegister:191 - 已进件=======LO王府井百货店
+2019-02-14 19:53:06,783  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:06,933  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:06,934 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市金堂县金鹰路375-377号
+2019-02-14 19:53:07,086  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:07,235  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:07,235 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市郫县安靖镇犀安路派出所旁
+2019-02-14 19:53:07,235 ERROR BatchRegister:191 - 已进件=======MA国际金融店
+2019-02-14 19:53:07,235 ERROR BatchRegister:191 - 已进件=======mc汽车美容工作室
+2019-02-14 19:53:07,382  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:07,458  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:07,459 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市郫县美墅街11号
+2019-02-14 19:53:07,647  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:07,834  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:07,834 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区双流区东升镇航都大街
+2019-02-14 19:53:07,945  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:08,129  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:08,129 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区双流区三强路一段116号
+2019-02-14 19:53:08,130 ERROR BatchRegister:191 - 已进件=======MP木朴创意美发沙
+2019-02-14 19:53:08,130 ERROR BatchRegister:191 - 已进件=======Mtan-A爱马
+2019-02-14 19:53:08,130 ERROR BatchRegister:191 - 已进件=======PA成都大悦城店
+2019-02-14 19:53:08,130 ERROR BatchRegister:191 - 已进件=======RADO
+2019-02-14 19:53:08,130 ERROR BatchRegister:191 - 已进件=======RA
+2019-02-14 19:53:08,131 ERROR BatchRegister:191 - 已进件=======RE汽车服务
+2019-02-14 19:53:08,132 ERROR BatchRegister:191 - 已进件=======RIMOWA
+2019-02-14 19:53:08,238  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:08,413  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:08,413 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区双流区五洞桥北路一段12
+2019-02-14 19:53:08,414 ERROR BatchRegister:191 - 已进件=======Samsonite
+2019-02-14 19:53:08,414 ERROR BatchRegister:191 - 已进件=======SA形象沙龙
+2019-02-14 19:53:08,414 ERROR BatchRegister:191 - 已进件=======SA形象沙龙二
+2019-02-14 19:53:08,414 ERROR BatchRegister:191 - 已进件=======SW大悦城店
+2019-02-14 19:53:08,414 ERROR BatchRegister:191 - 已进件=======T·T一非造型
+2019-02-14 19:53:08,415 ERROR BatchRegister:191 - 已进件=======TA私人订制潮西单
+2019-02-14 19:53:08,415 ERROR BatchRegister:191 - 已进件=======TITITITI蒂
+2019-02-14 19:53:08,415 ERROR BatchRegister:191 - 已进件=======TI群光广场店
+2019-02-14 19:53:08,415 ERROR BatchRegister:191 - 已进件=======TI西单商场店
+2019-02-14 19:53:08,510  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:08,698  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:08,698 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市蒲江县蒲回路隆盛村5组47栋1层1号
+2019-02-14 19:53:08,808  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:08,974  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:08,975 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区长冶路四段151号音美幼儿园旁
+2019-02-14 19:53:09,084  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:09,257  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:09,257 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区机场路土桥段225号
+2019-02-14 19:53:09,257 ERROR BatchRegister:191 - 已进件=======阿吉豆伊藤洋华堂店
+2019-02-14 19:53:09,454  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:09,559  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:09,560 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区华阳镇伏龙路一段100号
+2019-02-14 19:53:09,707  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:09,842  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:09,842 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市邛崃羊安镇冉义十字路口汤营新村5组10号
+2019-02-14 19:53:09,843 ERROR BatchRegister:191 - 已进件=======阿玛尼时尚腕表
+2019-02-14 19:53:09,844 ERROR BatchRegister:191 - 已进件=======爱马仕远洋太古里店
+2019-02-14 19:53:09,845 ERROR BatchRegister:191 - 已进件=======爱妻牛排火锅衣冠庙
+2019-02-14 19:53:09,848 ERROR BatchRegister:191 - 已进件=======爱炫车饰界汽车美容
+2019-02-14 19:53:09,933  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:10,083  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:10,084 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市郫县清江二街一号
+2019-02-14 19:53:10,084 ERROR BatchRegister:191 - 已进件=======澳思莱汽车会所
+2019-02-14 19:53:10,084 ERROR BatchRegister:191 - 已进件=======巴蜀大将火锅
+2019-02-14 19:53:10,084 ERROR BatchRegister:191 - 已进件=======巴蜀大宅门火锅
+2019-02-14 19:53:10,240  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:10,322  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:10,323 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市郫县团结镇书苑路口公交站
+2019-02-14 19:53:10,492  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:10,678  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:10,678 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区剑南大道华阳欧尚超市地面停车场内
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======爸爸炒料牛排老火锅
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======白家老店肥肠粉
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======百年神厨双楠店
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======百味记小郡肝砂罐串
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======宝晨汽车维修部郫县
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======宝亨表行
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======宝珀远洋太古里店
+2019-02-14 19:53:10,679 ERROR BatchRegister:191 - 已进件=======贝壳造型SA高新店
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======飚野汽车养护中心
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======藏韵圣宴
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======畅享汽车连锁犀浦店
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======潮·蜕变发型设计
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======炒作DS·民间饭店
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======车吧坊汽车服务中心
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======车管家平意汽车美容
+2019-02-14 19:53:10,680 ERROR BatchRegister:191 - 已进件=======车立方汽车生活馆
+2019-02-14 19:53:10,681 ERROR BatchRegister:191 - 已进件=======车享家（ 龙德路）
+2019-02-14 19:53:10,681 ERROR BatchRegister:191 - 已进件=======车享家（八桥店）
+2019-02-14 19:53:10,681 ERROR BatchRegister:191 - 已进件=======车享家（北环路店）
+2019-02-14 19:53:10,681 ERROR BatchRegister:191 - 已进件=======车享家（滨江路店）
+2019-02-14 19:53:10,681 ERROR BatchRegister:191 - 已进件=======车享家成都世纪大道
+2019-02-14 19:53:10,776  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:10,950  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:10,951 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区雅和南二路英伦城邦K区东门人行门
+2019-02-14 19:53:10,951 ERROR BatchRegister:191 - 已进件=======车享家（富洲路店）
+2019-02-14 19:53:10,952 ERROR BatchRegister:191 - 已进件=======车享家（钢花路店）
+2019-02-14 19:53:10,953 ERROR BatchRegister:191 - 已进件=======车享家（海峡路店）
+2019-02-14 19:53:10,953 ERROR BatchRegister:191 - 已进件=======车享家（华福大道）
+2019-02-14 19:53:10,953 ERROR BatchRegister:191 - 已进件=======车享家黄花园加油站
+2019-02-14 19:53:10,953 ERROR BatchRegister:191 - 已进件=======车享家（火炬大道）
+2019-02-14 19:53:10,953 ERROR BatchRegister:191 - 已进件=======车享家（金童路店）
+2019-02-14 19:53:10,953 ERROR BatchRegister:191 - 已进件=======车享家（缙云大道）
+2019-02-14 19:53:10,953 ERROR BatchRegister:191 - 已进件=======车享家龙华大道1
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（龙山大道）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（龙洲大道）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（青龙站店）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（石马河站）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（双宁路店）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（天吉路店）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（烟雨路店）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（邮电路店）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（余松路店）
+2019-02-14 19:53:10,954 ERROR BatchRegister:191 - 已进件=======车享家（白涛站店）
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家大学城东路
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家（海尔路店）
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家（海福路店）
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家（红黄路店）
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家（宏帆路店）
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家（虎曾路站）
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家（江与城店）
+2019-02-14 19:53:10,955 ERROR BatchRegister:191 - 已进件=======车享家（科城路店）
+2019-02-14 19:53:10,956 ERROR BatchRegister:191 - 已进件=======车享家（科龙路店）
+2019-02-14 19:53:10,956 ERROR BatchRegister:191 - 已进件=======车享家（兰花路店）
+2019-02-14 19:53:10,956 ERROR BatchRegister:191 - 已进件=======车享家（龙头寺店）
+2019-02-14 19:53:10,956 ERROR BatchRegister:191 - 已进件=======车享家（卢作孚路）
+2019-02-14 19:53:11,146  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:11,250  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:11,250 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区中和镇朝阳路306号附1号
+2019-02-14 19:53:11,251 ERROR BatchRegister:191 - 已进件=======车享家（南山路店）
+2019-02-14 19:53:11,251 ERROR BatchRegister:191 - 已进件=======车享家（南园东路）
+2019-02-14 19:53:11,252 ERROR BatchRegister:191 - 已进件=======车享家（七公里站）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（上江城店）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（双城路店）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（顺江站店）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（桃花大道）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（腾龙大道）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（通江大道）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家万州圣士豪庭
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（文苑北路）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（西双大道）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家学府大道路
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（学院街店）
+2019-02-14 19:53:11,254 ERROR BatchRegister:191 - 已进件=======车享家（悠然天地）
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======车享家（渝澳大道）
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======车玴车美汽车养护
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======车逸居汽车改装俱乐
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======车友必成贴膜.美容
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======车之骏汽车美容中心
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======车之美汽车一站式服
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======陈婆婆珍藏菜
+2019-02-14 19:53:11,255 ERROR BatchRegister:191 - 已进件=======成都吃客致民路店
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======成都亨得利钟表
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======初心HA
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======川井造型
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======川西坝子杜甫草堂
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======川西坝子羊犀直营店
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======创马汇宝马4S技师
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======吹吹风汽车美容
+2019-02-14 19:53:11,256 ERROR BatchRegister:191 - 已进件=======春耕野菜馆华阳店
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======春阳水饺·川味名小
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======大龙燚火锅花牌坊店
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======大龙燚火锅马鞍北路
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======大院河鲜·来仙气飘
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======得利达名表
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======德洛瑞恩
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======德式精养玛驰店
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======德系之星·极致车美
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======鼎靓精工坊
+2019-02-14 19:53:11,257 ERROR BatchRegister:191 - 已进件=======斗鸡饭场伙浆洗街店
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======额尔敦必福牛匠
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======范大碗好鱼人家冷锅
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======菲拉格慕国际金融
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======峰林汽车服务
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======福莱士蒸汽洗车美容
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======福雷蒙汽车美容中心
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======福曼汽车美容工坊
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======钢管厂五区小郡肝串
+2019-02-14 19:53:11,258 ERROR BatchRegister:191 - 已进件=======高新区实诚汽修
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======格耐汽车生活馆
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======格知沙龙
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======鼓动汽车音响改装连
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======怪叔叔汽车生活馆
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======广合汽车
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======海底捞火锅莱蒙都会
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======汉阳韩国料理
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======豪众汽车装饰美容服
+2019-02-14 19:53:11,259 ERROR BatchRegister:191 - 已进件=======恒动力汽车养护中心
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======红星兔丁WHC店
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======呼哈凉卷粉高升桥店
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======化锐汽车维修
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======奂燃汽车钣喷服务
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======惠泽汽车美容机场
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======机械蟲汽车美容保养
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======集洁号汽车美容服务
+2019-02-14 19:53:11,260 ERROR BatchRegister:191 - 已进件=======佳杰欣汽修厂
+2019-02-14 19:53:11,262 ERROR BatchRegister:191 - 已进件=======佳音汽车音响装饰馆
+2019-02-14 19:53:11,262 ERROR BatchRegister:191 - 已进件=======嘉悦汽车服务中心
+2019-02-14 19:53:11,262 ERROR BatchRegister:191 - 已进件=======間客
+2019-02-14 19:53:11,262 ERROR BatchRegister:191 - 已进件=======简HA九眼桥店
+2019-02-14 19:53:11,262 ERROR BatchRegister:191 - 已进件=======疆食记
+2019-02-14 19:53:11,262 ERROR BatchRegister:191 - 已进件=======今蓝纳米专业汽车贴
+2019-02-14 19:53:11,262 ERROR BatchRegister:191 - 已进件=======锦伯爵汽车美容中心
+2019-02-14 19:53:11,444  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:11,633  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:18,770 ERROR BatchRegister:191 - 已进件=======锦南炉火锅
+2019-02-14 19:53:18,771 ERROR BatchRegister:191 - 已进件=======精典汽车江浦路店
+2019-02-14 19:53:18,772 ERROR BatchRegister:191 - 已进件=======精典汽车连锁易修店
+2019-02-14 19:53:18,772 ERROR BatchRegister:191 - 已进件=======精点倍耐力轮胎红光
+2019-02-14 19:53:18,773 ERROR BatchRegister:191 - 已进件=======丼亦九宫格火锅
+2019-02-14 19:53:18,774 ERROR BatchRegister:191 - 已进件=======景羊岗贵州米粉·粉
+2019-02-14 19:53:18,775 ERROR BatchRegister:191 - 已进件=======聚昱汽修
+2019-02-14 19:53:18,775 ERROR BatchRegister:191 - 已进件=======卡伦造型锦城店
+2019-02-14 19:53:18,775 ERROR BatchRegister:191 - 已进件=======侃侃火锅高升桥店
+2019-02-14 19:53:18,776 ERROR BatchRegister:191 - 已进件=======科雷汽车服务中心
+2019-02-14 19:53:18,776 ERROR BatchRegister:191 - 已进件=======宽板凳火锅鱼
+2019-02-14 19:53:18,777 ERROR BatchRegister:191 - 已进件=======宽途汽车·众意洗车
+2019-02-14 19:53:18,777 ERROR BatchRegister:191 - 已进件=======辣九爷
+2019-02-14 19:53:18,778 ERROR BatchRegister:191 - 已进件=======浪琴远洋太古里店
+2019-02-14 19:53:18,778 ERROR BatchRegister:191 - 已进件=======老广东营汽车空调装
+2019-02-14 19:53:18,779 ERROR BatchRegister:191 - 已进件=======老家伙理发铺烫发染
+2019-02-14 19:53:18,779 ERROR BatchRegister:191 - 已进件=======老码头火锅玉林店
+2019-02-14 19:53:18,780 ERROR BatchRegister:191 - 已进件=======老盐边羊肉米线
+2019-02-14 19:53:18,781 ERROR BatchRegister:191 - 已进件=======乐山胖哥跷脚牛肉
+2019-02-14 19:53:18,782 ERROR BatchRegister:191 - 已进件=======乐山王屠夫跷脚牛肉
+2019-02-14 19:53:18,783 ERROR BatchRegister:191 - 已进件=======黎黎深夜火锅
+2019-02-14 19:53:18,783 ERROR BatchRegister:191 - 已进件=======丽江红山梁牛肉火锅
+2019-02-14 19:53:18,784 ERROR BatchRegister:191 - 已进件=======靓车会汽车镀膜青羊
+2019-02-14 19:53:18,784 ERROR BatchRegister:191 - 已进件=======靓华汽车服务中心
+2019-02-14 19:53:18,786 ERROR BatchRegister:191 - 已进件=======六年二班串串
+2019-02-14 19:53:18,788 ERROR BatchRegister:191 - 已进件=======龙膜匠心汽车服务工
+2019-02-14 19:53:18,789 ERROR BatchRegister:191 - 已进件=======泸州酸菜豆花红瓦寺
+2019-02-14 19:53:18,789 ERROR BatchRegister:191 - 已进件=======路尊汽修双楠伊藤店
+2019-02-14 19:53:18,790 ERROR BatchRegister:191 - 已进件=======路尊汽修总厂店
+2019-02-14 19:53:18,790 ERROR BatchRegister:191 - 已进件=======罗西尼
+2019-02-14 19:53:18,790 ERROR BatchRegister:191 - 已进件=======麻辣空间火锅WH店
+2019-02-14 19:53:18,790 ERROR BatchRegister:191 - 已进件=======马记牛肉焦饼
+2019-02-14 19:53:18,791 ERROR BatchRegister:191 - 已进件=======马立可北星店
+2019-02-14 19:53:19,043  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:19,152  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:19,153 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区安公路二段356-358号
+2019-02-14 19:53:19,153 ERROR BatchRegister:191 - 已进件=======马立可东升店
+2019-02-14 19:53:19,153 ERROR BatchRegister:191 - 已进件=======马立可光华店
+2019-02-14 19:53:19,153 ERROR BatchRegister:191 - 已进件=======马立可航都店
+2019-02-14 19:53:19,153 ERROR BatchRegister:191 - 已进件=======马立可花园会所店
+2019-02-14 19:53:19,153 ERROR BatchRegister:191 - 已进件=======马立可金沙店
+2019-02-14 19:53:19,353  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:19,538  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:19,538 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区华阳大道二段安公路一段312号
+2019-02-14 19:53:19,538 ERROR BatchRegister:191 - 已进件=======马立可九里堤店
+2019-02-14 19:53:19,539 ERROR BatchRegister:191 - 已进件=======马立可聚荟店
+2019-02-14 19:53:19,539 ERROR BatchRegister:191 - 已进件=======马立可李家沱店
+2019-02-14 19:53:19,539 ERROR BatchRegister:191 - 已进件=======马立可丽都店
+2019-02-14 19:53:19,539 ERROR BatchRegister:191 - 已进件=======马立可龙泉店
+2019-02-14 19:53:19,540 ERROR BatchRegister:198 - 根据名称=马立可汽车中心（天府二街店）找不到对应的图片文件
+2019-02-14 19:53:19,540 ERROR BatchRegister:191 - 已进件=======马立可天府收费站
+2019-02-14 19:53:19,726  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:19,913  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:19,914 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区华阳滨河路一段115号
+2019-02-14 19:53:19,915 ERROR BatchRegister:191 - 已进件=======马立可中海国际店
+2019-02-14 19:53:19,915 ERROR BatchRegister:191 - 已进件=======马立可紫荆店
+2019-02-14 19:53:19,916 ERROR BatchRegister:191 - 已进件=======玛吉斯轮胎-小车快
+2019-02-14 19:53:19,917 ERROR BatchRegister:191 - 已进件=======茂腾汽车美容服务中
+2019-02-14 19:53:19,918 ERROR BatchRegister:191 - 已进件=======帽子房
+2019-02-14 19:53:20,029  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:20,227  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:20,227 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市双流区长冶路二段72号
+2019-02-14 19:53:20,227 ERROR BatchRegister:191 - 已进件=======美丽100
+2019-02-14 19:53:20,227 ERROR BatchRegister:191 - 已进件=======美轮美汽车养护中心
+2019-02-14 19:53:20,227 ERROR BatchRegister:191 - 已进件=======美特施汽车美容
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======名士表
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======名嘴森林堍
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======铭車优品
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======摩登时代菁蓉国际
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======那时·初见形象设计
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======倪豆花
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======昵果造型
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======牛莽莽全牛火锅锦里
+2019-02-14 19:53:20,228 ERROR BatchRegister:191 - 已进件=======牛牪犇牛杂火锅
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======潘多拉
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======潘记牛肉旮饼
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======霹雳蛙掌门春熙路店
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======朴田泰式海鲜火锅
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======千乘租车
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======千和日系造型
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======千和造型沙龙
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======签王之王·牛肉串串
+2019-02-14 19:53:20,229 ERROR BatchRegister:191 - 已进件=======强盛汽修
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======强氏汽车
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======强氏汽车清江店
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======俏媳妇重庆老灶火锅
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======屈臣氏远洋太古里店
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======全福居老北京涮羊肉
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======群英汇汽车养护中心
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======人民食堂高升桥店
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======荣园餐馆
+2019-02-14 19:53:20,230 ERROR BatchRegister:191 - 已进件=======榕辉汽车维修部
+2019-02-14 19:53:20,415  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取城市列表成功","data":[{"value":"510100","text":"成都市"},{"value":"510300","text":"自贡市"},{"value":"510400","text":"攀枝花市"},{"value":"510500","text":"泸州市"},{"value":"510600","text":"德阳市"},{"value":"510700","text":"绵阳市"},{"value":"510800","text":"广元市"},{"value":"510900","text":"遂宁市"},{"value":"511000","text":"内江市"},{"value":"511100","text":"乐山市"},{"value":"511300","text":"南充市"},{"value":"511400","text":"眉山市"},{"value":"511500","text":"宜宾市"},{"value":"511600","text":"广安市"},{"value":"511700","text":"达州市"},{"value":"511800","text":"雅安市"},{"value":"511900","text":"巴中市"},{"value":"512000","text":"资阳市"},{"value":"513200","text":"阿坝藏族羌族自治州"},{"value":"513300","text":"甘孜藏族自治州"},{"value":"513400","text":"凉山彝族自治州"}]}
+2019-02-14 19:53:20,526  INFO HttpUtils:124 - 返回内容={"code":1,"msg":"获取区县列表成功","data":[{"value":"510101","text":"市辖区"},{"value":"510104","text":"锦江区"},{"value":"510105","text":"青羊区"},{"value":"510106","text":"金牛区"},{"value":"510107","text":"武侯区"},{"value":"510108","text":"成华区"},{"value":"510112","text":"龙泉驿区"},{"value":"510113","text":"青白江区"},{"value":"510114","text":"新都区"},{"value":"510115","text":"温江区"},{"value":"510121","text":"金堂县"},{"value":"510122","text":"双流县"},{"value":"510124","text":"郫县"},{"value":"510129","text":"大邑县"},{"value":"510131","text":"蒲江县"},{"value":"510132","text":"新津县"},{"value":"510181","text":"都江堰市"},{"value":"510182","text":"彭州市"},{"value":"510183","text":"邛崃市"},{"value":"510184","text":"崇州市"}]}
+2019-02-14 19:53:20,527 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=四川省成都市成都市武侯区通祠路16号
+2019-02-14 19:53:20,527 ERROR BatchRegister:191 - 已进件=======瑞含汽车美容一站式
+2019-02-14 19:53:20,527 ERROR BatchRegister:191 - 已进件=======塞博坦名车俱乐部
+2019-02-14 19:53:20,527 ERROR BatchRegister:191 - 已进件=======三道苗苗鱼火锅
+2019-02-14 19:53:20,527 ERROR BatchRegister:191 - 已进件=======三江烤鱼
+2019-02-14 19:53:20,527 ERROR BatchRegister:191 - 已进件=======三益口福抄手武候祠
+2019-02-14 19:53:20,528 ERROR BatchRegister:191 - 已进件=======叁口煮酒都老火锅
+2019-02-14 19:53:20,529 ERROR BatchRegister:198 - 根据名称=陕西面馆找不到对应的图片文件
+2019-02-14 19:53:20,529 ERROR BatchRegister:191 - 已进件=======上池面馆
+2019-02-14 19:53:20,529 ERROR BatchRegister:191 - 已进件=======上海·东尼美发
+2019-02-14 19:53:20,529 ERROR BatchRegister:191 - 已进件=======沈小福米线黉门街店
+2019-02-14 19:53:20,529 ERROR BatchRegister:191 - 已进件=======盛时表行
+2019-02-14 19:53:20,529 ERROR BatchRegister:191 - 已进件=======盛世华美汽车美容装
+2019-02-14 19:53:20,529 ERROR BatchRegister:191 - 已进件=======诗悦轻奢美发沙龙
+2019-02-14 19:53:20,530 ERROR BatchRegister:191 - 已进件=======诗悦轻奢沙龙
+2019-02-14 19:53:20,530 ERROR BatchRegister:191 - 已进件=======时间廊IF金融中心
+2019-02-14 19:53:20,530 ERROR BatchRegister:191 - 已进件=======时间廊龙湖北城天街
+2019-02-14 19:53:20,530 ERROR BatchRegister:191 - 已进件=======拾忆味老火锅
+2019-02-14 19:53:20,530 ERROR BatchRegister:191 - 已进件=======世纪精剪九号公馆店
+2019-02-14 19:53:20,686  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:20,839  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:20,839 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市北碚缙云大道56号
+2019-02-14 19:53:20,839 ERROR BatchRegister:191 - 已进件=======蜀车行汽车美容中心
+2019-02-14 19:53:20,839 ERROR BatchRegister:191 - 已进件=======蜀串香厕所串串
+2019-02-14 19:53:20,839 ERROR BatchRegister:191 - 已进件=======蜀大侠火锅中坝店
+2019-02-14 19:53:20,839 ERROR BatchRegister:191 - 已进件=======蜀国府邸老火锅冒菜
+2019-02-14 19:53:20,839 ERROR BatchRegister:191 - 已进件=======蜀九香火锅东轩AR
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======顺江花园汽车美容
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======斯美迪CC洗车场
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======苏苏元气汤
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======台湾一非造型
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======饕林餐厅WHC店
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======陶记蛋烘糕
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======藤野造型春熙路店
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======天梭时代百盛店
+2019-02-14 19:53:20,840 ERROR BatchRegister:191 - 已进件=======头鼎汉文化火锅WH
+2019-02-14 19:53:20,841 ERROR BatchRegister:191 - 已进件=======托马斯邦德汽车青羊
+2019-02-14 19:53:20,841 ERROR BatchRegister:191 - 已进件=======瓦烤·烧烤扛把子
+2019-02-14 19:53:20,841 ERROR BatchRegister:191 - 已进件=======瓦晒川菜WHC店
+2019-02-14 19:53:20,841 ERROR BatchRegister:191 - 已进件=======王鸡婆川菜馆彩虹桥
+2019-02-14 19:53:20,841 ERROR BatchRegister:191 - 已进件=======王记特色锅魁洗面桥
+2019-02-14 19:53:20,922  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,072  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,072 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市丰都滨江西路145号
+2019-02-14 19:53:21,073 ERROR BatchRegister:191 - 已进件=======味之绝美蛙鱼头火锅
+2019-02-14 19:53:21,073 ERROR BatchRegister:186 - 该商铺名称超过或等于10个字符=温江龙祥汽车修理厂
+2019-02-14 19:53:21,073 ERROR BatchRegister:191 - 已进件=======文速汽修厂
+2019-02-14 19:53:21,073 ERROR BatchRegister:191 - 已进件=======吴系打边炉
+2019-02-14 19:53:21,074 ERROR BatchRegister:191 - 已进件=======無UN发型沙龙
+2019-02-14 19:53:21,074 ERROR BatchRegister:191 - 已进件=======喜车缘
+2019-02-14 19:53:21,235  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,317  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,318 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市涪陵顺江好吃街顺江大道36号附23号
+2019-02-14 19:53:21,319 ERROR BatchRegister:191 - 已进件=======香港V·V美甲美睫
+2019-02-14 19:53:21,319 ERROR BatchRegister:191 - 已进件=======祥龙汽车美容连锁
+2019-02-14 19:53:21,319 ERROR BatchRegister:191 - 已进件=======享月·汤皇象南里店
+2019-02-14 19:53:21,319 ERROR BatchRegister:191 - 已进件=======享月·汤皇橡树林店
+2019-02-14 19:53:21,319 ERROR BatchRegister:191 - 已进件=======小P老师-PPP派
+2019-02-14 19:53:21,319 ERROR BatchRegister:191 - 已进件=======小桔养车琉璃路店
+2019-02-14 19:53:21,319 ERROR BatchRegister:191 - 已进件=======小牛大味面华西店
+2019-02-14 19:53:21,487  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,638  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,639 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市北碚城南卢作孚路568、570号
+2019-02-14 19:53:21,639 ERROR BatchRegister:191 - 已进件=======新奥通名车维修
+2019-02-14 19:53:21,639 ERROR BatchRegister:191 - 已进件=======新锐贴膜3M授权店
+2019-02-14 19:53:21,639 ERROR BatchRegister:191 - 已进件=======新山城菜根香浆洗街
+2019-02-14 19:53:21,639 ERROR BatchRegister:191 - 已进件=======新胜汽车装饰贴膜店
+2019-02-14 19:53:21,796  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,893  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:21,893 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市涪陵白涛街道巴王路6号中石油白涛加油站内
+2019-02-14 19:53:21,894 ERROR BatchRegister:191 - 已进件=======鑫城宝车汽车服务连
+2019-02-14 19:53:21,894 ERROR BatchRegister:191 - 已进件=======鑫鑫汽车装饰
+2019-02-14 19:53:21,895 ERROR BatchRegister:191 - 已进件=======鑫源汽车装饰
+2019-02-14 19:53:21,895 ERROR BatchRegister:191 - 已进件=======幸运成都 火锅先生
+2019-02-14 19:53:21,896 ERROR BatchRegister:191 - 已进件=======萱子饰品银泰城店
+2019-02-14 19:53:21,896 ERROR BatchRegister:191 - 已进件=======一把骨高升桥直营店
+2019-02-14 19:53:21,897 ERROR BatchRegister:191 - 已进件=======一汽“车之城”汽修
+2019-02-14 19:53:22,061  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,198  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,198 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市万州南山路28号8幢-3层5、6、7商铺
+2019-02-14 19:53:22,200 ERROR BatchRegister:191 - 已进件=======壹捷汽车江北盘溪店
+2019-02-14 19:53:22,284  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,426  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,426 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市合川钓办处高新农业产业大道58号
+2019-02-14 19:53:22,426 ERROR BatchRegister:191 - 已进件=======义君美发
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======意念造型水璟塘店
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======英国TOTOTO
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======优驰汽车快捷养护
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======友乐汽车装饰
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======鱼乐圈蒸汽石锅鱼
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======宇杰车爵士汽车二
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======御车汇万年店
+2019-02-14 19:53:22,427 ERROR BatchRegister:191 - 已进件=======御匠HA
+2019-02-14 19:53:22,428 ERROR BatchRegister:191 - 已进件=======跃驰汽修服务部
+2019-02-14 19:53:22,428 ERROR BatchRegister:191 - 已进件=======珍卓钻石
+2019-02-14 19:53:22,428 ERROR BatchRegister:191 - 已进件=======芝生堂鲜汤锅象南里
+2019-02-14 19:53:22,584  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,664  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,665 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市江津/滨江大道滨江路中段6栋5-2号
+2019-02-14 19:53:22,665 ERROR BatchRegister:191 - 已进件=======重庆创合汽车维修服
+2019-02-14 19:53:22,665 ERROR BatchRegister:191 - 已进件=======重庆隆钦汽配汽修维
+2019-02-14 19:53:22,665 ERROR BatchRegister:191 - 已进件=======走马西火锅
+2019-02-14 19:53:22,817  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,968  INFO HttpUtils:124 - 返回内容={"code":1001,"msg":"error","data":[]}
+2019-02-14 19:53:22,968 ERROR BatchRegister:246 - 没有获取到对应的省市区编号=重庆市北碚城南城南状元府邸朝阳小学对面
+2019-02-14 19:53:22,969 ERROR BatchRegister:191 - 已进件=======左士造型IFS店
+2019-02-14 19:53:22,969 ERROR BatchRegister:191 - 已进件=======佐冷馋·串串里
+2019-02-14 19:53:22,969  INFO BatchRegister:72 - 已经轮询到结尾=399
+2019-02-14 19:53:22,969  INFO BatchRegister:296 - 成功1个
+2019-02-14 19:53:22,989  INFO MyIntercept:34 - 访问[/test/batch]耗时=19987
+2019-02-14 19:55:10,617  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-14 19:55:10,805  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 5392 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-14 19:55:10,806  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-14 19:55:10,871  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75464c93: startup date [Thu Feb 14 19:55:10 CST 2019]; root of context hierarchy
+2019-02-14 19:55:12,574  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-14 19:55:13,197  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-14 19:55:13,661  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7684cb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-14 19:55:14,201  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-14 19:55:14,344  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 3477 ms
+2019-02-14 19:55:14,571  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-14 19:55:14,573  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-14 19:55:14,577  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-14 19:55:14,578  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-14 19:55:14,578  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-14 19:55:14,578  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-14 19:55:14,578  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-14 19:55:14,580  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-14 19:55:15,391  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-14 19:55:15,394  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-14 19:55:15,403  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-14 19:55:15,524  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:55:15,877  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75464c93: startup date [Thu Feb 14 19:55:10 CST 2019]; root of context hierarchy
+2019-02-14 19:55:15,944  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-14 19:55:15,946  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-14 19:55:15,947  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-14 19:55:15,947  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-14 19:55:15,948  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-14 19:55:15,948  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-14 19:55:15,949  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-14 19:55:15,950  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-14 19:55:15,952  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-14 19:55:15,952  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-14 19:55:15,967  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-14 19:55:15,990  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:55:15,991  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:55:16,092  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-14 19:55:16,485  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@75464c93: startup date [Thu Feb 14 19:55:10 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-14 19:55:16,486  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-14 19:55:16,502  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-14 19:55:16,724  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-14 19:55:16,766  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-14 19:55:16,767  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-14 19:55:16,767  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-14 19:55:16,768  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-14 19:55:16,774  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-14 19:55:16,776  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-14 19:55:16,777  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-14 19:55:16,813  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-14 19:55:16,819  INFO MRApplication:59 - Started MRApplication in 6.369 seconds (JVM running for 7.975)
+2019-02-14 19:55:39,040  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-14 19:55:39,064  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-02-14 19:55:39,377  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-14 19:55:40,164 ERROR BatchRegister:191 - 已进件=======1919酒类直供二
+2019-02-14 19:55:40,164 ERROR BatchRegister:191 - 已进件=======1983美容美发
+2019-02-14 19:55:40,165 ERROR BatchRegister:191 - 已进件=======AA远洋太古里店
+2019-02-14 19:56:29,465  INFO Version:21 - HV000001: Hibernate Validator 6.0.10.Final
+2019-02-14 19:56:29,760  INFO MRApplication:50 - Starting MRApplication on XCETP9GFY1Z5CHX with PID 10688 (D:\merchant-register\target\classes started by Administrator in D:\merchant-register)
+2019-02-14 19:56:29,761  INFO MRApplication:663 - The following profiles are active: dev
+2019-02-14 19:56:29,828  INFO AnnotationConfigServletWebServerApplicationContext:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40bfe02b: startup date [Thu Feb 14 19:56:29 CST 2019]; root of context hierarchy
+2019-02-14 19:56:30,840  INFO RepositoryConfigurationDelegate:163 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-14 19:56:31,207  INFO AutowiredAnnotationBeanPostProcessor:154 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-14 19:56:31,339  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b393763] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-14 19:56:31,736  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 7777 (http)
+2019-02-14 19:56:31,888  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2063 ms
+2019-02-14 19:56:32,121  INFO ServletRegistrationBean:186 - Servlet dispatcherServlet mapped to [/]
+2019-02-14 19:56:32,123  INFO ServletRegistrationBean:186 - Servlet statViewServlet mapped to [/druid/*]
+2019-02-14 19:56:32,127  INFO FilterRegistrationBean:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-14 19:56:32,127  INFO FilterRegistrationBean:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-14 19:56:32,127  INFO FilterRegistrationBean:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-14 19:56:32,127  INFO FilterRegistrationBean:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-14 19:56:32,128  INFO FilterRegistrationBean:258 - Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-14 19:56:32,129  INFO FilterRegistrationBean:245 - Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2019-02-14 19:56:33,116  INFO ExecutorConfig:24 - start asyncServiceExecutor
+2019-02-14 19:56:33,118  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService 
+2019-02-14 19:56:33,127  INFO ThreadPoolTaskExecutor:171 - Initializing ExecutorService  'asyncServiceExecutor'
+2019-02-14 19:56:33,245  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:56:33,583  INFO RequestMappingHandlerAdapter:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40bfe02b: startup date [Thu Feb 14 19:56:29 CST 2019]; root of context hierarchy
+2019-02-14 19:56:33,644  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/index]}" onto public java.lang.String com.merchant.controller.PageController.index()
+2019-02-14 19:56:33,647  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/register]}" onto public java.lang.String com.merchant.controller.PageController.register(com.merchant.entity.RuiShengUserInfo,org.springframework.ui.ModelMap)
+2019-02-14 19:56:33,648  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/list]}" onto public java.lang.String com.merchant.controller.PageController.merchantIndex()
+2019-02-14 19:56:33,648  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/p/s]}" onto public java.lang.String com.merchant.controller.PageController.index_succ(org.springframework.ui.ModelMap)
+2019-02-14 19:56:33,649  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/register]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.register()
+2019-02-14 19:56:33,649  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/list]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.queryUserInfo(int,int)
+2019-02-14 19:56:33,650  INFO RequestMappingHandlerMapping:547 - Mapped "{[/merchant/modRate]}" onto public com.merchant.entity.ResultData com.merchant.controller.RegisterController.modifyRate(double,java.lang.String,java.lang.String,java.lang.String)
+2019-02-14 19:56:33,650  INFO RequestMappingHandlerMapping:547 - Mapped "{[/test/batch]}" onto public void com.merchant.controller.TestController.batch()
+2019-02-14 19:56:33,652  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-14 19:56:33,653  INFO RequestMappingHandlerMapping:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-14 19:56:33,670  INFO SimpleUrlHandlerMapping:360 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-02-14 19:56:33,695  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:56:33,695  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-14 19:56:33,784  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-14 19:56:34,215  INFO SpringTemplateLoader:62 - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40bfe02b: startup date [Thu Feb 14 19:56:29 CST 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-02-14 19:56:34,216  INFO FreeMarkerConfigurer:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-02-14 19:56:34,233  WARN FreeMarkerAutoConfiguration:70 - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2019-02-14 19:56:34,438  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-02-14 19:56:34,481  INFO AnnotationMBeanExporter:433 - Registering beans for JMX exposure on startup
+2019-02-14 19:56:34,482  INFO AnnotationMBeanExporter:895 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-14 19:56:34,482  INFO AnnotationMBeanExporter:895 - Bean with name 'log-filter' has been autodetected for JMX exposure
+2019-02-14 19:56:34,482  INFO AnnotationMBeanExporter:895 - Bean with name 'stat-filter' has been autodetected for JMX exposure
+2019-02-14 19:56:34,490  INFO AnnotationMBeanExporter:668 - Located MBean 'log-filter': registering with JMX server as MBean [com.alibaba.druid.filter.logging:name=log-filter,type=Log4jFilter]
+2019-02-14 19:56:34,491  INFO AnnotationMBeanExporter:668 - Located MBean 'stat-filter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=stat-filter,type=StatFilter]
+2019-02-14 19:56:34,492  INFO AnnotationMBeanExporter:668 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-02-14 19:56:34,528  INFO TomcatWebServer:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2019-02-14 19:56:34,532  INFO MRApplication:59 - Started MRApplication in 5.279 seconds (JVM running for 6.487)
+2019-02-14 19:56:37,058  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-14 19:56:37,087  INFO DispatcherServlet:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2019-02-14 19:56:37,409  INFO DruidDataSource:930 - {dataSource-1} inited
+2019-02-14 19:56:38,420 ERROR BatchRegister:191 - 已进件=======1919酒类直供二
+2019-02-14 19:56:38,422 ERROR BatchRegister:191 - 已进件=======1983美容美发
+2019-02-14 19:56:38,422 ERROR BatchRegister:191 - 已进件=======AA远洋太古里店

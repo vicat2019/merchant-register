@@ -1,0 +1,562 @@
+package com.merchant.util;
+
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.merchant.entity.ResultData;
+import com.merchant.entity.RuiShengUserInfo;
+import com.merchant.service.RsMerchantInfoService;
+import com.merchant.service.impl.MerchantServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.thymeleaf.util.StringUtils;
+
+import java.io.File;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * @program: merchant-register
+ * @description: 批量录入
+ * @author: Vincent
+ * @create: 2019-02-14 09:00
+ **/
+@Component("batchRegister")
+public class BatchRegister {
+    private Logger log = LoggerFactory.getLogger("BatchRegister");
+
+    @Autowired
+    private HttpUtils httpUtils;
+
+    private static Map<String, String> provinceMap;
+
+    @Autowired
+    private MerchantServiceImpl merchantService;
+
+    @Autowired
+    private RsMerchantInfoService rsMerchantInfoService;
+
+    private static int pp = 100;
+    private static String phoneStr = "17712508";
+
+
+    public void execute() {
+
+        // 已经进件的商铺
+        List<String> alreadyRegister = null;
+        try {
+            alreadyRegister = rsMerchantInfoService.getAllName();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (alreadyRegister == null || alreadyRegister.size() == 0) {
+            log.error("查询已经进件的商铺名称列表为空");
+            return;
+        }
+        alreadyRegister.add("千乘租车");
+
+        // 获取店铺信息
+        List<List<String>> shopInfoList = getShop();
+
+        // 遍历前10条
+        int count = 0;
+        int i = 0;
+        while (count < 50) {
+            // 取店铺Excel文件中的数据
+            if (i >= shopInfoList.size()) {
+                log.info("已经轮询到结尾=" + i);
+                break;
+            }
+            List<String> shopInfo = shopInfoList.get(i);
+            i = i + 1;
+
+            // 商户名称
+            String name = shopInfo.get(0);
+            String originalName = name;
+
+            // 关键词
+            if (name.contains("车臣")) {
+                name = name.replaceAll("车臣", "CC");
+            }
+            if (name.contains("武侯祠")) {
+                name = name.replaceAll("武侯祠", "WHC");
+            }
+            if (name.contains("大师")) {
+                name = name.replaceAll("大师", "DS");
+            }
+
+            if ((name.contains("（") || name.contains("(")) && name.length() <= 12) {
+                name = name.replaceAll("（", "");
+                name = name.replaceAll("）", "");
+                name = name.replaceAll("\\(", "");
+                name = name.replaceAll("\\)", "");
+            }
+
+            if (name.contains("车享家汽车养护中心")) {
+                name = name.replaceAll("汽车养护中心", "");
+                name = name.replaceAll("重庆", "");
+                if (name.length() >= 10) {
+                    name = name.replaceAll("店", "");
+                }
+            }
+            if (name.contains("车享家") && name.length() >= 10) {
+                name = name.replaceAll("（", "");
+                name = name.replaceAll("）", "");
+            }
+            if (name.contains("马立可汽车中心")) {
+                name = name.replaceAll("（", "");
+                name = name.replaceAll("）", "");
+                name = name.replaceAll("汽车中心", "");
+            }
+
+
+            // 去掉括号，截取字母
+            if (name.length() >= 10) {
+                name = name.replaceAll("（", "");
+                name = name.replaceAll("）", "");
+                name = name.replaceAll("\\(", "");
+                name = name.replaceAll("\\)", "");
+                name = handleLetter(name);
+            }
+
+            // 去掉"直营店"
+            if (name.length() >= 10) {
+                if (name.contains("川西坝子")) {
+                    name = name.replaceAll("（", "");
+                    name = name.replaceAll("）", "");
+                    name = name.replaceAll("\\(", "");
+                    name = name.replaceAll("\\)", "");
+                    name = name.replaceAll("直营店", "");
+                }
+            }
+
+            // 去掉"店"
+            if (name.length() >= 10) {
+                name = name.replaceAll("（", "");
+                name = name.replaceAll("）", "");
+                name = name.replaceAll("\\(", "");
+                name = name.replaceAll("\\)", "");
+                name = name.replaceAll("店", "");
+            }
+
+            // 去掉"中心"
+            if (name.length() >= 10) {
+                name = name.replaceAll("中心", "");
+            }
+
+            // 去掉括号和里面内容，截取字母
+            if (name.length() >= 10) {
+                name = originalName.replaceAll("（.+）", "");
+                name = name.replaceAll("\\(.+\\)", "");
+                name = handleLetter(name);
+            }
+
+            if ("1919酒类直供".equals(name)) {
+                name = "1919酒类直供二";
+            }
+            if (originalName.contains("屈臣氏(成都远洋太古里店)")) {
+                name = "屈臣氏远洋太古里店";
+            }
+            if (name.contains("摩登时代")) name = "摩登时代菁蓉国际";
+            if (name.contains("温江龙祥汽车修理厂")) name = "温江龙祥汽车修理厂二";
+            if (name.contains("壹捷汽车服务")) name = "壹捷汽车江北盘溪店";
+            if (name.contains("宇杰车爵士汽车")) name = "宇杰车爵士汽车二";
+            if (name.contains("锦城印象火锅酒楼")) name = "锦城印象火锅酒楼二";
+
+
+            // 去掉括号内容
+            if (name.length() >= 10) {
+                name = originalName.replaceAll("（.+）", "");
+                name = name.replaceAll("\\(.+\\)", "");
+            }
+
+            // 截取名称中的前9个字符
+            if (name.length() >= 10) {
+                name = name.replaceAll("（", "");
+                name = name.replaceAll("）", "");
+                name = name.replaceAll("\\(", "");
+                name = name.replaceAll("\\)", "");
+                name = handleLetter(name);
+                name = name.substring(0, 9);
+            }
+
+
+            if (name.length() >= 10) {
+                log.error("该商铺名称超过或等于10个字符=" + originalName);
+                continue;
+            }
+
+            if (alreadyRegister.contains(name)) {
+                log.info("该商铺已进件=======" + name);
+                continue;
+            }
+
+            // 获取图片
+            File doorPicFile = getDoorPicFile(originalName);
+            if (doorPicFile == null) {
+                log.error("根据名称=" + originalName + "找不到对应的图片文件");
+                continue;
+            }
+
+            // 解析地址省市区
+            String addressStr = shopInfo.get(1);
+            String provinceName = "";
+            String cityName = "";
+            String areaName = "";
+            String address = "";
+
+            if (addressStr.contains("成都市成都市")) {
+                addressStr = addressStr.replaceAll("成都市成都市", "成都市");
+            }
+            if (addressStr.contains("双流区双流区")) {
+                addressStr = addressStr.replaceAll("双流区双流区", "双流区");
+            }
+            if (addressStr.contains("双流区")) {
+                addressStr = addressStr.replaceAll("双流区", "双流县");
+            }
+
+            // 正常地址，含有省、市、区
+            if (addressStr.contains("省") && addressStr.contains("市") && addressStr.contains("区")) {
+                provinceName = addressStr.substring(0, addressStr.indexOf("省") + 1);
+                cityName = addressStr.substring(addressStr.indexOf("省") + 1, addressStr.indexOf("市") + 1);
+                areaName = addressStr.substring(addressStr.indexOf("市") + 1, addressStr.indexOf("区") + 1);
+                address = addressStr.substring(addressStr.indexOf("区") + 1);
+            }
+
+            // 省市区中有一个为空
+            if (StringUtils.isEmpty(provinceName) || StringUtils.isEmpty(cityName) || StringUtils.isEmpty(areaName)) {
+                // 四川省成都市
+                if (addressStr.contains("四川省成都市")) {
+                    provinceName = "四川省";
+                    cityName = "成都市";
+
+                    if (addressStr.contains("崇州")) {
+                        areaName = "崇州市";
+                        address = addressStr.substring(addressStr.indexOf("崇州") + 2);
+                    } else if (addressStr.contains("邛崃")) {
+                        areaName = "邛崃市";
+                        address = addressStr.substring(addressStr.indexOf("邛崃") + 2);
+                    } else if (addressStr.contains("县")) {
+                        areaName = addressStr.substring(addressStr.indexOf("市") + 1, addressStr.indexOf("县") + 1);
+                        address = addressStr.substring(addressStr.indexOf("县") + 1);
+                    }
+                }
+
+                // 重庆市
+                if (addressStr.contains("重庆市")) {
+                    provinceName = "重庆市";
+                    cityName = "重庆市";
+
+
+                    if (addressStr.contains("区")) {
+                        areaName = addressStr.substring(addressStr.indexOf("市") + 1, addressStr.indexOf("区") + 1);
+                        address = addressStr.substring(addressStr.indexOf("区") + 1);
+                    }
+                    if (addressStr.contains("北碚")) {
+                        areaName = "北碚区";
+                        address = addressStr.substring(addressStr.indexOf("北碚") + 2);
+                    }
+                    if (addressStr.contains("涪陵")) {
+                        areaName = "涪陵区";
+                        address = addressStr.substring(addressStr.indexOf("涪陵") + 2);
+                    }
+                    if (addressStr.contains("万州")) {
+                        areaName = "万州区";
+                        address = addressStr.substring(addressStr.indexOf("万州") + 2);
+                    }
+                    if (addressStr.contains("江津")) {
+                        areaName = "江津区";
+                        address = addressStr.substring(addressStr.indexOf("江津") + 2);
+                    }
+                    if (addressStr.contains("合川")) {
+                        areaName = "合川区";
+                        address = addressStr.substring(addressStr.indexOf("合川") + 2);
+                    }
+                    if (addressStr.contains("丰都")) {
+                        cityName = "重庆市县";
+                        areaName = "丰都县";
+                        address = addressStr.substring(addressStr.indexOf("丰都") + 2);
+                    }
+                }
+            }
+
+            String province = getProvinceCode(provinceName);
+            String city = getCityCode(province, cityName);
+            String area = getAreaCode(city, areaName);
+
+            if (StringUtils.isEmpty(province) || StringUtils.isEmpty(city) || StringUtils.isEmpty(area)) {
+                log.error("没有获取到对应的省市区编号=" + addressStr);
+                continue;
+            }
+
+            // 上传门头照
+            String doorPicUrl = "";
+            String urlStr = "http://www.ruishengglass.cn//api-v1-user/upload.html";
+            String content = FileUploadHandler.uplad(doorPicFile.getAbsolutePath(), urlStr);
+            if (StringUtils.isEmpty(content)) {
+                log.error("上传门头照，返回内容为空");
+                continue;
+            }
+            JSONObject json = JSONObject.parseObject(content);
+            if (json.getInteger("code") == 1) {
+                JSONObject data = json.getJSONObject("data");
+                if (data != null) {
+                    doorPicUrl = data.getString("file");
+                }
+            }
+            if (StringUtils.isEmpty(doorPicUrl)) {
+                log.error("上传门头照，返回图片地址为空=" + originalName);
+                continue;
+            }
+
+            pp += 1;
+            String phone = phoneStr + pp;
+            String email = phone + "@163.com";
+
+
+            // 商户信息
+            RuiShengUserInfo userInfo = RegisterUserHelper.getChenYuMing(name, province, city, area, address, doorPicUrl, provinceName,
+                    cityName, areaName, phone, email, originalName);
+            try {
+                ResultData addResult = merchantService.insert(userInfo);
+                log.info("批量商户进件结果=" + addResult);
+            } catch (Exception e) {
+                e.printStackTrace();
+                log.error("商户进件异常=" + e.getMessage());
+            }
+
+            // 计数
+            count += 1;
+
+            // 睡眠时间
+            try {
+                TimeUnit.SECONDS.sleep(7);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        log.info("成功" + count + "个");
+    }
+
+    private String handleLetter(String name) {
+        Pattern pattern = Pattern.compile("([a-zA-Z]+)");
+        Matcher matcher = pattern.matcher(name);
+        String result = name;
+        if (matcher.find()) {
+            result = name.replaceAll("\\s+", "");
+            String temp = matcher.group(1);
+            if (temp.length() > 2) {
+                temp = temp.substring(0, 2);
+            }
+            result = result.replaceAll("[a-zA-Z]+|\\.+|\\&+", temp.toUpperCase());
+        }
+
+        return result;
+    }
+
+    public List<List<String>> getShop() {
+        String excelFile = "C:\\Users\\Administrator\\Desktop\\新建文件夹\\20190213天津滨海进件资料\\20190213入件资料 表格.xlsx";
+        List<List<String>> merchantInfoList = Lists.newArrayList();
+
+        try {
+            List<Object> dataList = ExcelUtils.readExcel(excelFile, 1, 2, "ALL");
+            dataList.forEach(item -> {
+                List<String> itemInfo = (List<String>) item;
+                if (itemInfo.size() > 2) {
+                    List<String> temp = Lists.newArrayList();
+                    temp.add(itemInfo.get(1));
+                    if ("null".equals(itemInfo.get(2)) || itemInfo.get(2) == null) {
+                        temp.add(itemInfo.get(3));
+                    } else {
+                        temp.add(itemInfo.get(2));
+                    }
+                    merchantInfoList.add(temp);
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return merchantInfoList;
+    }
+
+    public File getDoorPicFile(String name) {
+        File root = new File("C:\\Users\\Administrator\\Desktop\\新建文件夹\\20190213天津滨海进件资料");
+        List<File> fileList = Lists.newArrayList(root.listFiles());
+
+        for (File item : fileList) {
+            if (item.getName().contains(name)) {
+                return item;
+            }
+        }
+
+        return null;
+    }
+
+
+    /**
+     * 根据银行获取
+     *
+     * @param content
+     * @return
+     */
+    public String getBankCode(String content) {
+        Map<String, String> bankCodeMap = getBankData();
+
+        // 获取银行名称
+        Pattern pattern = Pattern.compile("(.*银行)");
+        Matcher matcher = pattern.matcher(content);
+        if (matcher.find()) {
+            String key = matcher.group(1);
+            if (bankCodeMap.containsKey(key)) {
+                return bankCodeMap.get(key);
+            }
+            key = key.replaceAll("中国", "");
+            if (bankCodeMap.containsKey(key)) {
+                return bankCodeMap.get(key);
+            }
+        }
+
+        return "";
+    }
+
+
+    /**
+     * 获取银行列表
+     *
+     * @return
+     */
+    public Map<String, String> getBankData() {
+        ResultData resultData = ResultData.getSuccessResult();
+        resultData.setData("{\"code\":1,\"msg\":\"获取银行列表成功\",\"data\":[{\"value\":\"1009999\",\"text\":\"邮政储蓄银行\",\"code\":\"PSBC\",\"typecode\":\"9006\"},{\"value\":\"1020000\",\"text\":\"工商银行\",\"code\":\"ICBC\",\"typecode\":\"9040\"},{\"value\":\"1030000\",\"text\":\"农业银行\",\"code\":\"ABC\",\"typecode\":\"9009\"},{\"value\":\"1040000\",\"text\":\"中国银行\",\"code\":\"BOC\",\"typecode\":\"9021\"},{\"value\":\"1050000\",\"text\":\"建设银行\",\"code\":\"CCB\",\"typecode\":\"9008\"},{\"value\":\"3010000\",\"text\":\"交通银行\",\"code\":\"BCM\",\"typecode\":\"9005\"},{\"value\":\"3020000\",\"text\":\"中信银行\",\"code\":\"ECITIC\",\"typecode\":\"9001\"},{\"value\":\"3030000\",\"text\":\"光大银行\",\"code\":\"CEB\",\"typecode\":\"9002\"},{\"value\":\"3040000\",\"text\":\"华夏银行\",\"code\":\"HXB\",\"typecode\":\"9003\"},{\"value\":\"3050000\",\"text\":\"民生银行\",\"code\":\"CMBC\",\"typecode\":\"9010\"},{\"value\":\"3060000\",\"text\":\"广发银行股份有限公司\",\"code\":\"GDB\",\"typecode\":\"9012\"},{\"value\":\"3070010\",\"text\":\"平安银行\",\"code\":\"PAB\",\"typecode\":\"9013\"},{\"value\":\"3080000\",\"text\":\"招商银行\",\"code\":\"CMB\",\"typecode\":\"9004\"},{\"value\":\"3090000\",\"text\":\"兴业银行\",\"code\":\"CIB\",\"typecode\":\"9015\"},{\"value\":\"3100000\",\"text\":\"浦东发展银行\",\"code\":\"SPDB\",\"typecode\":\"9020\"}]}");
+
+        Map<String, String> resultMap = parseBankResult(resultData);
+
+        return resultMap;
+    }
+
+    /**
+     * 获取支行列表
+     *
+     * @param parent 银行编号
+     * @return
+     */
+    public Map<String, String> getBranchBankData(String parent) {
+        String url = "http://www.ruishengglass.cn/api-v1-bank/getBranchList?parent=" + parent;
+        ResultData resultData = httpUtils.get(url, Maps.newHashMap());
+
+        Map<String, String> resultMap = parseBankResult(resultData);
+        return resultMap;
+    }
+
+    /**
+     * 解析查询银行返回的内容
+     *
+     * @param resultData
+     * @return
+     */
+    private Map<String, String> parseBankResult(ResultData resultData) {
+        Map<String, String> resultMap = Maps.newHashMap();
+        if (resultData.whetherOk()) {
+            String content = (String) resultData.getData();
+            JSONObject json = JSONObject.parseObject(content);
+            JSONArray dataJson = json.getJSONArray("data");
+
+            for (int i = 0; i < dataJson.size(); i++) {
+                JSONObject tempJson = (JSONObject) dataJson.get(i);
+                resultMap.put((String) tempJson.get("text"), (String) tempJson.get("value"));
+            }
+        }
+
+        return resultMap;
+    }
+
+    /**
+     * 根据省份名称获取编号
+     *
+     * @param province
+     * @return
+     */
+    private String getProvinceCode(String province) {
+        if (provinceMap == null || provinceMap.size() == 0) {
+            provinceMap = getProvince();
+        }
+
+        return provinceMap.get(province);
+    }
+
+    /**
+     * 获取省份
+     *
+     * @return
+     */
+    private Map<String, String> getProvince() {
+        String url = "http://www.ruishengglass.cn/api-v1-zone/getProvince";
+        ResultData resultData = httpUtils.get(url, Maps.newHashMap());
+
+        Map<String, String> provinceMap = parseBankResult(resultData);
+        return provinceMap;
+    }
+
+
+    /**
+     * 获取城市编码
+     *
+     * @param province
+     * @param cityName
+     * @return
+     */
+    private String getCityCode(String province, String cityName) {
+        Map<String, String> cityMap = getCityByProvince(province);
+        return cityMap.get(cityName);
+    }
+
+    /**
+     * 获取城市
+     *
+     * @param province
+     * @return
+     */
+    private Map<String, String> getCityByProvince(String province) {
+        String url = "http://www.ruishengglass.cn/api-v1-zone/getCity?parent=" + province;
+        ResultData resultData = httpUtils.get(url, Maps.newHashMap());
+
+        Map<String, String> cityMap = parseBankResult(resultData);
+        return cityMap;
+    }
+
+    /**
+     * 获取区域编码
+     *
+     * @param city
+     * @param areaName
+     * @return
+     */
+    private String getAreaCode(String city, String areaName) {
+        Map<String, String> areaMap = getAreaByCity(city);
+        return areaMap.get(areaName);
+    }
+
+    /**
+     * 获取区域
+     *
+     * @param city
+     * @return
+     */
+    private Map<String, String> getAreaByCity(String city) {
+        String url = "http://www.ruishengglass.cn/api-v1-zone/getArea?parent=" + city;
+        ResultData resultData = httpUtils.get(url, Maps.newHashMap());
+
+        Map<String, String> areaMap = parseBankResult(resultData);
+        return areaMap;
+    }
+
+
+}
